@@ -1,0 +1,1880 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   sodipodi:docname="spritesheet.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 384 640"
+   height="640"
+   width="384"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2967">
+      <stop
+         style="stop-color:#deaa87;stop-opacity:1;"
+         offset="0"
+         id="stop2963" />
+      <stop
+         style="stop-color:#deaa87;stop-opacity:0.5;"
+         offset="1"
+         id="stop2965" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient15638">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop15634" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.89999998;"
+         offset="1"
+         id="stop15636" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1211">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3582" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.69999999;"
+         offset="1"
+         id="stop3584" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1211-1">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop1207" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.85000002;"
+         offset="1"
+         id="stop1209" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1211"
+       id="linearGradient1213"
+       x1="96"
+       y1="0"
+       x2="96"
+       y2="64"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1211"
+       id="linearGradient2412"
+       gradientUnits="userSpaceOnUse"
+       x1="96"
+       y1="0"
+       x2="96"
+       y2="64"
+       gradientTransform="translate(64)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1211"
+       id="linearGradient2424"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(128)"
+       x1="96"
+       y1="0"
+       x2="96"
+       y2="64" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1211"
+       id="linearGradient2438"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(192)"
+       x1="96"
+       y1="0"
+       x2="96"
+       y2="64" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1211"
+       id="linearGradient2454"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(256)"
+       x1="96"
+       y1="0"
+       x2="96"
+       y2="64" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15638"
+       id="linearGradient3304"
+       gradientUnits="userSpaceOnUse"
+       x1="96"
+       y1="0"
+       x2="96"
+       y2="64"
+       gradientTransform="translate(0,64)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15638"
+       id="linearGradient3627"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(64,64)"
+       x1="96"
+       y1="0"
+       x2="96"
+       y2="64" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15638"
+       id="linearGradient3709"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(192,64)"
+       x1="96"
+       y1="0"
+       x2="96"
+       y2="64" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15638"
+       id="linearGradient3711"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(128,64)"
+       x1="96"
+       y1="0"
+       x2="96"
+       y2="64" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15638"
+       id="linearGradient3753"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(256,64)"
+       x1="96"
+       y1="0"
+       x2="96"
+       y2="64" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2967"
+       id="linearGradient2969"
+       x1="-90.509666"
+       y1="494.89148"
+       x2="-90.509666"
+       y2="510.89148"
+       gradientUnits="userSpaceOnUse" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3030">
+      <rect
+         style="fill:#666666;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3032"
+         width="64"
+         height="64"
+         x="256"
+         y="384" />
+    </clipPath>
+    <symbol
+       id="broom">
+      <title
+         id="title44611">Broomwagon</title>
+      <rect
+         style="fill:#ffffff;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill;opacity:0"
+         id="rect531"
+         width="64"
+         height="64"
+         x="0"
+         y="0" />
+      <g
+         id="g2974"
+         clip-path="url(#clipPath3030)"
+         transform="translate(-256,-384)">
+        <rect
+           style="fill:#666666;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+           id="rect2328"
+           width="16"
+           height="40"
+           x="-98.509666"
+           y="446.89148"
+           transform="rotate(-45)" />
+        <rect
+           style="fill:#aa0000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+           id="rect2330"
+           width="48"
+           height="8"
+           x="-114.50967"
+           y="486.89148"
+           transform="rotate(-45)" />
+        <rect
+           style="fill:url(#linearGradient2969);fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+           id="rect2332"
+           width="48"
+           height="16"
+           x="-114.50967"
+           y="494.89148"
+           transform="rotate(-45)" />
+      </g>
+    </symbol>
+    <symbol
+       id="mountain_1">
+      <title
+         id="title44619">Mountain (Category 1)</title>
+      <rect
+         style="fill:#ff5454;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect414"
+         width="64"
+         height="64"
+         x="64"
+         y="0" />
+      <path
+         style="fill:url(#linearGradient1213);fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         d="M 64,48 96,0 128,48 V 64 H 64 Z"
+         id="path574" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="path2040"
+         cx="96"
+         cy="40"
+         r="4" />
+    </symbol>
+    <symbol
+       id="mountain_2">
+      <title
+         id="title44625">Mountain (Category 2)</title>
+      <rect
+         style="fill:#ff9955;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect2406"
+         width="64"
+         height="64"
+         x="128"
+         y="0" />
+      <path
+         style="fill:url(#linearGradient2412);fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         d="M 128,48 160,0 192,48 V 64 H 128 Z"
+         id="path2408" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle2410"
+         cx="160"
+         cy="32"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle2414"
+         cx="160"
+         cy="48"
+         r="4" />
+    </symbol>
+    <symbol
+       id="mountain_3">
+      <title
+         id="title44632">Mountain (Category 3)</title>
+      <rect
+         style="fill:#ffdd55;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect2416"
+         width="64"
+         height="64"
+         x="192"
+         y="0" />
+      <path
+         style="fill:url(#linearGradient2424);fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         d="M 192,48 224,0 256,48 V 64 H 192 Z"
+         id="path2418" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle2420"
+         cx="224"
+         cy="32"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle2422"
+         cx="216"
+         cy="48"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle2426"
+         cx="232"
+         cy="48"
+         r="4" />
+    </symbol>
+    <symbol
+       id="mountain_4">
+      <title
+         id="title44640">Mountain (Category 4)</title>
+      <rect
+         style="fill:#54ff98;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect2428"
+         width="64"
+         height="64"
+         x="256"
+         y="0" />
+      <path
+         style="fill:url(#linearGradient2438);fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         d="M 256,48 288,0 320,48 V 64 H 256 Z"
+         id="path2430" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle2432"
+         cx="296"
+         cy="32"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle2434"
+         cx="280"
+         cy="48"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle2436"
+         cx="296"
+         cy="48"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle2440"
+         cx="280"
+         cy="32"
+         r="4" />
+    </symbol>
+    <symbol
+       id="mountain_0">
+      <title
+         id="title44649">Mountain (Beyond Categorisation)</title>
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect2442"
+         width="64"
+         height="64"
+         x="320"
+         y="0" />
+      <path
+         style="fill:url(#linearGradient2454);fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         d="M 320,48 352,0 384,48 V 64 H 320 Z"
+         id="path2444" />
+      <path
+         sodipodi:type="star"
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="path2508"
+         inkscape:flatsided="false"
+         sodipodi:sides="5"
+         sodipodi:cx="352"
+         sodipodi:cy="40"
+         sodipodi:r1="16"
+         sodipodi:r2="8"
+         sodipodi:arg1="-1.5707963"
+         sodipodi:arg2="-0.9424778"
+         inkscape:rounded="1.04083e-17"
+         inkscape:randomized="0"
+         d="m 352,24 4.70228,9.527864 10.51462,1.527864 -7.60845,7.416408 1.79611,10.472136 L 352,48 l -9.40456,4.944272 1.79611,-10.472136 -7.60845,-7.416408 10.51462,-1.527864 z"
+         inkscape:transform-center-y="-0.8" />
+    </symbol>
+    <symbol
+       id="finish">
+      <title
+         id="title44655">Finish</title>
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect2510"
+         width="64"
+         height="64"
+         x="0"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect238"
+         width="16"
+         height="16"
+         x="0"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect292"
+         width="16"
+         height="16"
+         x="16"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect294"
+         width="16"
+         height="16"
+         x="32"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect296"
+         width="16"
+         height="16"
+         x="48"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect298"
+         width="16"
+         height="16"
+         x="0"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect300"
+         width="16"
+         height="16"
+         x="16"
+         y="112" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect302"
+         width="16"
+         height="16"
+         x="32"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect304"
+         width="16"
+         height="16"
+         x="48"
+         y="112" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3079"
+         width="64"
+         height="64"
+         x="0"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3081"
+         width="16"
+         height="16"
+         x="0"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3083"
+         width="16"
+         height="16"
+         x="16"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3085"
+         width="16"
+         height="16"
+         x="32"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3087"
+         width="16"
+         height="16"
+         x="48"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3089"
+         width="16"
+         height="16"
+         x="0"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3091"
+         width="16"
+         height="16"
+         x="16"
+         y="112" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3093"
+         width="16"
+         height="16"
+         x="32"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3095"
+         width="16"
+         height="16"
+         x="48"
+         y="112" />
+    </symbol>
+    <symbol
+       id="finish_mountain_1">
+      <title
+         id="title44676">Summit Finish (Category 1)</title>
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3264"
+         width="64"
+         height="64"
+         x="64"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3266"
+         width="16"
+         height="16"
+         x="64"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3268"
+         width="16"
+         height="16"
+         x="80"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3270"
+         width="16"
+         height="16"
+         x="96"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3272"
+         width="16"
+         height="16"
+         x="112"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3274"
+         width="16"
+         height="16"
+         x="64"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3276"
+         width="16"
+         height="16"
+         x="80"
+         y="112" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3278"
+         width="16"
+         height="16"
+         x="96"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3280"
+         width="16"
+         height="16"
+         x="112"
+         y="112" />
+      <rect
+         style="fill:#ffabab;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3282"
+         width="64"
+         height="64"
+         x="64"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3284"
+         width="16"
+         height="16"
+         x="64"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3286"
+         width="16"
+         height="16"
+         x="80"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3288"
+         width="16"
+         height="16"
+         x="96"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3290"
+         width="16"
+         height="16"
+         x="112"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3292"
+         width="16"
+         height="16"
+         x="64"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3294"
+         width="16"
+         height="16"
+         x="80"
+         y="112" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3296"
+         width="16"
+         height="16"
+         x="96"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3298"
+         width="16"
+         height="16"
+         x="112"
+         y="112" />
+      <path
+         style="fill:url(#linearGradient3304);fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         d="m 64,112 32,-48 32,48 v 16 H 64 Z"
+         id="path3300" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle3302"
+         cx="96"
+         cy="104"
+         r="4" />
+    </symbol>
+    <symbol
+       id="finish_mountain_2">
+      <title
+         id="title44699">Summit Finish (Category 2)</title>
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3587"
+         width="64"
+         height="64"
+         x="128"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3589"
+         width="16"
+         height="16"
+         x="128"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3591"
+         width="16"
+         height="16"
+         x="144"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3593"
+         width="16"
+         height="16"
+         x="160"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3595"
+         width="16"
+         height="16"
+         x="176"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3597"
+         width="16"
+         height="16"
+         x="128"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3599"
+         width="16"
+         height="16"
+         x="144"
+         y="112" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3601"
+         width="16"
+         height="16"
+         x="160"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3603"
+         width="16"
+         height="16"
+         x="176"
+         y="112" />
+      <rect
+         style="fill:#ffcdab;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3605"
+         width="64"
+         height="64"
+         x="128"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3607"
+         width="16"
+         height="16"
+         x="128"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3609"
+         width="16"
+         height="16"
+         x="144"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3611"
+         width="16"
+         height="16"
+         x="160"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3613"
+         width="16"
+         height="16"
+         x="176"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3615"
+         width="16"
+         height="16"
+         x="128"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3617"
+         width="16"
+         height="16"
+         x="144"
+         y="112" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3619"
+         width="16"
+         height="16"
+         x="160"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3621"
+         width="16"
+         height="16"
+         x="176"
+         y="112" />
+      <path
+         style="fill:url(#linearGradient3627);fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         d="m 128,112 32,-48 32,48 v 16 h -64 z"
+         id="path3623" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle3894"
+         cx="160"
+         cy="96"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle3896"
+         cx="160"
+         cy="112"
+         r="4" />
+    </symbol>
+    <symbol
+       id="finish_mountain_3">
+      <title
+         id="title44723">Summit Finish (Category 3)</title>
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3629"
+         width="64"
+         height="64"
+         x="192"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3631"
+         width="16"
+         height="16"
+         x="192"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3633"
+         width="16"
+         height="16"
+         x="208"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3635"
+         width="16"
+         height="16"
+         x="224"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3637"
+         width="16"
+         height="16"
+         x="240"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3639"
+         width="16"
+         height="16"
+         x="192"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3641"
+         width="16"
+         height="16"
+         x="208"
+         y="112" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3643"
+         width="16"
+         height="16"
+         x="224"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3645"
+         width="16"
+         height="16"
+         x="240"
+         y="112" />
+      <rect
+         style="fill:#ffeeab;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3647"
+         width="64"
+         height="64"
+         x="192"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3649"
+         width="16"
+         height="16"
+         x="192"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3651"
+         width="16"
+         height="16"
+         x="208"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3653"
+         width="16"
+         height="16"
+         x="224"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3655"
+         width="16"
+         height="16"
+         x="240"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3657"
+         width="16"
+         height="16"
+         x="192"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3659"
+         width="16"
+         height="16"
+         x="208"
+         y="112" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3661"
+         width="16"
+         height="16"
+         x="224"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3663"
+         width="16"
+         height="16"
+         x="240"
+         y="112" />
+      <path
+         style="fill:url(#linearGradient3711);fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         d="m 192,112 32,-48 32,48 v 16 h -64 z"
+         id="path3665" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle3898"
+         cx="224"
+         cy="96"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle3900"
+         cx="216"
+         cy="112"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle3902"
+         cx="232"
+         cy="112"
+         r="4" />
+    </symbol>
+    <symbol
+       id="finish_mountain_4">
+      <title
+         id="title44748">Summit Finish (Category 4)</title>
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3669"
+         width="64"
+         height="64"
+         x="256"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3671"
+         width="16"
+         height="16"
+         x="256"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3673"
+         width="16"
+         height="16"
+         x="272"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3675"
+         width="16"
+         height="16"
+         x="288"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3677"
+         width="16"
+         height="16"
+         x="304"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3679"
+         width="16"
+         height="16"
+         x="256"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3681"
+         width="16"
+         height="16"
+         x="272"
+         y="112" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3683"
+         width="16"
+         height="16"
+         x="288"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3685"
+         width="16"
+         height="16"
+         x="304"
+         y="112" />
+      <rect
+         style="fill:#abffcc;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3687"
+         width="64"
+         height="64"
+         x="256"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3689"
+         width="16"
+         height="16"
+         x="256"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3691"
+         width="16"
+         height="16"
+         x="272"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3693"
+         width="16"
+         height="16"
+         x="288"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3695"
+         width="16"
+         height="16"
+         x="304"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3697"
+         width="16"
+         height="16"
+         x="256"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3699"
+         width="16"
+         height="16"
+         x="272"
+         y="112" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3701"
+         width="16"
+         height="16"
+         x="288"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3703"
+         width="16"
+         height="16"
+         x="304"
+         y="112" />
+      <path
+         style="fill:url(#linearGradient3709);fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         d="m 256,112 32,-48 32,48 v 16 h -64 z"
+         id="path3705" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle3904"
+         cx="296"
+         cy="96"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle3906"
+         cx="280"
+         cy="112"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle3908"
+         cx="296"
+         cy="112"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle3910"
+         cx="280"
+         cy="96"
+         r="4" />
+    </symbol>
+    <symbol
+       id="finish_mountain_0">
+      <title
+         id="title44774">Summit Finish (Beyond Categorisation)</title>
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3713"
+         width="64"
+         height="64"
+         x="320"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3715"
+         width="16"
+         height="16"
+         x="320"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3717"
+         width="16"
+         height="16"
+         x="336"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3719"
+         width="16"
+         height="16"
+         x="352"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3721"
+         width="16"
+         height="16"
+         x="368"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3723"
+         width="16"
+         height="16"
+         x="320"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3725"
+         width="16"
+         height="16"
+         x="336"
+         y="112" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3727"
+         width="16"
+         height="16"
+         x="352"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3729"
+         width="16"
+         height="16"
+         x="368"
+         y="112" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3731"
+         width="64"
+         height="64"
+         x="320"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3733"
+         width="16"
+         height="16"
+         x="320"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3735"
+         width="16"
+         height="16"
+         x="336"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3737"
+         width="16"
+         height="16"
+         x="352"
+         y="64" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3739"
+         width="16"
+         height="16"
+         x="368"
+         y="80" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3741"
+         width="16"
+         height="16"
+         x="320"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3743"
+         width="16"
+         height="16"
+         x="336"
+         y="112" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3745"
+         width="16"
+         height="16"
+         x="352"
+         y="96" />
+      <rect
+         style="fill:#000000;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3747"
+         width="16"
+         height="16"
+         x="368"
+         y="112" />
+      <path
+         style="fill:url(#linearGradient3753);fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         d="m 320,112 32,-48 32,48 v 16 h -64 z"
+         id="path3749" />
+      <path
+         sodipodi:type="star"
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="path3912"
+         inkscape:flatsided="false"
+         sodipodi:sides="5"
+         sodipodi:cx="352"
+         sodipodi:cy="40"
+         sodipodi:r1="16"
+         sodipodi:r2="8"
+         sodipodi:arg1="-1.5707963"
+         sodipodi:arg2="-0.9424778"
+         inkscape:rounded="1.04083e-17"
+         inkscape:randomized="0"
+         d="m 352,24 4.70228,9.527864 10.51462,1.527864 -7.60845,7.416408 1.79611,10.472136 L 352,48 l -9.40456,4.944272 1.79611,-10.472136 -7.60845,-7.416408 10.51462,-1.527864 z"
+         inkscape:transform-center-y="-0.8"
+         transform="translate(1e-5,64)" />
+    </symbol>
+    <symbol
+       id="depart_fictif">
+      <title
+         id="title44797">Neutral Start</title>
+      <rect
+         style="opacity:1;fill:#5454ff;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect18731"
+         width="64"
+         height="64"
+         x="0"
+         y="128" />
+      <path
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 12,140 v 40 l 40,-20 z"
+         id="path18856" />
+    </symbol>
+    <symbol
+       id="pave_1">
+      <title
+         id="title44802">Cobbles (Difficulty 1)</title>
+      <rect
+         style="opacity:1;fill:#54ff98;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect11475"
+         width="64"
+         height="64"
+         x="64"
+         y="128" />
+      <path
+         id="rect13973"
+         style="opacity:1;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 83,128 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 z m 18,0 v 2 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -2 z m 18,0 v 4 c 0,2.216 1.784,4 4,4 h 5 v -8 z m -55,1.375 v 9.25 c 0.61498,-0.70295 1,-1.61334 1,-2.625 v -4 c 0,-1.01166 -0.38502,-1.92205 -1,-2.625 z M 71,130 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 5.53516 c 0.68986,-1.19651 1.97903,-2 3.46484,-2 h 2.44922 C 82.7907,139.41045 83,138.73303 83,138 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 18,4 c -2.216,0 -4,1.784 -4,4 v 2 h 16 v -2 c 0,-2.216 -1.784,-4 -4,-4 z m 18,2 c -2.216,0 -4,1.784 -4,4 h 9 c 2.216,0 4,1.784 4,4 v 3.86133 c 1.72629,-0.44369 3,-1.99278 3,-3.86133 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 18,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 3 v -12 z m -61,4.13867 v 11.72266 c 1.72629,-0.44369 3,-1.99278 3,-3.86133 v -4 c 0,-1.86855 -1.27371,-3.41764 -3,-3.86133 z M 73,144 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 3 v -12 z m 43,6 v 12 h 1 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 11,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 1 v -12 z m -63,4 v 12 h 1 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 11,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 1 v -12 z m 41,6 v 12 h 3 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 12,2.13867 c -1.72629,0.44369 -3,1.99278 -3,3.86133 v 4 c 0,1.86855 1.27371,3.41764 3,3.86133 z M 64,170 v 12 h 3 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 12,2.13867 c -1.72629,0.44369 -3,1.99278 -3,3.86133 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 h -9 c -2.216,0 -4,-1.784 -4,-4 z M 115.46484,178 c -0.68986,1.19651 -1.97903,2 -3.46484,2 h -2.44922 C 109.2093,180.58955 109,181.26697 109,182 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z M 91,180 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -4 z m 37,1.375 c -0.61498,0.70295 -1,1.61334 -1,2.625 v 4 c 0,1.01166 0.38502,1.92205 1,2.625 z M 64,184 v 8 h 9 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 15,2 c -2.216,0 -4,1.784 -4,4 v 2 h 16 v -2 c 0,-2.216 -1.784,-4 -4,-4 z m 18,4 c -1.48297,0 -2.75838,0.80729 -3.44922,2 h 14.89844 c -0.69084,-1.19271 -1.96625,-2 -3.44922,-2 z" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle15336"
+         cx="96"
+         cy="160"
+         r="4" />
+    </symbol>
+    <symbol
+       id="pave_2">
+      <title
+         id="title44808">Cobbles (Difficulty 2)</title>
+      <rect
+         style="opacity:1;fill:#ffdd55;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect14147"
+         width="64"
+         height="64"
+         x="128"
+         y="128" />
+      <path
+         id="path14149"
+         style="opacity:1;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 147,128 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 z m 18,0 v 2 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -2 z m 18,0 v 4 c 0,2.216 1.784,4 4,4 h 5 v -8 z m -55,1.375 v 9.25 c 0.61498,-0.70295 1,-1.61334 1,-2.625 v -4 c 0,-1.01166 -0.38502,-1.92205 -1,-2.625 z m 7,0.625 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 5.53516 c 0.68986,-1.19651 1.97903,-2 3.46484,-2 h 2.44922 C 146.7907,139.41045 147,138.73303 147,138 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 18,4 c -2.216,0 -4,1.784 -4,4 v 2 h 16 v -2 c 0,-2.216 -1.784,-4 -4,-4 z m 18,2 c -2.216,0 -4,1.784 -4,4 h 9 c 2.216,0 4,1.784 4,4 v 3.86133 c 1.72629,-0.44369 3,-1.99278 3,-3.86133 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 18,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 3 v -12 z m -61,4.13867 v 11.72266 c 1.72629,-0.44369 3,-1.99278 3,-3.86133 v -4 c 0,-1.86855 -1.27371,-3.41764 -3,-3.86133 z M 137,144 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 3 v -12 z m 43,6 v 12 h 1 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 11,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 1 v -12 z m -63,4 v 12 h 1 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 11,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 1 v -12 z m 41,6 v 12 h 3 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 12,2.13867 c -1.72629,0.44369 -3,1.99278 -3,3.86133 v 4 c 0,1.86855 1.27371,3.41764 3,3.86133 z M 128,170 v 12 h 3 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 12,2.13867 c -1.72629,0.44369 -3,1.99278 -3,3.86133 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 h -9 c -2.216,0 -4,-1.784 -4,-4 z M 179.46484,178 c -0.68986,1.19651 -1.97903,2 -3.46484,2 h -2.44922 C 173.2093,180.58955 173,181.26697 173,182 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z M 155,180 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -4 z m 37,1.375 c -0.61498,0.70295 -1,1.61334 -1,2.625 v 4 c 0,1.01166 0.38502,1.92205 1,2.625 z M 128,184 v 8 h 9 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 15,2 c -2.216,0 -4,1.784 -4,4 v 2 h 16 v -2 c 0,-2.216 -1.784,-4 -4,-4 z m 18,4 c -1.48297,0 -2.75838,0.80729 -3.44922,2 h 14.89844 c -0.69084,-1.19271 -1.96625,-2 -3.44922,-2 z" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle15338"
+         cx="160"
+         cy="152"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle15340"
+         cx="160"
+         cy="168"
+         r="4" />
+    </symbol>
+    <symbol
+       id="pave_3">
+      <title
+         id="title44815">Cobbles (Difficulty 3)</title>
+      <rect
+         style="opacity:1;fill:#ff9955;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect14151"
+         width="64"
+         height="64"
+         x="192"
+         y="128" />
+      <path
+         id="path14153"
+         style="opacity:1;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 211,128 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 z m 18,0 v 2 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -2 z m 18,0 v 4 c 0,2.216 1.784,4 4,4 h 5 v -8 z m -55,1.375 v 9.25 c 0.61498,-0.70295 1,-1.61334 1,-2.625 v -4 c 0,-1.01166 -0.38502,-1.92205 -1,-2.625 z m 7,0.625 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 5.53516 c 0.68986,-1.19651 1.97903,-2 3.46484,-2 h 2.44922 C 210.7907,139.41045 211,138.73303 211,138 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 18,4 c -2.216,0 -4,1.784 -4,4 v 2 h 16 v -2 c 0,-2.216 -1.784,-4 -4,-4 z m 18,2 c -2.216,0 -4,1.784 -4,4 h 9 c 2.216,0 4,1.784 4,4 v 3.86133 c 1.72629,-0.44369 3,-1.99278 3,-3.86133 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 18,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 3 v -12 z m -61,4.13867 v 11.72266 c 1.72629,-0.44369 3,-1.99278 3,-3.86133 v -4 c 0,-1.86855 -1.27371,-3.41764 -3,-3.86133 z M 201,144 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 3 v -12 z m 43,6 v 12 h 1 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 11,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 1 v -12 z m -63,4 v 12 h 1 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 11,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 1 v -12 z m 41,6 v 12 h 3 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 12,2.13867 c -1.72629,0.44369 -3,1.99278 -3,3.86133 v 4 c 0,1.86855 1.27371,3.41764 3,3.86133 z M 192,170 v 12 h 3 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 12,2.13867 c -1.72629,0.44369 -3,1.99278 -3,3.86133 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 h -9 c -2.216,0 -4,-1.784 -4,-4 z M 243.46484,178 c -0.68986,1.19651 -1.97903,2 -3.46484,2 h -2.44922 C 237.2093,180.58955 237,181.26697 237,182 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z M 219,180 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -4 z m 37,1.375 c -0.61498,0.70295 -1,1.61334 -1,2.625 v 4 c 0,1.01166 0.38502,1.92205 1,2.625 z M 192,184 v 8 h 9 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 15,2 c -2.216,0 -4,1.784 -4,4 v 2 h 16 v -2 c 0,-2.216 -1.784,-4 -4,-4 z m 18,4 c -1.48297,0 -2.75838,0.80729 -3.44922,2 h 14.89844 c -0.69084,-1.19271 -1.96625,-2 -3.44922,-2 z" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle15342"
+         cx="224"
+         cy="152"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle15344"
+         cx="216"
+         cy="168"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle15346"
+         cx="232"
+         cy="168"
+         r="4" />
+    </symbol>
+    <symbol
+       id="pave_4">
+      <title
+         id="title44823">Cobbles (Difficulty 4)</title>
+      <rect
+         style="opacity:1;fill:#ff5454;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect14155"
+         width="64"
+         height="64"
+         x="256"
+         y="128" />
+      <path
+         id="path14157"
+         style="opacity:1;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 275,128 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 z m 18,0 v 2 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -2 z m 18,0 v 4 c 0,2.216 1.784,4 4,4 h 5 v -8 z m -55,1.375 v 9.25 c 0.61498,-0.70295 1,-1.61334 1,-2.625 v -4 c 0,-1.01166 -0.38502,-1.92205 -1,-2.625 z m 7,0.625 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 5.53516 c 0.68986,-1.19651 1.97903,-2 3.46484,-2 h 2.44922 C 274.7907,139.41045 275,138.73303 275,138 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 18,4 c -2.216,0 -4,1.784 -4,4 v 2 h 16 v -2 c 0,-2.216 -1.784,-4 -4,-4 z m 18,2 c -2.216,0 -4,1.784 -4,4 h 9 c 2.216,0 4,1.784 4,4 v 3.86133 c 1.72629,-0.44369 3,-1.99278 3,-3.86133 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 18,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 3 v -12 z m -61,4.13867 v 11.72266 c 1.72629,-0.44369 3,-1.99278 3,-3.86133 v -4 c 0,-1.86855 -1.27371,-3.41764 -3,-3.86133 z M 265,144 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 3 v -12 z m 43,6 v 12 h 1 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 11,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 1 v -12 z m -63,4 v 12 h 1 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 11,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 1 v -12 z m 41,6 v 12 h 3 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 12,2.13867 c -1.72629,0.44369 -3,1.99278 -3,3.86133 v 4 c 0,1.86855 1.27371,3.41764 3,3.86133 z M 256,170 v 12 h 3 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 12,2.13867 c -1.72629,0.44369 -3,1.99278 -3,3.86133 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 h -9 c -2.216,0 -4,-1.784 -4,-4 z M 307.46484,178 c -0.68986,1.19651 -1.97903,2 -3.46484,2 h -2.44922 C 301.2093,180.58955 301,181.26697 301,182 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z M 283,180 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -4 z m 37,1.375 c -0.61498,0.70295 -1,1.61334 -1,2.625 v 4 c 0,1.01166 0.38502,1.92205 1,2.625 z M 256,184 v 8 h 9 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 15,2 c -2.216,0 -4,1.784 -4,4 v 2 h 16 v -2 c 0,-2.216 -1.784,-4 -4,-4 z m 18,4 c -1.48297,0 -2.75838,0.80729 -3.44922,2 h 14.89844 c -0.69084,-1.19271 -1.96625,-2 -3.44922,-2 z" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle15348"
+         cx="296"
+         cy="152"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle15350"
+         cx="280"
+         cy="168"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle15352"
+         cx="296"
+         cy="168"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle15354"
+         cx="280"
+         cy="152"
+         r="4" />
+    </symbol>
+    <symbol
+       id="pave_5">
+      <title
+         id="title44832">Cobbles (Difficulty 5)</title>
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect14159"
+         width="64"
+         height="64"
+         x="320"
+         y="128" />
+      <path
+         id="path14161"
+         style="opacity:1;fill:#b2b2b2;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 339,128 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 z m 18,0 v 2 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -2 z m 18,0 v 4 c 0,2.216 1.784,4 4,4 h 5 v -8 z m -55,1.375 v 9.25 c 0.61498,-0.70295 1,-1.61334 1,-2.625 v -4 c 0,-1.01166 -0.38502,-1.92205 -1,-2.625 z m 7,0.625 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 5.53516 c 0.68986,-1.19651 1.97903,-2 3.46484,-2 h 2.44922 C 338.7907,139.41045 339,138.73303 339,138 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 18,4 c -2.216,0 -4,1.784 -4,4 v 2 h 16 v -2 c 0,-2.216 -1.784,-4 -4,-4 z m 18,2 c -2.216,0 -4,1.784 -4,4 h 9 c 2.216,0 4,1.784 4,4 v 3.86133 c 1.72629,-0.44369 3,-1.99278 3,-3.86133 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 18,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 3 v -12 z m -61,4.13867 v 11.72266 c 1.72629,-0.44369 3,-1.99278 3,-3.86133 v -4 c 0,-1.86855 -1.27371,-3.41764 -3,-3.86133 z M 329,144 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 3 v -12 z m 43,6 v 12 h 1 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 11,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 1 v -12 z m -63,4 v 12 h 1 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 11,2 c -2.216,0 -4,1.784 -4,4 v 4 c 0,2.216 1.784,4 4,4 h 1 v -12 z m 41,6 v 12 h 3 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 12,2.13867 c -1.72629,0.44369 -3,1.99278 -3,3.86133 v 4 c 0,1.86855 1.27371,3.41764 3,3.86133 z M 320,170 v 12 h 3 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 12,2.13867 c -1.72629,0.44369 -3,1.99278 -3,3.86133 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 h -9 c -2.216,0 -4,-1.784 -4,-4 z M 371.46484,178 c -0.68986,1.19651 -1.97903,2 -3.46484,2 h -2.44922 C 365.2093,180.58955 365,181.26697 365,182 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.784,-4 -4,-4 z M 347,180 v 4 c 0,2.216 1.784,4 4,4 h 8 c 2.216,0 4,-1.784 4,-4 v -4 z m 37,1.375 c -0.61498,0.70295 -1,1.61334 -1,2.625 v 4 c 0,1.01166 0.38502,1.92205 1,2.625 z M 320,184 v 8 h 9 v -4 c 0,-2.216 -1.784,-4 -4,-4 z m 15,2 c -2.216,0 -4,1.784 -4,4 v 2 h 16 v -2 c 0,-2.216 -1.784,-4 -4,-4 z m 18,4 c -1.48297,0 -2.75838,0.80729 -3.44922,2 h 14.89844 c -0.69084,-1.19271 -1.96625,-2 -3.44922,-2 z" />
+      <path
+         sodipodi:type="star"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="path15356"
+         inkscape:flatsided="false"
+         sodipodi:sides="5"
+         sodipodi:cx="352"
+         sodipodi:cy="40"
+         sodipodi:r1="16"
+         sodipodi:r2="8"
+         sodipodi:arg1="-1.5707963"
+         sodipodi:arg2="-0.9424778"
+         inkscape:rounded="1.04083e-17"
+         inkscape:randomized="0"
+         d="m 352,24 4.70228,9.527864 10.51462,1.527864 -7.60845,7.416408 1.79611,10.472136 L 352,48 l -9.40456,4.944272 1.79611,-10.472136 -7.60845,-7.416408 10.51462,-1.527864 z"
+         inkscape:transform-center-y="-0.800004"
+         transform="translate(9.0480065e-6,120.72786)"
+         inkscape:transform-center-x="4.9485155e-06" />
+    </symbol>
+    <symbol
+       id="depart_real">
+      <title
+         id="title44838">Kilometre 0</title>
+      <rect
+         style="opacity:1;fill:#5454ff;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect5346"
+         width="64"
+         height="64"
+         x="0"
+         y="192" />
+      <ellipse
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="path5508"
+         cx="24"
+         cy="224"
+         rx="12"
+         ry="16" />
+      <path
+         id="path7124"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 42,227 v 16 h 4 v -5 l 4.34375,5 H 56 l -7,-8 7,-8 H 50.34375 L 46,232 v -5 z"
+         sodipodi:nodetypes="cccccccccccc" />
+    </symbol>
+    <symbol
+       id="blanc_1">
+      <title
+         id="title44844">Dirt/Gravel (Difficulty 1)</title>
+      <rect
+         style="opacity:1;fill:#54ff98;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect20310"
+         width="64"
+         height="64"
+         x="64"
+         y="192" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle20330"
+         cx="96"
+         cy="224"
+         r="4" />
+      <path
+         id="path1101"
+         style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 64,192 v 3.80078 A 4,4 0 0 0 67,192 Z m 5,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m -50,4 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 125,200 a 4,4 0 0 0 3,3.80078 z M 73,204 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3,-1.42969 V 208 c 0,-0.70318 0.18002,-1.36256 0.49609,-1.93555 A 4,4 0 0 0 73,204 Z m 40,0 a 4,4 0 0 0 -0.3125,0.0625 C 114.57311,204.38706 116,206.01892 116,208 v 2.57031 A 4,4 0 0 0 117,208 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 67,208 4,4 0 0 0 64,204.13477 Z M 69,212 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 50,0 a 4,4 0 0 0 -3,1.42969 v 5.14062 a 4,4 0 0 0 3,1.42969 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 125,216 a 4,4 0 0 0 3,3.80078 z m -52,1.23047 A 4,4 0 0 0 75,216 a 4,4 0 0 0 1,2.57031 z M 73,220 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3,-1.42969 v -5.20312 A 4,4 0 0 0 73,220 Z m 50,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 67,224 4,4 0 0 0 64,220.13477 Z m 52,1.23242 v 5.20312 A 4,4 0 0 0 117,224 4,4 0 0 0 116,221.36719 Z M 69,228 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 50,0 a 4,4 0 0 0 -3,1.42969 v 5.14062 a 4,4 0 0 0 3,1.42969 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 125,232 a 4,4 0 0 0 3,3.80078 z m -52,1.23047 A 4,4 0 0 0 75,232 a 4,4 0 0 0 1,2.57031 z M 73,236 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3.46484,-2.12305 C 76.16843,241.31773 76,240.6794 76,240 v -2.63281 A 4,4 0 0 0 73,236 Z m 50,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 67,240 4,4 0 0 0 64,236.13477 Z m 52,1.23242 V 240 c 0,1.98108 -1.42689,3.61294 -3.3125,3.9375 A 4,4 0 0 0 113,244 a 4,4 0 0 0 4,-4 4,4 0 0 0 -1,-2.63281 z M 69,244 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 125,248 a 4,4 0 0 0 3,3.80078 z M 73,252 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m -59,0.13477 V 256 h 3 a 4,4 0 0 0 -3,-3.86523 z" />
+    </symbol>
+    <symbol
+       id="blanc_2">
+      <title
+         id="title44850">Dirt/Gravel (Difficulty 2)</title>
+      <rect
+         style="opacity:1;fill:#ffdd55;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect20314"
+         width="64"
+         height="64"
+         x="128"
+         y="192" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle20332"
+         cx="160"
+         cy="216"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle20334"
+         cx="160"
+         cy="232"
+         r="4" />
+      <path
+         id="path20352"
+         style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 128,192 v 3.80078 A 4,4 0 0 0 131,192 Z m 5,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m -50,4 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 189,200 a 4,4 0 0 0 3,3.80078 z M 137,204 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3,-1.42969 V 208 c 0,-0.70318 0.18002,-1.36256 0.49609,-1.93555 A 4,4 0 0 0 137,204 Z m 40,0 a 4,4 0 0 0 -0.3125,0.0625 C 178.57311,204.38706 180,206.01892 180,208 v 2.57031 A 4,4 0 0 0 181,208 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 131,208 4,4 0 0 0 128,204.13477 Z M 133,212 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 50,0 a 4,4 0 0 0 -3,1.42969 v 5.14062 a 4,4 0 0 0 3,1.42969 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 189,216 a 4,4 0 0 0 3,3.80078 z m -52,1.23047 A 4,4 0 0 0 139,216 a 4,4 0 0 0 1,2.57031 z M 137,220 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3,-1.42969 v -5.20312 A 4,4 0 0 0 137,220 Z m 50,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 131,224 a 4,4 0 0 0 -3,-3.86523 z m 52,1.23242 v 5.20312 A 4,4 0 0 0 181,224 4,4 0 0 0 180,221.36719 Z M 133,228 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 50,0 a 4,4 0 0 0 -3,1.42969 v 5.14062 a 4,4 0 0 0 3,1.42969 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 189,232 a 4,4 0 0 0 3,3.80078 z m -52,1.23047 A 4,4 0 0 0 139,232 a 4,4 0 0 0 1,2.57031 z M 137,236 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3.46484,-2.12305 C 140.16843,241.31773 140,240.6794 140,240 v -2.63281 A 4,4 0 0 0 137,236 Z m 50,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 131,240 a 4,4 0 0 0 -3,-3.86523 z m 52,1.23242 V 240 c 0,1.98108 -1.42689,3.61294 -3.3125,3.9375 A 4,4 0 0 0 177,244 a 4,4 0 0 0 4,-4 4,4 0 0 0 -1,-2.63281 z M 133,244 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 189,248 a 4,4 0 0 0 3,3.80078 z M 137,252 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m -59,0.13477 V 256 h 3 a 4,4 0 0 0 -3,-3.86523 z" />
+    </symbol>
+    <symbol
+       id="blanc_3">
+      <title
+         id="title44857">Dirt/Gravel (Difficulty 3)</title>
+      <rect
+         style="opacity:1;fill:#ff9955;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect20318"
+         width="64"
+         height="64"
+         x="192"
+         y="192" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle20336"
+         cx="224"
+         cy="216"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle20338"
+         cx="216"
+         cy="232"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle20340"
+         cx="232"
+         cy="232"
+         r="4" />
+      <path
+         id="path1095"
+         style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 192,192 v 3.80078 A 4,4 0 0 0 195,192 Z m 5,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m -50,4 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 253,200 a 4,4 0 0 0 3,3.80078 z M 201,204 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3,-1.42969 V 208 c 0,-0.70318 0.18002,-1.36256 0.49609,-1.93555 A 4,4 0 0 0 201,204 Z m 40,0 a 4,4 0 0 0 -0.3125,0.0625 C 242.57311,204.38706 244,206.01892 244,208 v 2.57031 A 4,4 0 0 0 245,208 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 195,208 4,4 0 0 0 192,204.13477 Z M 197,212 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 50,0 a 4,4 0 0 0 -3,1.42969 v 5.14062 a 4,4 0 0 0 3,1.42969 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 253,216 a 4,4 0 0 0 3,3.80078 z m -52,1.23047 A 4,4 0 0 0 203,216 a 4,4 0 0 0 1,2.57031 z M 201,220 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3,-1.42969 v -5.20312 A 4,4 0 0 0 201,220 Z m 50,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 195,224 a 4,4 0 0 0 -3,-3.86523 z m 52,1.23242 v 5.20312 A 4,4 0 0 0 245,224 4,4 0 0 0 244,221.36719 Z M 197,228 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 50,0 a 4,4 0 0 0 -3,1.42969 v 5.14062 a 4,4 0 0 0 3,1.42969 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 253,232 a 4,4 0 0 0 3,3.80078 z m -52,1.23047 A 4,4 0 0 0 203,232 a 4,4 0 0 0 1,2.57031 z M 201,236 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3.46484,-2.12305 C 204.16843,241.31773 204,240.6794 204,240 v -2.63281 A 4,4 0 0 0 201,236 Z m 50,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 195,240 a 4,4 0 0 0 -3,-3.86523 z m 52,1.23242 V 240 c 0,1.98108 -1.42689,3.61294 -3.3125,3.9375 A 4,4 0 0 0 241,244 a 4,4 0 0 0 4,-4 4,4 0 0 0 -1,-2.63281 z M 197,244 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 253,248 a 4,4 0 0 0 3,3.80078 z M 201,252 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m -59,0.13477 V 256 h 3 a 4,4 0 0 0 -3,-3.86523 z" />
+    </symbol>
+    <symbol
+       id="blanc_4">
+      <title
+         id="title44865">Dirt/Gravel (Difficulty 4)</title>
+      <rect
+         style="opacity:1;fill:#ff5454;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect20322"
+         width="64"
+         height="64"
+         x="256"
+         y="192" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle20342"
+         cx="296"
+         cy="216"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle20344"
+         cx="280"
+         cy="232"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle20346"
+         cx="296"
+         cy="232"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle20348"
+         cx="280"
+         cy="216"
+         r="4" />
+      <path
+         id="path1097"
+         style="opacity:1;fill:#ffb380;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 256,192 v 3.80078 A 4,4 0 0 0 259,192 Z m 5,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m -50,4 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 317,200 a 4,4 0 0 0 3,3.80078 z M 265,204 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3,-1.42969 V 208 c 0,-0.70318 0.18002,-1.36256 0.49609,-1.93555 A 4,4 0 0 0 265,204 Z m 40,0 a 4,4 0 0 0 -0.3125,0.0625 C 306.57311,204.38706 308,206.01892 308,208 v 2.57031 A 4,4 0 0 0 309,208 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 259,208 4,4 0 0 0 256,204.13477 Z M 261,212 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 50,0 a 4,4 0 0 0 -3,1.42969 v 5.14062 a 4,4 0 0 0 3,1.42969 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 317,216 a 4,4 0 0 0 3,3.80078 z m -52,1.23047 A 4,4 0 0 0 267,216 a 4,4 0 0 0 1,2.57031 z M 265,220 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3,-1.42969 v -5.20312 A 4,4 0 0 0 265,220 Z m 50,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 259,224 a 4,4 0 0 0 -3,-3.86523 z m 52,1.23242 v 5.20312 A 4,4 0 0 0 309,224 4,4 0 0 0 308,221.36719 Z M 261,228 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 50,0 a 4,4 0 0 0 -3,1.42969 v 5.14062 a 4,4 0 0 0 3,1.42969 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 317,232 a 4,4 0 0 0 3,3.80078 z m -52,1.23047 A 4,4 0 0 0 267,232 a 4,4 0 0 0 1,2.57031 z M 265,236 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3.46484,-2.12305 C 268.16843,241.31773 268,240.6794 268,240 v -2.63281 A 4,4 0 0 0 265,236 Z m 50,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 259,240 a 4,4 0 0 0 -3,-3.86523 z m 52,1.23242 V 240 c 0,1.98108 -1.42689,3.61294 -3.3125,3.9375 A 4,4 0 0 0 305,244 a 4,4 0 0 0 4,-4 4,4 0 0 0 -1,-2.63281 z M 261,244 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 317,248 a 4,4 0 0 0 3,3.80078 z M 265,252 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m -59,0.13477 V 256 h 3 a 4,4 0 0 0 -3,-3.86523 z" />
+    </symbol>
+    <symbol
+       id="blanc_5">
+      <title
+         id="title44874">Dirt/Gravel (Difficulty 5)</title>
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect20326"
+         width="64"
+         height="64"
+         x="320"
+         y="192" />
+      <path
+         sodipodi:type="star"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="path20350"
+         inkscape:flatsided="false"
+         sodipodi:sides="5"
+         sodipodi:cx="352"
+         sodipodi:cy="40"
+         sodipodi:r1="16"
+         sodipodi:r2="8"
+         sodipodi:arg1="-1.5707963"
+         sodipodi:arg2="-0.9424778"
+         inkscape:rounded="1.04083e-17"
+         inkscape:randomized="0"
+         d="m 352,24 4.70228,9.527864 10.51462,1.527864 -7.60845,7.416408 1.79611,10.472136 L 352,48 l -9.40456,4.944272 1.79611,-10.472136 -7.60845,-7.416408 10.51462,-1.527864 z"
+         inkscape:transform-center-y="-0.800004"
+         transform="translate(9e-6,184.72786)"
+         inkscape:transform-center-x="4.9485155e-06" />
+      <path
+         id="path1099"
+         style="opacity:1;fill:#ffb380;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 320,192 v 3.80078 A 4,4 0 0 0 323,192 Z m 5,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m 10,0 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 z m -50,4 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 381,200 a 4,4 0 0 0 3,3.80078 z M 329,204 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3,-1.42969 V 208 c 0,-0.70318 0.18002,-1.36256 0.49609,-1.93555 A 4,4 0 0 0 329,204 Z m 40,0 a 4,4 0 0 0 -0.3125,0.0625 C 370.57311,204.38706 372,206.01892 372,208 v 2.57031 A 4,4 0 0 0 373,208 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 323,208 4,4 0 0 0 320,204.13477 Z M 325,212 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 50,0 a 4,4 0 0 0 -3,1.42969 v 5.14062 a 4,4 0 0 0 3,1.42969 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 381,216 a 4,4 0 0 0 3,3.80078 z m -52,1.23047 A 4,4 0 0 0 331,216 a 4,4 0 0 0 1,2.57031 z M 329,220 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3,-1.42969 v -5.20312 A 4,4 0 0 0 329,220 Z m 50,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 323,224 a 4,4 0 0 0 -3,-3.86523 z m 52,1.23242 v 5.20312 A 4,4 0 0 0 373,224 4,4 0 0 0 372,221.36719 Z M 325,228 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 50,0 a 4,4 0 0 0 -3,1.42969 v 5.14062 a 4,4 0 0 0 3,1.42969 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 381,232 a 4,4 0 0 0 3,3.80078 z m -52,1.23047 A 4,4 0 0 0 331,232 a 4,4 0 0 0 1,2.57031 z M 329,236 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3.46484,-2.12305 C 332.16843,241.31773 332,240.6794 332,240 v -2.63281 A 4,4 0 0 0 329,236 Z m 50,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m -59,0.13477 v 7.66601 A 4,4 0 0 0 323,240 a 4,4 0 0 0 -3,-3.86523 z m 52,1.23242 V 240 c 0,1.98108 -1.42689,3.61294 -3.3125,3.9375 A 4,4 0 0 0 369,244 a 4,4 0 0 0 4,-4 4,4 0 0 0 -1,-2.63281 z M 325,244 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 9,0.19922 A 4,4 0 0 0 381,248 a 4,4 0 0 0 3,3.80078 z M 329,252 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m 10,0 a 4,4 0 0 0 -4,4 h 8 a 4,4 0 0 0 -4,-4 z m -59,0.13477 V 256 h 3 a 4,4 0 0 0 -3,-3.86523 z" />
+    </symbol>
+    <symbol
+       id="bonus">
+      <title
+         id="title44880">Intermediate Sprint with Bonus Time</title>
+      <rect
+         style="opacity:1;fill:#802a80;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect7298"
+         width="64"
+         height="64"
+         x="0"
+         y="256" />
+      <circle
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="path9584"
+         cx="28"
+         cy="292"
+         r="20" />
+      <path
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 28,280 v 12 l 8,8"
+         id="path9638"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 52,260 v 16"
+         id="path10366" />
+      <path
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="M 44,268 H 60"
+         id="path10368" />
+    </symbol>
+    <symbol
+       id="sprint_purple">
+      <title
+         id="title44888">Intermediate Sprint</title>
+      <rect
+         style="opacity:1;fill:#802a80;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect11096"
+         width="64"
+         height="64"
+         x="64"
+         y="256" />
+      <circle
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="path11467"
+         cx="96"
+         cy="288"
+         r="24" />
+      <g
+         aria-label="S"
+         id="text11156"
+         style="font-weight:bold;font-size:42.6667px;line-height:120%;font-family:Inter;-inkscape-font-specification:'Inter Bold';text-align:center;text-anchor:middle;opacity:1;fill:#802a80;stroke-width:6;stroke-linejoin:bevel;stroke-miterlimit:10;paint-order:stroke markers fill"
+         transform="translate(0,64)">
+        <path
+           d="m 101.56061,217.38635 q -0.18182,-1.83333 -1.575763,-2.84848 -1.378789,-1.01515 -3.727275,-1.01515 -2.409093,0 -3.696973,0.98484 -1.287879,0.98485 -1.287879,2.48485 -0.0303,1.66667 1.424243,2.53031 1.469698,0.84849 3.484851,1.31818 l 2.787881,0.66667 q 2.696975,0.60606 4.787885,1.75758 2.10606,1.15151 3.30303,2.9697 1.21212,1.80303 1.21212,4.39394 -0.0151,4.25758 -3.19697,6.78788 -3.16667,2.51516 -8.848491,2.51516 -5.65152,0 -9.015158,-2.57576 -3.363639,-2.57576 -3.484852,-7.60607 h 6.34849 q 0.166667,2.33334 1.833335,3.51515 1.681819,1.16667 4.242427,1.16667 2.500002,0 3.984849,-1.06061 1.5,-1.0606 1.51516,-2.75757 -0.0152,-1.57576 -1.37879,-2.42425 -1.363641,-0.84848 -3.893946,-1.45454 l -3.37879,-0.84849 q -3.924246,-0.93939 -6.196975,-2.98485 -2.272729,-2.04546 -2.257577,-5.4697 -0.01515,-2.81818 1.500001,-4.92425 1.530304,-2.12121 4.196973,-3.28788 2.666668,-1.18182 6.06061,-1.18182 3.454548,0 6.030304,1.18182 2.59091,1.18182 4.03031,3.28788 1.43939,2.10607 1.48485,4.87879 z"
+           id="path17881" />
+      </g>
+    </symbol>
+    <symbol
+       id="sprint_green">
+      <title
+         id="title44895">Intermediate Sprint</title>
+      <rect
+         style="opacity:1;fill:#2a802f;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect17818"
+         width="64"
+         height="64"
+         x="128"
+         y="256" />
+      <circle
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="circle17820"
+         cx="160"
+         cy="288"
+         r="24" />
+      <g
+         aria-label="S"
+         id="text17824"
+         style="font-weight:bold;font-size:42.6667px;line-height:120%;font-family:Inter;-inkscape-font-specification:'Inter Bold';text-align:center;text-anchor:middle;opacity:1;fill:#2a802f;fill-opacity:1;stroke-width:6;stroke-linejoin:bevel;stroke-miterlimit:10;paint-order:stroke markers fill"
+         transform="translate(0,64)">
+        <path
+           d="m 165.56061,217.38635 q -0.18182,-1.83333 -1.57576,-2.84848 -1.37879,-1.01515 -3.72728,-1.01515 -2.40909,0 -3.69697,0.98484 -1.28788,0.98485 -1.28788,2.48485 -0.0303,1.66667 1.42424,2.53031 1.4697,0.84849 3.48485,1.31818 l 2.78789,0.66667 q 2.69697,0.60606 4.78788,1.75758 2.10606,1.15151 3.30303,2.9697 1.21212,1.80303 1.21212,4.39394 -0.0152,4.25758 -3.19697,6.78788 -3.16667,2.51516 -8.84849,2.51516 -5.65152,0 -9.01516,-2.57576 -3.36364,-2.57576 -3.48485,-7.60607 h 6.34849 q 0.16667,2.33334 1.83333,3.51515 1.68182,1.16667 4.24243,1.16667 2.5,0 3.98485,-1.06061 1.5,-1.0606 1.51516,-2.75757 -0.0152,-1.57576 -1.37879,-2.42425 -1.36364,-0.84848 -3.89395,-1.45454 l -3.37879,-0.84849 q -3.92424,-0.93939 -6.19697,-2.98485 -2.27273,-2.04546 -2.25758,-5.4697 -0.0152,-2.81818 1.5,-4.92425 1.53031,-2.12121 4.19698,-3.28788 2.66666,-1.18182 6.06061,-1.18182 3.45454,0 6.0303,1.18182 2.59091,1.18182 4.03031,3.28788 1.43939,2.10607 1.48485,4.87879 z"
+           id="path17878"
+           style="fill:#2a802f;fill-opacity:1" />
+      </g>
+    </symbol>
+    <symbol
+       id="timecheck">
+      <title
+         id="title44902">Time Check</title>
+      <rect
+         style="opacity:1;fill:#5454ff;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect11469"
+         width="64"
+         height="64"
+         x="192"
+         y="256" />
+      <circle
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="circle11471"
+         cx="224"
+         cy="288"
+         r="20" />
+      <path
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 224,276 v 12 l 8,8"
+         id="path11473"
+         sodipodi:nodetypes="ccc" />
+    </symbol>
+  </defs>
+  <sodipodi:namedview
+     units="px"
+     inkscape:document-rotation="0"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="true"
+     inkscape:current-layer="layer2"
+     inkscape:document-units="px"
+     inkscape:cy="81.494057"
+     inkscape:cx="183.84776"
+     inkscape:zoom="2.8284271"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#474747"
+     id="base"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#474747">
+    <inkscape:grid
+       type="xygrid"
+       id="grid132"
+       spacingy="4"
+       spacingx="4"
+       empspacing="16"
+       empcolor="#000000"
+       empopacity="0.50196078"
+       color="#000000"
+       opacity="0.1254902"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     id="layer2"
+     inkscape:groupmode="layer"
+     style="display:inline">
+    <use
+       xlink:href="#broom"
+       id="use547" />
+    <use
+       xlink:href="#mountain_1"
+       id="use565"
+       transform="translate(192)" />
+    <use
+       xlink:href="#mountain_2"
+       id="use591"
+       transform="translate(64)" />
+    <use
+       xlink:href="#mountain_3"
+       id="use627"
+       transform="translate(-64)" />
+    <use
+       xlink:href="#mountain_4"
+       id="use675"
+       transform="translate(-192)" />
+    <use
+       xlink:href="#mountain_0"
+       id="use733" />
+    <use
+       xlink:href="#finish"
+       id="use813" />
+    <use
+       xlink:href="#finish_mountain_1"
+       id="use932"
+       transform="translate(192)" />
+    <use
+       xlink:href="#finish_mountain_2"
+       id="use1093"
+       transform="translate(64)" />
+    <use
+       xlink:href="#finish_mountain_3"
+       id="use1298"
+       transform="translate(-64)" />
+    <use
+       xlink:href="#finish_mountain_4"
+       id="use1549"
+       transform="translate(-192)" />
+    <use
+       xlink:href="#finish_mountain_0"
+       id="use1844" />
+    <use
+       xlink:href="#depart_fictif"
+       id="use2205" />
+    <use
+       xlink:href="#pave_1"
+       id="use2533" />
+    <use
+       xlink:href="#pave_2"
+       id="use2865" />
+    <use
+       xlink:href="#pave_3"
+       id="use3210" />
+    <use
+       xlink:href="#pave_4"
+       id="use3564" />
+    <use
+       xlink:href="#pave_5"
+       id="use3932" />
+    <use
+       xlink:href="#depart_real"
+       id="use4303" />
+    <use
+       xlink:href="#blanc_1"
+       id="use4681" />
+    <use
+       xlink:href="#blanc_2"
+       id="use5067" />
+    <use
+       xlink:href="#blanc_3"
+       id="use5463" />
+    <use
+       xlink:href="#blanc_4"
+       id="use5871" />
+    <use
+       xlink:href="#blanc_5"
+       id="use6289" />
+    <use
+       xlink:href="#bonus"
+       id="use6716" />
+    <use
+       xlink:href="#sprint_purple"
+       id="use7153" />
+    <use
+       xlink:href="#sprint_green"
+       id="use7600" />
+    <use
+       xlink:href="#timecheck"
+       id="use8054" />
+  </g>
+</svg>
