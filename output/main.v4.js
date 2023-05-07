@@ -89,7 +89,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
     let speedannotations = []
 
     if (final) {
-        finalminutes = final[0] * 60 + final[1] + final[2] * 60;
+        finalminutes = final[0] * 60 + final[1] + final[2] / 60;
         finalspeed = (distance / (finalminutes / 60)).toFixed(1);
         finalcut = converter(finalspeed, coefficient, distance, rounding)
 
@@ -159,7 +159,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
         return instance;
     }
 
-    var speedGraph = speedGraph(distance, coefficient, rounding, speedannotations);
+    var speedGraphBuilt = speedGraph(distance, coefficient, rounding, speedannotations);
 
     function timeToSpeed(time, distance) {
         return distance / (time / 60)
@@ -217,7 +217,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
         return instance;
     }
 
-    var timeGraph = timeGraph(distance, coefficient, rounding, timeannotations);
+    var timeGraphBuilt = timeGraph(distance, coefficient, rounding, timeannotations);
 
     document.getElementById("speedButton").addEventListener("click", (e) => document.getElementById("graphContainer").classList.toggle("timeSwitch"));
 
