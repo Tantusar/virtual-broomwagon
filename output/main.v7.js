@@ -88,6 +88,12 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
     let timeannotations = []
     let speedannotations = []
 
+    medianspeed = (range[0] + range[1]) / 2
+
+    mediantime = speedToTime(medianspeed, distance)
+
+    document.getElementsByClassName("html-duration-picker")[0].value = `${Math.floor(mediantime / 60).toString().padStart(2, '0')}:${Math.floor(mediantime % 60).toString().padStart(2, '0')}:${Math.floor((mediantime * 60) % 60).toString().padStart(2, '0')}`
+
     if (final) {
         finalminutes = final[0] * 60 + final[1] + final[2] / 60;
         finalspeed = (distance / (finalminutes / 60)).toFixed(1);
@@ -120,6 +126,8 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
         } else if (finalspeed > range[1] - 5) {
             range[1] = Math.ceil(finalspeed) + 5;
         }
+
+        document.getElementsByClassName("html-duration-picker")[0].value = `${final[0].toString().padStart(2, '0')}:${final[1].toString().padStart(2, '0')}:${final[2].toString().padStart(2, '0') }`
     }
 
     function speedGraph(distance, coefficient, rounding = "", annotations = []) {

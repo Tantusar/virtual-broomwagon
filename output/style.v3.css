@@ -169,5 +169,7 @@ a {
 
 .annotations text {
     stroke:rgb(230, 230, 230);
-    stroke-width: 2px;
+    stroke-width: 4px;
+    fill: black;
+        paint-order: stroke fill;
 }
