@@ -163,5 +163,11 @@ a {
 }
 
 .annotations path {
-    color: navy;
+    stroke: navy;
+    stroke-dasharray: 5;
+}
+
+.annotations text {
+    stroke:rgb(230, 230, 230);
+    stroke-width: 2px;
 }
