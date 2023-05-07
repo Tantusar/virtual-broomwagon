@@ -1,7 +1,7 @@
 from more_itertools import windowed
 from itertools import chain
 from glob import iglob
-from lxml import ElementTree as ET
+import lxml.etree as ET
 from json import load
 
 from datetime import datetime
