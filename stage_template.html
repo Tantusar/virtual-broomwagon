@@ -1,15 +1,15 @@
 <html>
     <head>
         <script src="https://unpkg.com/function-plot/dist/function-plot.js"></script>
-        <link rel="preconnect" href="https://rsms.me/">
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        <link rel="stylesheet" href="/style.css">
-        <title>Stage %STAGE_ID%: %STAGE_TITLE% | %EVENT_TITLE% | Virtual Broomwagon</title>
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="stylesheet" href="/style.css" />
+        <title>Stage %STAGE_ID%: %STAGE_TITLE% | %.EVENT_TITLE% | Virtual Broomwagon</title>
     </head>
     <body>
         <header>
             <h1><a href="/">Virtual Broomwagon</a></h1>
-            <h2><a href="..">%EVENT_TITLE%</a></h2>
+            <h2><a href="..">%.EVENT_TITLE%</a></h2>
             <h3><a>&lt;---</a> Stage %STAGE_ID%: %STAGE_TITLE% <a>---&gt;</a></h3>
             <p>%STAGE_DATE%</p>
             <p>%STAGE_LENGTH%km • %STAGE_TYPE% • Coefficient %STAGE_COEFFICIENT%</p>
@@ -33,7 +33,7 @@
             <thead>
                 <th><object data="/sprites/broom.svg"></object></th>
                 <th>Location</th>
-                <th><span title="km from start">S-></span><br><span title="km to finish">->F</span></th>
+                <th><span title="km from start">S-></span><br /><span title="km to finish">->F</span></th>
                 <!-- <th>%SPEED_HIGH%</th>
                 <th>%SPEED_MEDIUM%</th>
                 <th>%SPEED_LOW%</th> -->
@@ -71,7 +71,7 @@
 
             let distance = %STAGE_LENGTH%
 
-            let rounding = %EVENT_ROUNDING%
+            let rounding = %.EVENT_ROUNDING%
 
             let range = %STAGE_RANGE%
 
