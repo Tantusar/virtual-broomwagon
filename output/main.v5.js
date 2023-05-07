@@ -114,6 +114,12 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
                 text: overageFormat(finalcut)
             }
         ]
+
+        if (finalspeed < range[0]+5) {
+            range[0] = Math.floor(finalspeed - 5);
+        } else if (finalspeed > range[1]-5) {
+            range[1] = Math.ceil(finalspeed + 5);
+        }
     }
 
     function speedGraph(distance, coefficient, rounding = "", annotations = []) {
