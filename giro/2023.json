@@ -69,7 +69,7 @@
                     "finish"
                 ]
             ],
-            "final": false
+            "final": [4, 55, 11]
         },
         "3": {
             "title": "Vasto – Melfi",
