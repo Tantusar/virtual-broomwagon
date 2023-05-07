@@ -166,7 +166,7 @@ for item in iglob('**/*.json', recursive=True):
             icon = ET.SubElement(row, "td")
 
             if len(waypoint) > 2:
-                ET.SubElement(icon, "object", {data: f"/sprites/{waypoint[2]}.svg"})
+                ET.SubElement(icon, "object", {"data": f"/sprites/{waypoint[2]}.svg"})
 
             ET.SubElement(row, "td").text = waypoint[0]
 
