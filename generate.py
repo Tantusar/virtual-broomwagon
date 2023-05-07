@@ -155,7 +155,7 @@ for item in iglob('**/*.json', recursive=True):
 
         table = working.find(".//table")
 
-        header = table.find("th")
+        header = table.find("thead")
 
         for speed in data["speeds"]:
             ET.SubElement(header, "th").text = f"{speed} km/h"
