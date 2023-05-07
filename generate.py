@@ -158,9 +158,11 @@ for item in iglob('**/*.json', recursive=True):
         header = table.find("thead")
 
         for i, speed in enumerate(data["speeds"]):
-            outer = ET.SubElement(header, "th").text = f"{speed} km/h"
+            
             if data["final"]:
-                outer.attribs["class"] = "small"
+                outer = ET.SubElement(header, "th", {"class": "small"}).text = f"{speed} km/h"
+            else:
+                outer = ET.SubElement(header, "th").text = f"{speed} km/h"
 
 
         if data["final"]:
@@ -191,12 +193,12 @@ for item in iglob('**/*.json', recursive=True):
             ET.SubElement(dist, "br").tail = f"{(data['length'] - waypoint[1]):.1f}"
 
             for i, speed in enumerate(data["speeds"]):
-                outer = ET.SubElement(row, "td")
+                if data["final"]:
+                    outer = ET.SubElement(row, "td", {"class": "small"})
+                else:
+                    outer = ET.SubElement(row, "td")
                 outer.text = timeformat((waypoint[1]/speed)*60)
                 ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(speed,replacements['STAGE_COEFFICIENT_LIST'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
-
-                if data["final"]:
-                    outer.attribs["class"] = "small"
 
             if data["final"]:
                 outer = ET.SubElement(row, "td", {"class": "final"})
