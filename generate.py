@@ -161,7 +161,7 @@ for item in iglob('**/*.json', recursive=True):
             ET.SubElement(header, "th").text = f"{speed} km/h"
 
         if data["final"]:
-            finaltime = data["final"][0] * 60 + data["final"][1] + data["final"][2] / 60
+            finalminutes = data["final"][0] * 60 + data["final"][1] + data["final"][2] / 60
             finalspeed = (data["length"] / (finalminutes / 60))
             ET.SubElement(header, "th").text = f"{finalspeed:.1f} km/h"
 
