@@ -102,113 +102,122 @@ def year_roman(year: int = 0) -> str:
         result += "I"
     return result
 
-for item in iglob('**/*.json', recursive=True):
+allevents = []
+
+for item in iglob('**/top.json', recursive=True):
     if item.startswith("output"):
         continue
     with open(item, 'r') as f:
-        current = load(f)
+        toplevel = load(f)
+
+    allevents.extend(toplevel["events"])
+
+    for ep, ec, en in windowed(chain([None], toplevel["events"], [None]), 3):
+
+        with open(item.replace("top.json", ec[3]), 'r') as f:
+            current = load(f)
     
-    for p, c, n in windowed(chain([None], current["stages"], [None]), 3):
-        data = current["stages"][c]
+        for p, c, n in windowed(chain([None], current["stages"], [None]), 3):
+            data = current["stages"][c]
 
-        with open('stage_template.html', 'r') as f:
-            working = f.read()
-        
-        replacements = {
-            "EVENT_TITLE": current["title"],
-            "STAGE_ID": c,
-            "STAGE_TITLE": data["title"],
-            "STAGE_DATE": data["date"],
-            "STAGE_LENGTH": data["length"],
-            "STAGE_TYPE": data["type"],
-            "STAGE_COEFFICIENT_LIST": current["coefficients"][1][data["coefficient"]][0],
-            "STAGE_COEFFICIENT": data["coefficient"],
-            "EVENT_ROUNDING": current["coefficients"][0],
-            "STAGE_RANGE": current["coefficients"][1][data["coefficient"]][1],
-            "CURRENT_YEAR": year_roman(),
-            "FINAL_TIME": data["final"] or "false"
-        }
-
-        if "range" in data:
-            replacements["STAGE_RANGE"] = data["range"]
-
-        for k, v in replacements.items():
-            working = working.replace(k, str(v))
-
-
-        try:
-            working = HTML.fromstring(working)
-        except:
-            logging.error(working)
-            raise
-
-        stagelinks = working.findall(".//h3/a")
-
-        if p:
-            stagelinks[0].attrib["href"] = f"./{p}"
-            stagelinks[0].attrib["title"] = f'Stage {p}: {current["stages"][p]["title"]}'
-        else:
-            stagelinks[0].attrib["disabled"] = ""
-
-        if n:
-            stagelinks[1].attrib["href"] = f"./{n}"
-            stagelinks[1].attrib["title"] = f'Stage {n}: {current["stages"][n]["title"]}'
-        else:
-            stagelinks[1].attrib["disabled"] = ""
-
-        table = working.find(".//table")
-
-        header = table.find("thead")
-
-        for i, speed in enumerate(data["speeds"]):
+            with open('stage_template.html', 'r') as f:
+                working = f.read()
             
-            if data["final"]:
-                outer = ET.SubElement(header, "th", {"class": "small"}).text = f"{speed} km/h"
+            replacements = {
+                "EVENT_TITLE": current["title"],
+                "STAGE_ID": c,
+                "STAGE_TITLE": data["title"],
+                "STAGE_DATE": data["date"],
+                "STAGE_LENGTH": data["length"],
+                "STAGE_TYPE": data["type"],
+                "STAGE_COEFFICIENT_LIST": current["coefficients"][1][data["coefficient"]][0],
+                "STAGE_COEFFICIENT": data["coefficient"],
+                "EVENT_ROUNDING": current["coefficients"][0],
+                "STAGE_RANGE": current["coefficients"][1][data["coefficient"]][1],
+                "CURRENT_YEAR": year_roman(),
+                "FINAL_TIME": data["final"] or "false"
+            }
+
+            if "range" in data:
+                replacements["STAGE_RANGE"] = data["range"]
+
+            for k, v in replacements.items():
+                working = working.replace(k, str(v))
+
+
+            try:
+                working = HTML.fromstring(working)
+            except:
+                logging.error(working)
+                raise
+
+            stagelinks = working.findall(".//h3/a")
+
+            if p:
+                stagelinks[0].attrib["href"] = f"./{p}"
+                stagelinks[0].attrib["title"] = f'Stage {p}: {current["stages"][p]["title"]}'
             else:
-                outer = ET.SubElement(header, "th").text = f"{speed} km/h"
+                stagelinks[0].attrib["disabled"] = ""
 
+            if n:
+                stagelinks[1].attrib["href"] = f"./{n}"
+                stagelinks[1].attrib["title"] = f'Stage {n}: {current["stages"][n]["title"]}'
+            else:
+                stagelinks[1].attrib["disabled"] = ""
 
-        if data["final"]:
-            finalminutes = data["final"][0] * 60 + data["final"][1] + data["final"][2] / 60
-            finalspeed = (data["length"] / (finalminutes / 60))
-            ET.SubElement(header, "th", {"class": "final"}).text = f"{finalspeed:.1f} km/h"
+            table = working.find(".//table")
 
-        for waypoint in data["waypoints"]:
-            row = ET.SubElement(table, "tr")
-
-            icon = ET.SubElement(row, "td")
-
-            if len(waypoint) > 2:
-                ET.SubElement(icon, "object", {"data": f"/sprites/{waypoint[2]}.svg"})
-
-            name = ET.SubElement(row, "td")
-
-            for i, l in enumerate(waypoint[0].split("<br>")):
-                if not i:
-                    name.text = l
-                else:
-                    ET.SubElement(name, "br").tail = l
-
-            dist = ET.SubElement(row, "td")
-
-            dist.text = f"{waypoint[1]:.1f}"
-
-            ET.SubElement(dist, "br").tail = f"{(data['length'] - waypoint[1]):.1f}"
+            header = table.find("thead")
 
             for i, speed in enumerate(data["speeds"]):
+                
                 if data["final"]:
-                    outer = ET.SubElement(row, "td", {"class": "small"})
+                    outer = ET.SubElement(header, "th", {"class": "small"}).text = f"{speed} km/h"
                 else:
-                    outer = ET.SubElement(row, "td")
-                outer.text = timeformat((waypoint[1]/speed)*60)
-                ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(speed,replacements['STAGE_COEFFICIENT_LIST'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
+                    outer = ET.SubElement(header, "th").text = f"{speed} km/h"
+
 
             if data["final"]:
-                outer = ET.SubElement(row, "td", {"class": "final"})
-                outer.text = timeformat((waypoint[1]/finalspeed)*60)
-                ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(finalspeed,replacements['STAGE_COEFFICIENT_LIST'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
+                finalminutes = data["final"][0] * 60 + data["final"][1] + data["final"][2] / 60
+                finalspeed = (data["length"] / (finalminutes / 60))
+                ET.SubElement(header, "th", {"class": "final"}).text = f"{finalspeed:.1f} km/h"
 
-        filename = 'output/' + item.replace('.json', f'/{c}.html')
-        os.makedirs(os.path.dirname(filename), exist_ok=True)
-        with open(filename, 'w') as f:
-            f.write(HTML.tostring(working, method="html", encoding="unicode", doctype="<!DOCTYPE html>"))
+            for waypoint in data["waypoints"]:
+                row = ET.SubElement(table, "tr")
+
+                icon = ET.SubElement(row, "td")
+
+                if len(waypoint) > 2:
+                    ET.SubElement(icon, "object", {"data": f"/sprites/{waypoint[2]}.svg"})
+
+                name = ET.SubElement(row, "td")
+
+                for i, l in enumerate(waypoint[0].split("<br>")):
+                    if not i:
+                        name.text = l
+                    else:
+                        ET.SubElement(name, "br").tail = l
+
+                dist = ET.SubElement(row, "td")
+
+                dist.text = f"{waypoint[1]:.1f}"
+
+                ET.SubElement(dist, "br").tail = f"{(data['length'] - waypoint[1]):.1f}"
+
+                for i, speed in enumerate(data["speeds"]):
+                    if data["final"]:
+                        outer = ET.SubElement(row, "td", {"class": "small"})
+                    else:
+                        outer = ET.SubElement(row, "td")
+                    outer.text = timeformat((waypoint[1]/speed)*60)
+                    ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(speed,replacements['STAGE_COEFFICIENT_LIST'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
+
+                if data["final"]:
+                    outer = ET.SubElement(row, "td", {"class": "final"})
+                    outer.text = timeformat((waypoint[1]/finalspeed)*60)
+                    ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(finalspeed,replacements['STAGE_COEFFICIENT_LIST'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
+
+            filename = 'output/' + item.replace('.json', f'/{c}.html')
+            os.makedirs(os.path.dirname(filename), exist_ok=True)
+            with open(filename, 'w') as f:
+                f.write(HTML.tostring(working, method="html", encoding="unicode", doctype="<!DOCTYPE html>"))
