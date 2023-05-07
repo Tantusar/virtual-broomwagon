@@ -107,9 +107,13 @@ table {
 }
 
 th, td {
-    padding: 8px 16px;
+    padding: 8px 0px 8px 16px;
     height: 48px;
     border-bottom: rgb(230, 230, 230) solid 1px;
+}
+
+:is(th, td):last-child {
+    padding-right: 8px;
 }
 
 th {
