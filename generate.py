@@ -160,6 +160,11 @@ for item in iglob('**/*.json', recursive=True):
         for speed in data["speeds"]:
             ET.SubElement(header, "th").text = f"{speed} km/h"
 
+        if data["final"]:
+            finaltime = data["final"][0] * 60 + data["final"][1] + data["final"][2] / 60
+            finalspeed = (data["length"] / (finalminutes / 60))
+            ET.SubElement(header, "th").text = f"{finalspeed:.1f} km/h"
+
         for waypoint in data["waypoints"]:
             row = ET.SubElement(table, "tr")
 
@@ -186,6 +191,11 @@ for item in iglob('**/*.json', recursive=True):
                 outer = ET.SubElement(row, "td")
                 outer.text = timeformat((waypoint[1]/speed)*60)
                 ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(speed,replacements['STAGE_COEFFICIENT_LIST'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
+
+            if data["final"]:
+                outer = ET.SubElement(row, "td")
+                outer.text = timeformat((waypoint[1]/finalspeed)*60)
+                ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(finalspeed,replacements['STAGE_COEFFICIENT_LIST'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
 
         filename = 'output/' + item.replace('.json', f'/{c}.html')
         os.makedirs(os.path.dirname(filename), exist_ok=True)
