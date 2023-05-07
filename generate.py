@@ -47,9 +47,12 @@ def converter(speed, coefficient, distance, rounding=""):
 def timeformat(time, hours = True, minutes = True, seconds = True):
     result = ""
     if hours:
-        result += f"{(floor(time/60)):02d}h"
+        result += f"{(floor(time/60))}h"
     if minutes:
-        result += f"{(floor(time) % 60):02d}'"
+        if not hours:
+            result += f"{(floor(time)):02d}'"
+        else:
+            result += f"{(floor(time) % 60):02d}'"
     if seconds:
         result += f"{(floor(time * 60) % 60):02d}\""
     return result
