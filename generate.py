@@ -141,13 +141,13 @@ for item in iglob('**/*.json', recursive=True):
 
         if p:
             stagelinks[0].attrib["href"] = f"../{p}"
-            stagelinks[0].attrib["title"] = current["stages"][p]["title"]
+            stagelinks[0].attrib["title"] = f'Stage {p}: {current["stages"][p]["title"]}'
         else:
             stagelinks[0].attrib["disabled"] = ""
 
         if n:
             stagelinks[1].attrib["href"] = f"../{n}"
-            stagelinks[1].attrib["title"] = current["stages"][n]["title"]
+            stagelinks[1].attrib["title"] = f'Stage {n}: {current["stages"][n]["title"]}'
         else:
             stagelinks[1].attrib["disabled"] = ""
 
