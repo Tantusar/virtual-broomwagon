@@ -1,4 +1,6 @@
-function stagemonolith(coefficient, distance, rounding, range) {
+import functionPlot from 'https://unpkg.com/function-plot/dist/function-plot.js'
+
+export function stagemonolith(coefficient, distance, rounding, range) {
 
     function convertRemToPixels(rem) {
         return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);

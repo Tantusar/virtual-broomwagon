@@ -46,11 +46,11 @@ def converter(speed, coefficient, distance, rounding=""):
 def timeformat(time, hours = True, minutes = True, seconds = True):
     result = ""
     if hours:
-        result += f"{time//60}h"
+        result += f"{(floor(time/60)):02d}h"
     if minutes:
-        result += f"{floor(time) % 60}'"
+        result += f"{(floor(time) % 60):02d}'"
     if seconds:
-        result += f"{floor(time * 60) % 60}\""
+        result += f"{(floor(time * 60) % 60):02d}\""
     return result
     
 def year_roman(year: int = 0) -> str:
@@ -146,10 +146,10 @@ for item in iglob('**/*.json', recursive=True):
             stagelinks[0].attrib["disabled"] = ""
 
         if n:
-            stagelinks[0].attrib["href"] = f"../{n}"
-            stagelinks[0].attrib["title"] = current["stages"][n]["title"]
+            stagelinks[1].attrib["href"] = f"../{n}"
+            stagelinks[1].attrib["title"] = current["stages"][n]["title"]
         else:
-            stagelinks[0].attrib["disabled"] = ""
+            stagelinks[1].attrib["disabled"] = ""
 
         table = working.find(".//table")
 
