@@ -182,4 +182,4 @@ for item in iglob('**/*.json', recursive=True):
         filename = 'output/' + item.replace('.json', f'/{c}.html')
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         with open(filename, 'w') as f:
-            f.write(ET.tostring(working, method="html", doctype="<!DOCTYPE html>"))
+            f.write(ET.tostring(working, method="html", encoding="unicode", doctype="<!DOCTYPE html>"))
