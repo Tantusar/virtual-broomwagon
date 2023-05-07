@@ -1,4 +1,17 @@
-function stagemonolith(coefficient, distance, rounding, range) {
+function stagemonolith(coefficient, distance, rounding, range, final = false) {
+
+    function speedFormat(x) {
+        return `${x} km/h`
+    }
+    function overageFormat(y) {
+        return `+${Math.floor(y).toString().padStart(2, '0')}'${Math.floor((y * 60) % 60).toString().padStart(2, '0')}"`
+    }
+    function timeFormat(x) {
+        return `${Math.floor(x / 60)}h${Math.floor(x % 60).toString().padStart(2, '0')}'${Math.floor((x * 60) % 60).toString().padStart(2, '0')}"`
+    }
+    function hourFormat(x) {
+        return `${Math.floor(x / 60)}h${Math.floor(x % 60).toString().padStart(2, '0')}'`
+    }
 
     function convertRemToPixels(rem) {
         return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
@@ -39,38 +52,29 @@ function stagemonolith(coefficient, distance, rounding, range) {
         switch (rounding) {
             case "ceil-s":
                 return Math.ceil(baseline * (distance / x) * 3600) / 60;
-                break;
             case "ceil-m":
                 return Math.ceil(baseline * (distance / x) * 60);
-                break;
             case "ceil-h":
                 return Math.ceil(baseline * (distance / x)) * 60;
-                break;
             case "floor-s":
                 return Math.floor(baseline * (distance / x) * 3600) / 60;
-                break;
             case "floor-m":
                 return Math.floor(baseline * (distance / x) * 60);
-                break;
             case "floor-h":
                 return Math.floor(baseline * (distance / x)) * 60;
-                break;
             case "round-s":
                 return Math.round(baseline * (distance / x) * 3600) / 60;
-                break;
             case "round-m":
                 return Math.round(baseline * (distance / x) * 60);
-                break;
             case "round-h":
                 return Math.round(baseline * (distance / x)) * 60;
-                break;
             default:
                 return baseline * (distance / x) * 60;
         }
 
     }
 
-    function minmax(xes, coefficent, distance, rounding = "") {
+    function minmax(xes, coefficient, distance, rounding = "") {
         let min = converter(xes[0], coefficient, distance, rounding)
         let max = min
         for (let index = xes[0]; index < xes[1]; index += 0.1) {
@@ -81,14 +85,39 @@ function stagemonolith(coefficient, distance, rounding, range) {
         return [min - 1, max + 1]
     }
 
+    let timeannotations = []
+    let speedannotations = []
+
+    if (final) {
+        finalminutes = final[0] * 60 + final[1] + final[2] * 60;
+        finalspeed = (distance / (finalminutes / 60)).toFixed(1);
+        finalcut = converter(finalspeed, coefficient, distance, rounding)
+
+        timeannotations = [
+            {
+                x: finalminutes,
+                text: timeFormat(finalminutes)
+            },
+            {
+                y: finalcut,
+                text: overageFormat(finalcut)
+            }
+        ]
+
+        speedannotations = [
+            {
+                x: finalspeed,
+                text: speedFormat(finalspeed)
+            },
+            {
+                y: finalcut,
+                text: overageFormat(finalcut)
+            }
+        ]
+    }
+
     function speedGraph(distance, coefficient, rounding = "") {
         let target = document.getElementById("speedGraph");
-        function speedFormat(x) {
-            return `${x} km/h`
-        }
-        function overageFormat(y) {
-            return `+${Math.floor(y).toString().padStart(2, '0')}'${Math.floor((y * 60) % 60).toString().padStart(2, '0')}"`
-        }
         let instance = functionPlot({
             grid: true,
             tip: {
@@ -118,6 +147,7 @@ function stagemonolith(coefficient, distance, rounding, range) {
                     fn: (scope) => converter(scope.x, coefficient, distance, rounding)
                 }
             ],
+            annotations: speedannotations,
             target
         });
 
@@ -145,15 +175,7 @@ function stagemonolith(coefficient, distance, rounding, range) {
 
     function timeGraph(distance, coefficient, rounding = "") {
         let target = document.getElementById("timeGraph");
-        function speedFormat(x) {
-            return `${Math.floor(x / 60)}h${Math.floor(x % 60).toString().padStart(2, '0')}'${Math.floor((x * 60) % 60).toString().padStart(2, '0')}"`
-        }
-        function overageFormat(y) {
-            return `+${Math.floor(y).toString().padStart(2, '0')}'${Math.floor((y * 60) % 60).toString().padStart(2, '0')}"`
-        }
-        function timeFormat(x) {
-            return `${Math.floor(x / 60)}h${Math.floor(x % 60).toString().padStart(2, '0')}'`
-        }
+
         let instance = functionPlot({
             grid: true,
             tip: {
@@ -161,7 +183,7 @@ function stagemonolith(coefficient, distance, rounding, range) {
                 yLine: true,
                 renderer: function (x, y, index) {
                     x = x.toFixed(1);
-                    x = speedFormat(x);
+                    x = timeFormat(x);
 
                     y = overageFormat(y);
 
@@ -183,10 +205,11 @@ function stagemonolith(coefficient, distance, rounding, range) {
                     fn: (scope) => converter(timeToSpeed(scope.x, distance), coefficient, distance, rounding)
                 }
             ],
+            annotations: timeannotations,
             target
         });
 
-        instance.meta.xAxis.tickFormat(timeFormat);
+        instance.meta.xAxis.tickFormat(hourFormat);
         instance.meta.yAxis.tickFormat(overageFormat);
         instance.meta.margin.left += 5;
         instance.draw();

@@ -28,7 +28,7 @@
                 ["Porto di Ortona", 16.8, "timecheck"],
                 ["Ortona (69m)", 19.6, "finish_mountain_4"]
             ],
-            "final": false
+            "final": [0, 17, 10]
         },
         "2": {
             "title": "Teramo – San Salvo",

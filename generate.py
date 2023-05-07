@@ -123,6 +123,7 @@ for item in iglob('**/*.json', recursive=True):
             "EVENT_ROUNDING": current["coefficients"][0],
             "STAGE_RANGE": current["coefficients"][1][data["coefficient"]][1],
             "CURRENT_YEAR": year_roman(),
+            "FINAL_TIME": data["final"] or "false"
         }
 
         if "range" in data:
