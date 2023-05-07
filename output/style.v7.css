@@ -136,6 +136,14 @@ th {
     text-align: right;
 }
 
+:is(th, td).final {
+    color: navy;
+}
+
+:is(th, td).small {
+    font-size: 80%;
+}
+
 input {
     width: 5rem;
     text-align: left;
