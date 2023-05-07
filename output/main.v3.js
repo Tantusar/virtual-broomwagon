@@ -116,7 +116,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
         ]
     }
 
-    function speedGraph(distance, coefficient, rounding = "") {
+    function speedGraph(distance, coefficient, rounding = "", annotations = []) {
         let target = document.getElementById("speedGraph");
         let instance = functionPlot({
             grid: true,
@@ -147,7 +147,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
                     fn: (scope) => converter(scope.x, coefficient, distance, rounding)
                 }
             ],
-            annotations: speedannotations,
+            annotations,
             target
         });
 
@@ -159,7 +159,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
         return instance;
     }
 
-    var speedGraph = speedGraph(distance, coefficient, rounding);
+    var speedGraph = speedGraph(distance, coefficient, rounding, speedannotations);
 
     function timeToSpeed(time, distance) {
         return distance / (time / 60)
@@ -173,7 +173,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
         return [speedToTime(xes[0], distance), speedToTime(xes[1], distance)].reverse()
     }
 
-    function timeGraph(distance, coefficient, rounding = "") {
+    function timeGraph(distance, coefficient, rounding = "", annotations = []) {
         let target = document.getElementById("timeGraph");
 
         let instance = functionPlot({
@@ -205,7 +205,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
                     fn: (scope) => converter(timeToSpeed(scope.x, distance), coefficient, distance, rounding)
                 }
             ],
-            annotations: timeannotations,
+            annotations: annotations,
             target
         });
 
@@ -217,7 +217,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
         return instance;
     }
 
-    var timeGraph = timeGraph(distance, coefficient, rounding);
+    var timeGraph = timeGraph(distance, coefficient, rounding, timeannotations);
 
     document.getElementById("speedButton").addEventListener("click", (e) => document.getElementById("graphContainer").classList.toggle("timeSwitch"));
 
