@@ -110,7 +110,6 @@ for item in iglob('**/top.json', recursive=True):
     with open(item, 'r') as f:
         toplevel = load(f)
 
-    logging.debug(toplevel["title"])
 
     allevents.extend(toplevel["events"])
 
@@ -119,12 +118,10 @@ for item in iglob('**/top.json', recursive=True):
         with open(item.replace("top.json", ec[3]), 'r') as f:
             current = load(f)
 
-        logging.debug(f"    {current['title']}")
     
         for p, c, n in windowed(chain([None], current["stages"], [None]), 3):
             data = current["stages"][c]
 
-            logging.debug(f"        Stage {c}: {data['title']}")
 
             with open('stage_template.html', 'r') as f:
                 working = f.read()
@@ -223,12 +220,10 @@ for item in iglob('**/top.json', recursive=True):
                     outer.text = timeformat((waypoint[1]/finalspeed)*60)
                     ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(finalspeed,replacements['STAGE_COEFFICIENT_LIST'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
 
-            filename = 'output/' + item.replace('.json', f'/{c}.html')
+            filename = 'output/' + item.replace('top.json', ec[3]).replace('.json', f'/{c}.html')
             os.makedirs(os.path.dirname(filename), exist_ok=True)
 
             output = HTML.tostring(working, method="html", encoding="unicode", doctype="<!DOCTYPE html>")
-
-            logging.debug(f"            {filename}: {len(output)} characters")
 
             with open(filename, 'w') as f:
                 f.write(output)
