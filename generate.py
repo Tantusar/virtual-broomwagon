@@ -111,16 +111,16 @@ for item in iglob('**/*.json', recursive=True):
             working = f.read()
         
         replacements = {
-            "%EVENT_TITLE%": item["title"],
+            "\%EVENT_TITLE%": current["title"],
             "%STAGE_ID%": c,
             "%STAGE_TITLE%": data["title"],
             "%STAGE_DATE%": data["date"],
             "%STAGE_LENGTH%": data["length"],
             "%STAGE_TYPE%": data["type"],
             "%STAGE_COEFFICIENT%": data["coefficient"],
-            "%STAGE_COEFFICIENT_LIST%": item["coefficients"][1][data["coefficient"]][0],
-            "%EVENT_ROUNDING%": item["coefficients"][0],
-            "%STAGE_RANGE": item["coefficients"][1][data["coefficient"]][1],
+            "%STAGE_COEFFICIENT_LIST%": current["coefficients"][1][data["coefficient"]][0],
+            "\%EVENT_ROUNDING%": current["coefficients"][0],
+            "%STAGE_RANGE": current["coefficients"][1][data["coefficient"]][1],
             "%CURRENT_YEAR%": year_roman(),
         }
 
@@ -128,7 +128,7 @@ for item in iglob('**/*.json', recursive=True):
             replacements["%STAGE_RANGE%"] = data["range"]
 
         for k, v in replacements.items():
-            working = working.replace(k, v)
+            working = working.replace(k, str(v))
 
         working = ET.fromstring(working)
 
@@ -136,13 +136,13 @@ for item in iglob('**/*.json', recursive=True):
 
         if p:
             stagelinks[0].attrib["href"] = f"../{p}"
-            stagelinks[0].attrib["title"] = item["stages"][p]["title"]
+            stagelinks[0].attrib["title"] = current["stages"][p]["title"]
         else:
             stagelinks[0].attrib["disabled"] = ""
 
         if n:
             stagelinks[0].attrib["href"] = f"../{n}"
-            stagelinks[0].attrib["title"] = item["stages"][n]["title"]
+            stagelinks[0].attrib["title"] = current["stages"][n]["title"]
         else:
             stagelinks[0].attrib["disabled"] = ""
 
@@ -172,6 +172,6 @@ for item in iglob('**/*.json', recursive=True):
             for speed in data["speeds"]:
                 outer = ET.SubElement(row, "td")
                 outer.text = timeformat((waypoint[1]/speed)*60)
-                ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(speed,replacements['%STAGE_COEFFICIENT_LIST%'], data['length'], item['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
+                ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(speed,replacements['%STAGE_COEFFICIENT_LIST%'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
 
         working.write('output/' + item.replace('.json', f'/{c}.html'))
