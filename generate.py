@@ -181,5 +181,7 @@ for item in iglob('**/*.json', recursive=True):
                 outer.text = timeformat((waypoint[1]/speed)*60)
                 ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(speed,replacements['STAGE_COEFFICIENT_LIST'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
 
-        with open('output/' + item.replace('.json', f'/{c}.html'), 'w') as f:
+        filename = 'output/' + item.replace('.json', f'/{c}.html')
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        with open(filename, 'w') as f:
             f.write(ET.tostring(working, method="html", doctype="<!DOCTYPE html>"))
