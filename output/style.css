@@ -153,3 +153,11 @@ th:first-child {
 tr:last-child td:first-child {
     border-radius: 0 0 0 8px;
 }
+
+footer {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
