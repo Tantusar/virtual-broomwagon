@@ -1,7 +1,8 @@
 from more_itertools import windowed
 from itertools import chain
 from glob import iglob
-import lxml.html as ET
+import lxml.etree as ET
+import lxml.html as HTML
 from json import load
 from datetime import datetime
 from math import floor, ceil
@@ -132,7 +133,7 @@ for item in iglob('**/*.json', recursive=True):
 
 
         try:
-            working = ET.fromstring(working)
+            working = HTML.fromstring(working)
         except:
             logging.error(working)
             raise
@@ -182,4 +183,4 @@ for item in iglob('**/*.json', recursive=True):
         filename = 'output/' + item.replace('.json', f'/{c}.html')
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         with open(filename, 'w') as f:
-            f.write(ET.tostring(working, method="html", encoding="unicode", doctype="<!DOCTYPE html>"))
+            f.write(HTML.tostring(working, method="html", encoding="unicode", doctype="<!DOCTYPE html>"))
