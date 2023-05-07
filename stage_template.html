@@ -69,7 +69,7 @@
                 functionPlot.globals.DEFAULT_WIDTH = width
                 functionPlot.globals.DEFAULT_HEIGHT = height
 
-                let converter = function (x, coefficient, distance, rounding = "") {
+                function converter (x, coefficient, distance, rounding = "") {
                     if (x < 0) {
                         return;
                     }
@@ -125,7 +125,7 @@
 
                 }
 
-                minmax = function (xes, coefficent, distance, rounding = "") {
+                function minmax (xes, coefficent, distance, rounding = "") {
                     let min = converter(xes[0], coefficient, distance, rounding)
                     let max = min
                     for (let index = xes[0]; index < xes[1]; index += 0.1) {
@@ -136,12 +136,12 @@
                     return [min - 1, max + 1]
                 }
 
-                speedGraph = function (distance, coefficient, rounding = "") {
+                function speedGraph (distance, coefficient, rounding = "") {
                     let target = document.getElementById("speedGraph");
-                    let speedFormat = function (x) {
+                    function speedFormat (x) {
                         return `${x} km/h`
                     }
-                    let overageFormat = function (y) {
+                    function overageFormat (y) {
                         return `+${Math.floor(y).toString().padStart(2, '0')}'${Math.floor((y * 60) % 60).toString().padStart(2, '0')}"`
                     }
                     let instance = functionPlot({
@@ -186,27 +186,27 @@
 
                 var speedGraph = speedGraph(distance, coefficient, rounding);
 
-                timeToSpeed = function (time, distance) {
+                function timeToSpeed (time, distance) {
                     return distance / (time / 60)
                 }
 
-                speedToTime = function (speed, distance) {
+                function speedToTime (speed, distance) {
                     return (distance / speed) * 60
                 }
 
-                ends = function (xes, distance) {
+                function ends (xes, distance) {
                     return [speedToTime(xes[0], distance), speedToTime(xes[1], distance)].reverse()
                 }
 
-                timeGraph = function (distance, coefficient, rounding = "") {
+                function timeGraph (distance, coefficient, rounding = "") {
                     let target = document.getElementById("timeGraph");
-                    let speedFormat = function (x) {
+                    function speedFormat (x) {
                         return `${Math.floor(x / 60)}h${Math.floor(x % 60).toString().padStart(2, '0')}'${Math.floor((x * 60) % 60).toString().padStart(2, '0')}"`
                     }
-                    let overageFormat = function (y) {
+                    function overageFormat (y) {
                         return `+${Math.floor(y).toString().padStart(2, '0')}'${Math.floor((y * 60) % 60).toString().padStart(2, '0')}"`
                     }
-                    let timeFormat = function (x) {
+                    function timeFormat (x) {
                         return `${Math.floor(x / 60)}h${Math.floor(x % 60).toString().padStart(2, '0')}'`
                     }
                     let instance = functionPlot({
