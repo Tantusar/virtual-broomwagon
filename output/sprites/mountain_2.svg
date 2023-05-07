@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 64 64"
+   height="64"
+   width="64"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient1211">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3582" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.69999999;"
+         offset="1"
+         id="stop3584" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient1211"
+       id="linearGradient35935"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(64)"
+       x1="96"
+       y1="0"
+       x2="96"
+       y2="64" />
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer2"
+     style="display:inline"
+     transform="translate(-192)">
+    <g
+       id="use591"
+       transform="translate(64)">
+      <title
+         id="title35923">Mountain (Category 2)</title>
+      <rect
+         style="fill:#ff9955;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect35925"
+         width="64"
+         height="64"
+         x="128"
+         y="0" />
+      <path
+         style="fill:url(#linearGradient35935);fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         d="M 128,48 160,0 192,48 V 64 H 128 Z"
+         id="path35927" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle35929"
+         cx="160"
+         cy="32"
+         r="4" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="circle35931"
+         cx="160"
+         cy="48"
+         r="4" />
+    </g>
+  </g>
+</svg>

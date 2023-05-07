@@ -1,0 +1,155 @@
+:root {
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: 'tnum';
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+body {
+    max-width: 1000px;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 300%;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 200%;
+    margin: 1rem 0;
+}
+
+h3 {
+    font-size: 150%;
+    margin: 1rem 0;
+}
+
+header, section {
+    text-align: center;
+}
+
+a[disabled] {
+    opacity: 50%;
+}
+
+#timeButton, #speedButton {
+    writing-mode: vertical-lr;
+    text-align: center;
+    border-radius: 8px 0px 0px 8px;
+    line-height: 64px;
+    cursor: pointer;
+    font-size: 110%; 
+}
+
+#timeButton, .timeSwitch #speedButton {
+    background: white;
+}
+
+#speedButton, .timeSwitch #timeButton {
+    background: rgb(230,230,230);
+}
+
+#graphContainer {
+    display: grid;
+    grid-template-areas: "speedButton speedGraph"
+    "timeButton speedGraph";
+    grid-template-columns: 64px 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 1rem 0;
+}
+
+#graphContainer.timeSwitch {
+    grid-template-areas: "speedButton timeGraph"
+            "timeButton timeGraph";
+}
+
+#speedGraph {
+    grid-area: speedGraph;
+    width: 100%;
+    background: rgb(230,230,230);
+    border-radius: 0px 8px 8px 8px;
+}
+
+#timeGraph {
+    grid-area: timeGraph;
+    width: 100%;
+    background: rgb(230, 230, 230);
+    border-radius: 8px 8px 8px 0px;
+    display: none;
+}
+
+:is(#speedGraph, #timeGraph) svg {
+    margin: 1rem;
+}
+
+.timeSwitch #speedGraph {
+    display: none;
+}
+
+.timeSwitch #timeGraph {
+    display: block;
+}
+
+table, section {
+    border-spacing: 0;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+table {
+    border-radius: 8px 0px 0px 8px;
+}
+
+th, td {
+    padding: 8px 16px;
+    height: 48px;
+    border-bottom: rgb(230, 230, 230) solid 1px;
+}
+
+th {
+    text-align: left;
+}
+
+:is(th, td):first-child {
+    width: 48px;
+    background: rgb(230, 230, 230);
+    padding: 8px 8px
+}
+
+:is(td, th) :is(svg, img, object) {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px
+}
+
+:is(th, td):not(:nth-child(2)) {
+    text-align: right;
+}
+
+input {
+    width: 5rem;
+    text-align: left;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+.graph .line {
+    stroke-width: 2px;
+    stroke-linecap: butt;
+}
+
+th:first-child {
+    border-radius: 8px 0 0 0;
+}
+
+tr:last-child td:first-child {
+    border-radius: 0 0 0 8px;
+}

@@ -4,14 +4,15 @@
     "dates": "6–28 May 2023",
     "coefficients": [
         "ceil-m",
-        {"A": [0.07, 40, 0.08, 45, 0.1],
-        "B": [0.09, 37, 0.1, 41, 0.11],
-        "C": [0.11, 35, 0.12, 39, 0.13],
-        "D": [0.16, 30, 0.17, 34, 0.18],
-        "D (short)": [0.19, 30, 0.21, 34, 0.22],
-        "E": [0.3]
+        {"A": [[0.07, 40, 0.08, 45, 0.1], [35, 50]],
+        "B": [[0.09, 37, 0.1, 41, 0.11], [32, 46]],
+        "C": [[0.11, 35, 0.12, 39, 0.13], [30, 44]],
+        "D": [[0.16, 30, 0.17, 34, 0.18], [25, 39]],
+        "D (short)": [[0.19, 30, 0.21, 34, 0.22], [23, 37]],
+        "E": [[0.3], [20, 60]]
         }
     ],
+    "rounding": "ceil-m",
     "stages": {
         "1": {
             "title": "Costa dei Trabocchi Tudor ITT (Fossacesia Marina – Ortona)",
@@ -20,6 +21,7 @@
             "coefficient": "E",
             "length": 19.6,
             "range": [45, 59],
+            "speeds": [50, 52, 54],
             "waypoints": [
                 ["Fossacesia Marina", 0, "depart_real"],
                 ["Marina di San Vito", 9.8, "timecheck"],
@@ -34,6 +36,7 @@
             "type": "Low difficulty",
             "coefficient": "A",
             "length": 202,
+            "speeds": [41, 43, 45],
             "waypoints": [
                 [
                     "Teramo (after 5.6km)",
@@ -74,6 +77,7 @@
             "type": "Medium difficulty",
             "coefficient": "C",
             "length": 213,
+            "speeds": [39, 41, 43],
             "waypoints": [
                 [
                     "Vasto (after 9.5km)",
@@ -114,6 +118,7 @@
             "type": "Medium difficulty",
             "coefficient": "C",
             "length": 175,
+            "speeds": [37, 39, 41],
             "waypoints": [
                 [
                     "Venosa (after 6.3km)",
@@ -159,6 +164,7 @@
             "type": "Low difficulty",
             "coefficient": "B",
             "length": 171,
+            "speeds": [38, 40, 42],
             "waypoints": [
                 [
                     "Atripalda (after 9km)",
@@ -199,6 +205,7 @@
             "type": "Low difficulty",
             "coefficient": "C",
             "length": 162,
+            "speeds": [39, 41, 43],
             "waypoints": [
                 [
                     "Napoli (after 9.5km)",
@@ -239,6 +246,7 @@
             "type": "High difficulty",
             "coefficient": "D",
             "length": 218,
+            "speeds": [35, 37, 39],
             "waypoints": [
                 [
                     "Capua (after 2.6km)",
@@ -279,6 +287,7 @@
             "type": "Medium difficulty",
             "coefficient": "C",
             "length": 207,
+            "speeds": [38, 40, 42],
             "waypoints": [
                 [
                     "Terni (after 5.2km)",
@@ -329,6 +338,7 @@
             "coefficient": "E",
             "length": 35,
             "range": [47, 61],
+            "speeds": [52, 54, 56],
             "waypoints": [
                 [
                     "Savignano sul Rubicone",
@@ -364,6 +374,7 @@
             "type": "Low difficulty",
             "coefficient": "B",
             "length": 196,
+            "speeds": [38, 40, 42],
             "waypoints": [
                 [
                     "Scandiano (after 6.5km)",
@@ -404,6 +415,7 @@
             "type": "Low difficulty",
             "coefficient": "B",
             "length": 219,
+            "speeds": [38, 40, 42],
             "waypoints": [
                 [
                     "Camaiore (after 10km)",
@@ -449,6 +461,7 @@
             "type": "Medium difficulty",
             "coefficient": "C",
             "length": 179,
+            "speeds": [38, 40, 42],
             "waypoints": [
                 [
                     "Bra (after 7.9km)",
@@ -493,6 +506,7 @@
             "type": "High difficulty",
             "coefficient": "D",
             "length": 207,
+            "speeds": [32, 34, 36],
             "waypoints": [
                 [
                     "Borgofranco d'Ivrea (after 2.8km)",
@@ -533,6 +547,7 @@
             "type": "Low difficulty",
             "coefficient": "B",
             "length": 194,
+            "speeds": [37, 39, 41],
             "waypoints": [
                 [
                     "Sierre (Valais) (after 6km)",
@@ -568,6 +583,7 @@
             "type": "High difficulty",
             "coefficient": "D",
             "length": 195,
+            "speeds": [35, 37, 39],
             "waypoints": [
                 [
                     "Seregno (after 4.7km)",
@@ -622,6 +638,7 @@
             "type": "High difficulty",
             "coefficient": "D",
             "length": 203,
+            "speeds": [31, 33, 35],
             "waypoints": [
                 [
                     "Sabbio Chiese (after 6.5km)",
@@ -672,6 +689,7 @@
             "type": "Low difficulty",
             "coefficient": "A",
             "length": 197,
+            "speeds": [43, 45, 47],
             "waypoints": [
                 [
                     "Pergine Valsugana (after 2.6km)",
@@ -702,6 +720,7 @@
             "type": "Medium difficulty",
             "coefficient": "D (short)",
             "length": 161,
+            "speeds": [32, 34, 36],
             "waypoints": [
                 [
                     "Oderzo (after 5.8km)",
@@ -752,6 +771,7 @@
             "type": "High difficulty",
             "coefficient": "D",
             "length": 183,
+            "speeds": [32, 34, 36],
             "waypoints": [
                 [
                     "Longarone (after 8.2km)",
@@ -806,6 +826,7 @@
                 20,
                 34
             ],
+            "speeds": [25, 27, 29],
             "waypoints": [
                 [
                     "Tarvisio",
@@ -841,6 +862,7 @@
             "type": "Low difficulty",
             "coefficient": "A",
             "length": 126,
+            "speeds": [38, 40, 42],
             "waypoints": [
                 [
                     "Roma - Eur (Westbound) (after 2.5km)",

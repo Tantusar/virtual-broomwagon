@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 64 64"
+   height="64"
+   width="64"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer2"
+     style="display:inline"
+     transform="translate(-128,-256)">
+    <g
+       id="use7600">
+      <title
+         id="title35415">Intermediate Sprint</title>
+      <rect
+         style="opacity:1;fill:#2a802f;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="rect35417"
+         width="64"
+         height="64"
+         x="128"
+         y="256" />
+      <circle
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="circle35419"
+         cx="160"
+         cy="288"
+         r="24" />
+      <g
+         aria-label="S"
+         id="g35423"
+         style="font-weight:bold;font-size:42.6667px;line-height:120%;font-family:Inter;-inkscape-font-specification:'Inter Bold';text-align:center;text-anchor:middle;opacity:1;fill:#2a802f;fill-opacity:1;stroke-width:6;stroke-linejoin:bevel;stroke-miterlimit:10;paint-order:stroke markers fill"
+         transform="translate(0,64)">
+        <path
+           d="m 165.56061,217.38635 q -0.18182,-1.83333 -1.57576,-2.84848 -1.37879,-1.01515 -3.72728,-1.01515 -2.40909,0 -3.69697,0.98484 -1.28788,0.98485 -1.28788,2.48485 -0.0303,1.66667 1.42424,2.53031 1.4697,0.84849 3.48485,1.31818 l 2.78789,0.66667 q 2.69697,0.60606 4.78788,1.75758 2.10606,1.15151 3.30303,2.9697 1.21212,1.80303 1.21212,4.39394 -0.0152,4.25758 -3.19697,6.78788 -3.16667,2.51516 -8.84849,2.51516 -5.65152,0 -9.01516,-2.57576 -3.36364,-2.57576 -3.48485,-7.60607 h 6.34849 q 0.16667,2.33334 1.83333,3.51515 1.68182,1.16667 4.24243,1.16667 2.5,0 3.98485,-1.06061 1.5,-1.0606 1.51516,-2.75757 -0.0152,-1.57576 -1.37879,-2.42425 -1.36364,-0.84848 -3.89395,-1.45454 l -3.37879,-0.84849 q -3.92424,-0.93939 -6.19697,-2.98485 -2.27273,-2.04546 -2.25758,-5.4697 -0.0152,-2.81818 1.5,-4.92425 1.53031,-2.12121 4.19698,-3.28788 2.66666,-1.18182 6.06061,-1.18182 3.45454,0 6.0303,1.18182 2.59091,1.18182 4.03031,3.28788 1.43939,2.10607 1.48485,4.87879 z"
+           id="path35421"
+           style="fill:#2a802f;fill-opacity:1" />
+      </g>
+    </g>
+  </g>
+</svg>

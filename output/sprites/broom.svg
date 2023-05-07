@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 64 64"
+   height="64"
+   width="64"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient2967">
+      <stop
+         style="stop-color:#deaa87;stop-opacity:1;"
+         offset="0"
+         id="stop2963" />
+      <stop
+         style="stop-color:#deaa87;stop-opacity:0.5;"
+         offset="1"
+         id="stop2965" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3030">
+      <rect
+         style="fill:#666666;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect3032"
+         width="64"
+         height="64"
+         x="256"
+         y="384" />
+    </clipPath>
+    <linearGradient
+       xlink:href="#linearGradient2967"
+       id="linearGradient35963"
+       gradientUnits="userSpaceOnUse"
+       x1="-90.509666"
+       y1="494.89148"
+       x2="-90.509666"
+       y2="510.89148" />
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer2"
+     style="display:inline">
+    <g
+       id="use547">
+      <title
+         id="title35949">Broomwagon</title>
+      <rect
+         style="opacity:0;fill:#ffffff;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+         id="rect35951"
+         width="64"
+         height="64"
+         x="0"
+         y="0" />
+      <g
+         id="g35959"
+         clip-path="url(#clipPath3030)"
+         transform="translate(-256,-384)">
+        <rect
+           style="fill:#666666;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+           id="rect35953"
+           width="16"
+           height="40"
+           x="-98.509666"
+           y="446.89148"
+           transform="rotate(-45)" />
+        <rect
+           style="fill:#aa0000;fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+           id="rect35955"
+           width="48"
+           height="8"
+           x="-114.50967"
+           y="486.89148"
+           transform="rotate(-45)" />
+        <rect
+           style="fill:url(#linearGradient35963);fill-opacity:1;stroke-width:15.1181;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:stroke markers fill"
+           id="rect35957"
+           width="48"
+           height="16"
+           x="-114.50967"
+           y="494.89148"
+           transform="rotate(-45)" />
+      </g>
+    </g>
+  </g>
+</svg>
