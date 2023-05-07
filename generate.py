@@ -1,7 +1,7 @@
 from more_itertools import windowed
 from itertools import chain
 from glob import iglob
-import lxml.etree as ET
+import lxml.html as ET
 from json import load
 from datetime import datetime
 from math import floor, ceil
