@@ -1,5 +1,3 @@
-import { functionPlot } from 'https://unpkg.com/function-plot/dist/function-plot.js'
-
 function stagemonolith(coefficient, distance, rounding, range) {
 
     function convertRemToPixels(rem) {
