@@ -115,7 +115,9 @@ for item in iglob('**/top.json', recursive=True):
 
     for ep, ec, en in windowed(chain([None], toplevel["events"], [None]), 3):
 
-        with open(item.replace("top.json", ec[3]), 'r') as f:
+        subitem = item.replace("top.json", ec[3])
+
+        with open(subitem, 'r') as f:
             current = load(f)
 
     
@@ -185,7 +187,14 @@ for item in iglob('**/top.json', recursive=True):
                 finalspeed = (data["length"] / (finalminutes / 60))
                 ET.SubElement(header, "th", {"class": "final"}).text = f"{finalspeed:.1f} km/h"
 
-            for waypoint in data["waypoints"]:
+            for j, waypoint in enumerate(data["waypoints"]):
+
+                if j and data["waypoints"][j-1][1] > waypoint[1]:
+                    logging.error(f"SANITY CHECK: {subitem} Stage {c}: Waypoint {j} before waypoint {j-1}.")
+
+                if j-1 == len(data["waypoints"]) and waypoint[1] != data["length"]:
+                    logging.error(f"SANITY CHECK: {subitem} Stage {c}: Final waypoint doesn't match length.")
+
                 row = ET.SubElement(table, "tr")
 
                 icon = ET.SubElement(row, "td")
@@ -220,7 +229,7 @@ for item in iglob('**/top.json', recursive=True):
                     outer.text = timeformat((waypoint[1]/finalspeed)*60)
                     ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(finalspeed,replacements['STAGE_COEFFICIENT_LIST'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
 
-            filename = 'output/' + item.replace('top.json', ec[3]).replace('.json', f'/{c}.html')
+            filename = 'output/' + subitem.replace('.json', f'/{c}.html')
             os.makedirs(os.path.dirname(filename), exist_ok=True)
 
             output = HTML.tostring(working, method="html", encoding="unicode", doctype="<!DOCTYPE html>")
