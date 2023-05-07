@@ -127,7 +127,7 @@ for item in iglob('**/*.json', recursive=True):
         }
 
         if "range" in data:
-            replacements["%STAGE_RANGE%"] = data["range"]
+            replacements["STAGE_RANGE"] = data["range"]
 
         for k, v in replacements.items():
             working = working.replace(k, str(v))
@@ -179,6 +179,6 @@ for item in iglob('**/*.json', recursive=True):
             for speed in data["speeds"]:
                 outer = ET.SubElement(row, "td")
                 outer.text = timeformat((waypoint[1]/speed)*60)
-                ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(speed,replacements['%STAGE_COEFFICIENT_LIST%'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
+                ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(speed,replacements['STAGE_COEFFICIENT_LIST'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
 
         working.write('output/' + item.replace('.json', f'/{c}.html'), method="html", doctype="<!DOCTYPE html>")
