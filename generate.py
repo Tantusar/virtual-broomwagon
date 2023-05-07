@@ -3,12 +3,10 @@ from itertools import chain
 from glob import iglob
 import lxml.etree as ET
 from json import load
-
 from datetime import datetime
-
 from math import floor, ceil
-
 import logging
+import os
 
 def converter(speed, coefficient, distance, rounding=""):
     if speed < 0:
