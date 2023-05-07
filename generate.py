@@ -113,17 +113,17 @@ for item in iglob('**/*.json', recursive=True):
             working = f.read()
         
         replacements = {
-            "%.EVENT_TITLE%": current["title"],
-            "%STAGE_ID%": c,
-            "%STAGE_TITLE%": data["title"],
-            "%STAGE_DATE%": data["date"],
-            "%STAGE_LENGTH%": data["length"],
-            "%STAGE_TYPE%": data["type"],
-            "%STAGE_COEFFICIENT%": data["coefficient"],
-            "%STAGE_COEFFICIENT_LIST%": current["coefficients"][1][data["coefficient"]][0],
-            "%.EVENT_ROUNDING%": current["coefficients"][0],
-            "%STAGE_RANGE": current["coefficients"][1][data["coefficient"]][1],
-            "%CURRENT_YEAR%": year_roman(),
+            "EVENT_TITLE": current["title"],
+            "STAGE_ID": c,
+            "STAGE_TITLE": data["title"],
+            "STAGE_DATE": data["date"],
+            "STAGE_LENGTH": data["length"],
+            "STAGE_TYPE": data["type"],
+            "STAGE_COEFFICIENT": data["coefficient"],
+            "STAGE_COEFFICIENT_LIST": current["coefficients"][1][data["coefficient"]][0],
+            "EVENT_ROUNDING": current["coefficients"][0],
+            "STAGE_RANGE": current["coefficients"][1][data["coefficient"]][1],
+            "CURRENT_YEAR": year_roman(),
         }
 
         if "range" in data:
