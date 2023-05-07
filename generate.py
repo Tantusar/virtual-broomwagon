@@ -8,6 +8,8 @@ from datetime import datetime
 
 from math import floor, ceil
 
+import logging
+
 def converter(speed, coefficient, distance, rounding=""):
     if speed < 0:
         return
@@ -130,7 +132,12 @@ for item in iglob('**/*.json', recursive=True):
         for k, v in replacements.items():
             working = working.replace(k, str(v))
 
-        working = ET.fromstring(working)
+
+        try:
+            working = ET.fromstring(working)
+        except:
+            logging.error(working)
+            raise
 
         stagelinks = working.findall(".//h3/a")
 
