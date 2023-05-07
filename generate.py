@@ -104,7 +104,7 @@ for item in iglob('**/*.json', recursive=True):
     with open(item, 'r') as f:
         current = load(f)
     
-    for p, c, n in windowed(chain([None], current["stages"], [None])):
+    for p, c, n in windowed(chain([None], current["stages"], [None]), 3):
         data = current["stages"][c]
 
         with open('stage_template.html', 'r') as f:
