@@ -168,7 +168,13 @@ for item in iglob('**/*.json', recursive=True):
             if len(waypoint) > 2:
                 ET.SubElement(icon, "object", {"data": f"/sprites/{waypoint[2]}.svg"})
 
-            ET.SubElement(row, "td").text = waypoint[0]
+            name = ET.SubElement(row, "td")
+
+            for i, l in enumerate(waypoint[0].split("<br>")):
+                if not i:
+                    name.text = l
+                else:
+                    ET.SubElement(name, "br").tail = l
 
             dist = ET.SubElement(row, "td")
 
