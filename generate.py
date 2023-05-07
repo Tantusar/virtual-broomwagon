@@ -110,7 +110,7 @@ for item in iglob('**/top.json', recursive=True):
     with open(item, 'r') as f:
         toplevel = load(f)
 
-    logging.info(toplevel["title"])
+    logging.debug(toplevel["title"])
 
     allevents.extend(toplevel["events"])
 
@@ -119,12 +119,12 @@ for item in iglob('**/top.json', recursive=True):
         with open(item.replace("top.json", ec[3]), 'r') as f:
             current = load(f)
 
-        logging.info(f"    {current['title']}")
+        logging.debug(f"    {current['title']}")
     
         for p, c, n in windowed(chain([None], current["stages"], [None]), 3):
             data = current["stages"][c]
 
-            logging.info(f"        Stage {c}: {data['title']}")
+            logging.debug(f"        Stage {c}: {data['title']}")
 
             with open('stage_template.html', 'r') as f:
                 working = f.read()
@@ -228,7 +228,7 @@ for item in iglob('**/top.json', recursive=True):
 
             output = HTML.tostring(working, method="html", encoding="unicode", doctype="<!DOCTYPE html>")
 
-            logging.info(f"            {len(output)} characters")
+            logging.debug(f"            {filename}: {len(output)} characters")
 
             with open(filename, 'w') as f:
                 f.write(output)
