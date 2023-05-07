@@ -115,10 +115,10 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
             }
         ]
 
-        if (finalspeed < range[0]+5) {
-            range[0] = Math.floor(finalspeed - 5);
-        } else if (finalspeed > range[1]-5) {
-            range[1] = Math.ceil(finalspeed + 5);
+        if (finalspeed < range[0] + 5) {
+            range[0] = Math.floor(finalspeed) - 5;
+        } else if (finalspeed > range[1] - 5) {
+            range[1] = Math.ceil(finalspeed) + 5;
         }
     }
 
@@ -149,7 +149,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
             data: [
                 {
                     graphType: 'polyline',
-                    color: 'red',
+                    color: 'orange',
                     fn: (scope) => converter(scope.x, coefficient, distance, rounding)
                 }
             ],
@@ -207,7 +207,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
             data: [
                 {
                     graphType: 'polyline',
-                    color: 'red',
+                    color: 'orange',
                     fn: (scope) => converter(timeToSpeed(scope.x, distance), coefficient, distance, rounding)
                 }
             ],

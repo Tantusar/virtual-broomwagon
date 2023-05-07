@@ -161,3 +161,7 @@ footer {
 a {
     color: black;
 }
+
+.annotations path {
+    color: navy;
+}
