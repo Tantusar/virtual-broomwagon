@@ -337,3 +337,11 @@ for item in iglob('**/top.json', recursive=True):
 
         eventinfo = ET.SubElement(eventcell, "br")
         eventinfo.tail = str(event[5])
+
+    filename = 'output/' + toplevel['code'] + '/index.html'
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+    output = HTML.tostring(seriespage, method="html", encoding="unicode", doctype="<!DOCTYPE html>")
+
+    with open(filename, 'w') as f:
+        f.write(output)
