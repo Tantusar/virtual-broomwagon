@@ -299,7 +299,7 @@ for item in iglob('**/top.json', recursive=True):
 
     
     with open("series_template.html", "r") as f:
-            seriespage = f.read()
+        seriespage = f.read()
 
     seriesreplacements = {
         "EVENT_TITLE": toplevel["title"],
@@ -323,6 +323,8 @@ for item in iglob('**/top.json', recursive=True):
         seriesdescription.getparent().remove(seriesdescription)
 
     eventtable = seriespage.find(".//table")
+
+    logging.warning(allevents)
 
     for event in sorted(allevents, reverse=True):
         eventrow = ET.SubElement(eventtable, "tr")
