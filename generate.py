@@ -137,17 +137,19 @@ for item in iglob('**/top.json', recursive=True):
 
         eventpage = HTML.fromstring(eventpage)
 
+        eventlinks = working.findall(".//h3/a")
+
         if ep:
-            stagelinks[0].attrib["href"] = f"../{ep[4]}"
-            stagelinks[0].attrib["title"] = f'{ep[5]}'
+            eventlinks[0].attrib["href"] = f"../{ep[4]}"
+            eventlinks[0].attrib["title"] = f'{ep[5]}'
         else:
-            stagelinks[0].attrib["disabled"] = ""
+            eventlinks[0].attrib["disabled"] = ""
 
         if en:
-            stagelinks[1].attrib["href"] = f"../{en[4]}"
-            stagelinks[1].attrib["title"] = f'{en[5]}'
+            eventlinks[1].attrib["href"] = f"../{en[4]}"
+            eventlinks[1].attrib["title"] = f'{en[5]}'
         else:
-            stagelinks[1].attrib["disabled"] = ""
+            eventlinks[1].attrib["disabled"] = ""
 
         eventdescription = [HTML.fragment_fromstring(d, create_parent="p") for d in current["description"]]
 
