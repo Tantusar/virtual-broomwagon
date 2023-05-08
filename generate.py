@@ -102,6 +102,8 @@ def year_roman(year: int = 0) -> str:
         result += "I"
     return result
 
+suffix = lambda n: { 1: "st", 2: "nd", 3: "rd" }.get(n if (n < 20) else (n % 10), 'th')
+
 allevents = []
 
 for item in iglob('**/top.json', recursive=True):
@@ -111,7 +113,7 @@ for item in iglob('**/top.json', recursive=True):
         toplevel = load(f)
 
 
-    allevents.extend(toplevel["events"])
+    allevents.extend([e[:-1] + [item.replace("top.json",e[-1])] for e in toplevel["events"]])
 
     for ep, ec, en in windowed(chain([None], toplevel["events"], [None]), 3):
 
@@ -120,10 +122,43 @@ for item in iglob('**/top.json', recursive=True):
         with open(subitem, 'r') as f:
             current = load(f)
 
+        with open("event_template.html", "r") as f:
+            eventpage = f.read()
+
+        eventreplacements = {
+            "EVENT_TITLE": current["title"],
+            "THIRD_LINE": f"{current['edition']}{suffix(current['edition'])} Edition",
+            "FOURTH_LINE": f"{current['dates']} • {str(len(current['stages']) - 1) + '(+ 1 prologue)' if 'P' in current['stages'] else len(current['stages'])} • {sum([e['length'] for e in current['stages'].values()])}km",
+            "CURRENT_YEAR": year_roman()
+        }
+
+        for k, v in eventreplacements.items():
+            eventpage = eventpage.replace(k, str(v))
+
+        eventpage = HTML.fromstring(eventpage)
+
+        eventdescription = [HTML.fragment_fromstring(d, create_parent="p") for d in current["description"]]
+
+        eventdescription.find(".//article").extend(eventdescription)
+
+        stagetable = eventdescription.find(".//table")
+
+        ET.SubElement(stagetable.find("thead"), "th").text = "Stage"
+
     
         for p, c, n in windowed(chain([None], current["stages"], [None]), 3):
             data = current["stages"][c]
 
+            stagerow = ET.SubElement(stagetable, tr)
+
+            ET.SubElement(stagerow, td).text = c
+
+            stagecell = ET.SubElement(stagerow, td)
+
+            ET.SubElement(stagecell, "a", {"href": f"./{c}"}).text = data['title']
+
+            stageinfo = ET.SubElement(stagecell, "br")
+            stageinfo.tail = f"STAGE_LENGTHkm • STAGE_TYPE • Coefficient STAGE_COEFFICIENT"
 
             with open('stage_template.html', 'r') as f:
                 working = f.read()
@@ -148,13 +183,9 @@ for item in iglob('**/top.json', recursive=True):
 
             for k, v in replacements.items():
                 working = working.replace(k, str(v))
+                stageinfo.tail = stageinfo.tail.replace(k, str(v))
 
-
-            try:
-                working = HTML.fromstring(working)
-            except:
-                logging.error(working)
-                raise
+            working = HTML.fromstring(working)
 
             stagelinks = working.findall(".//h3/a")
 
@@ -228,6 +259,7 @@ for item in iglob('**/top.json', recursive=True):
                     outer = ET.SubElement(row, "td", {"class": "final"})
                     outer.text = timeformat((waypoint[1]/finalspeed)*60)
                     ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(finalspeed,replacements['STAGE_COEFFICIENT_LIST'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
+                    stageinfo.tail += f" • {outer.text} • {finalspeed:.1f}km/h"
 
             filename = 'output/' + subitem.replace('.json', f'/{c}.html')
             os.makedirs(os.path.dirname(filename), exist_ok=True)
@@ -236,3 +268,11 @@ for item in iglob('**/top.json', recursive=True):
 
             with open(filename, 'w') as f:
                 f.write(output)
+        
+        filename = 'output/' + subitem.replace('.json', f'/index.html')
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+        output = HTML.tostring(eventpage, method="html", encoding="unicode", doctype="<!DOCTYPE html>")
+
+        with open(filename, 'w') as f:
+            f.write(output)
