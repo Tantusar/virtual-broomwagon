@@ -195,6 +195,11 @@ a {
 
 article {
     background:rgb(230, 230, 230);
-    padding: 2rem;
+    padding: 1rem 2rem;
     border-radius: 8px;
+    margin: 1rem 0;
+}
+
+article.short {
+    padding: 0.5rem 2rem;
 }

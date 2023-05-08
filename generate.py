@@ -223,6 +223,14 @@ for item in iglob('**/top.json', recursive=True):
             else:
                 stagelinks[1].attrib["disabled"] = ""
 
+            stagedescription = [HTML.fragment_fromstring(d, create_parent="p") for d in data["description"]]
+
+            if stagedescription:
+                working.find(".//article").extend(stagedescription)
+            else:
+                stagedescription = working.find(".//article")
+                stagedescription.getparent().remove(stagedescription)
+
             table = working.find(".//table")
 
             header = table.find("thead")
@@ -360,7 +368,7 @@ indexpage = HTML.fromstring(indexpage)
 
 eventtable = indexpage.find(".//table")
 
-for event in sorted(allevents, reverse=True):
+for event in sorted(reallyallevents, reverse=True):
     eventrow = ET.SubElement(eventtable, "tr")
 
     ET.SubElement(eventrow, "td").text = str(event[3])

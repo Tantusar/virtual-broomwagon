@@ -21,6 +21,7 @@
             "type": "Individual Time Trial",
             "coefficient": "E",
             "length": 19.6,
+            "description": [],
             "range": [45, 59],
             "speeds": [50, 52, 54],
             "waypoints": [
@@ -37,6 +38,7 @@
             "type": "Low difficulty",
             "coefficient": "A",
             "length": 202,
+            "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [41, 43, 45],
             "waypoints": [
                 [
@@ -78,6 +80,7 @@
             "type": "Medium difficulty",
             "coefficient": "C",
             "length": 213,
+            "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [39, 41, 43],
             "waypoints": [
                 [
@@ -119,6 +122,7 @@
             "type": "Medium difficulty",
             "coefficient": "C",
             "length": 175,
+            "description": ["The three-kilometre rule applies on this stage."],
             "speeds": [37, 39, 41],
             "waypoints": [
                 [
@@ -165,6 +169,7 @@
             "type": "Low difficulty",
             "coefficient": "B",
             "length": 171,
+            "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [38, 40, 42],
             "waypoints": [
                 [
@@ -206,6 +211,7 @@
             "type": "Low difficulty",
             "coefficient": "C",
             "length": 162,
+            "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [39, 41, 43],
             "waypoints": [
                 [
@@ -247,6 +253,7 @@
             "type": "High difficulty",
             "coefficient": "D",
             "length": 218,
+            "description": [],
             "speeds": [35, 37, 39],
             "waypoints": [
                 [
@@ -288,6 +295,7 @@
             "type": "Medium difficulty",
             "coefficient": "C",
             "length": 207,
+            "description": ["The three-kilometre rule applies on this stage."],
             "speeds": [38, 40, 42],
             "waypoints": [
                 [
@@ -338,6 +346,7 @@
             "type": "Individual Time Trial",
             "coefficient": "E",
             "length": 35,
+            "description": [],
             "range": [47, 61],
             "speeds": [52, 54, 56],
             "waypoints": [
@@ -375,6 +384,7 @@
             "type": "Low difficulty",
             "coefficient": "B",
             "length": 196,
+            "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [38, 40, 42],
             "waypoints": [
                 [
@@ -416,6 +426,7 @@
             "type": "Low difficulty",
             "coefficient": "B",
             "length": 219,
+            "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [38, 40, 42],
             "waypoints": [
                 [
@@ -462,6 +473,7 @@
             "type": "Medium difficulty",
             "coefficient": "C",
             "length": 179,
+            "description": ["The three-kilometre rule applies on this stage."],
             "speeds": [38, 40, 42],
             "waypoints": [
                 [
@@ -507,6 +519,7 @@
             "type": "High difficulty",
             "coefficient": "D",
             "length": 207,
+            "description": [],
             "speeds": [32, 34, 36],
             "waypoints": [
                 [
@@ -548,6 +561,7 @@
             "type": "Low difficulty",
             "coefficient": "B",
             "length": 194,
+            "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [37, 39, 41],
             "waypoints": [
                 [
@@ -584,6 +598,7 @@
             "type": "High difficulty",
             "coefficient": "D",
             "length": 195,
+            "description": ["The three-kilometre rule applies on this stage."],
             "speeds": [35, 37, 39],
             "waypoints": [
                 [
@@ -639,6 +654,7 @@
             "type": "High difficulty",
             "coefficient": "D",
             "length": 203,
+            "description": [],
             "speeds": [31, 33, 35],
             "waypoints": [
                 [
@@ -690,6 +706,7 @@
             "type": "Low difficulty",
             "coefficient": "A",
             "length": 197,
+            "description": ["The three-kilometre rule applies on this stage."],
             "speeds": [43, 45, 47],
             "waypoints": [
                 [
@@ -721,6 +738,7 @@
             "type": "Medium difficulty",
             "coefficient": "D (short)",
             "length": 161,
+            "description": [],
             "speeds": [32, 34, 36],
             "waypoints": [
                 [
@@ -772,6 +790,7 @@
             "type": "High difficulty",
             "coefficient": "D",
             "length": 183,
+            "description": [],
             "speeds": [32, 34, 36],
             "waypoints": [
                 [
@@ -823,6 +842,7 @@
             "type": "Individual Time Trial",
             "coefficient": "E",
             "length": 18.6,
+            "description": [],
             "range": [
                 20,
                 34
@@ -863,6 +883,7 @@
             "type": "Low difficulty",
             "coefficient": "A",
             "length": 126,
+            "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [38, 40, 42],
             "waypoints": [
                 [
