@@ -106,7 +106,11 @@ suffix = lambda n: { 1: "st", 2: "nd", 3: "rd" }.get(n if (n < 20) else (n % 10)
 
 reallyallevents = []
 
+seriescount = 0
+
 for item in iglob('**/top.json', recursive=True):
+    seriescount += 1
+
     if item.startswith("output"):
         continue
     with open(item, 'r') as f:
@@ -312,8 +316,6 @@ for item in iglob('**/top.json', recursive=True):
 
     seriespage = HTML.fromstring(seriespage)
 
-    serieslinks = seriespage.findall(".//h3/a")
-
     seriesdescription = [HTML.fragment_fromstring(d, create_parent="p") for d in toplevel["description"]]
 
     if seriesdescription:
@@ -323,8 +325,6 @@ for item in iglob('**/top.json', recursive=True):
         seriesdescription.getparent().remove(seriesdescription)
 
     eventtable = seriespage.find(".//table")
-
-    logging.warning(allevents)
 
     for event in sorted(allevents, reverse=True):
         eventrow = ET.SubElement(eventtable, "tr")
@@ -345,3 +345,37 @@ for item in iglob('**/top.json', recursive=True):
 
     with open(filename, 'w') as f:
         f.write(output)
+
+with open("index_template.html", "r") as f:
+    indexpage = f.read()
+
+indexreplacements = {
+    "FOURTH_LINE": f"{len(reallyallevents)} events recorded in {seriescount} series",
+    "CURRENT_YEAR": year_roman()
+}
+for k, v in indexreplacements.items():
+    indexpage = indexpage.replace(k, str(v))
+
+indexpage = HTML.fromstring(indexpage)
+
+eventtable = indexpage.find(".//table")
+
+for event in sorted(allevents, reverse=True):
+    eventrow = ET.SubElement(eventtable, "tr")
+
+    ET.SubElement(eventrow, "td").text = str(event[3])
+
+    eventcell = ET.SubElement(eventrow, "td")
+
+    ET.SubElement(eventcell, "a", {"href": str(event[6])}).text = str(event[4])
+
+    eventinfo = ET.SubElement(eventcell, "br")
+    eventinfo.tail = str(event[5])
+
+filename = 'output/index.html'
+os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+output = HTML.tostring(indexpage, method="html", encoding="unicode", doctype="<!DOCTYPE html>")
+
+with open(filename, 'w') as f:
+    f.write(output)
