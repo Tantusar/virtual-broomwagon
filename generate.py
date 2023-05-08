@@ -131,9 +131,9 @@ for item in iglob('**/top.json', recursive=True):
             "CURRENT_YEAR": year_roman()
         }
 
-        allevents.append([ec[:3] + [current['edition'], current['title'], eventreplacements["FOURTH_LINE"]], f"./{ec[4]}"])
+        allevents.append(ec[:3] + [current['edition'], current['title'], eventreplacements["FOURTH_LINE"], f"./{ec[4]}"])
 
-        reallyallevents.append([ec[:3] + [current['edition'], current['title'], eventreplacements["FOURTH_LINE"]], f"/{toplevel['code']}/{ec[4]}"])
+        reallyallevents.append(ec[:3] + [current['edition'], current['title'], eventreplacements["FOURTH_LINE"], f"/{toplevel['code']}/{ec[4]}"])
 
         for k, v in eventreplacements.items():
             eventpage = eventpage.replace(k, str(v))
