@@ -149,11 +149,11 @@ for item in iglob('**/top.json', recursive=True):
         for p, c, n in windowed(chain([None], current["stages"], [None]), 3):
             data = current["stages"][c]
 
-            stagerow = ET.SubElement(stagetable, tr)
+            stagerow = ET.SubElement(stagetable, "tr")
 
-            ET.SubElement(stagerow, td).text = c
+            ET.SubElement(stagerow, "td").text = c
 
-            stagecell = ET.SubElement(stagerow, td)
+            stagecell = ET.SubElement(stagerow, "td")
 
             ET.SubElement(stagecell, "a", {"href": f"./{c}"}).text = data['title']
 
