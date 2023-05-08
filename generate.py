@@ -137,7 +137,7 @@ for item in iglob('**/top.json', recursive=True):
 
         eventpage = HTML.fromstring(eventpage)
 
-        eventlinks = working.findall(".//h3/a")
+        eventlinks = eventpage.findall(".//h3/a")
 
         if ep:
             eventlinks[0].attrib["href"] = f"../{ep[4]}"
