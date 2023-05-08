@@ -333,5 +333,5 @@ for item in iglob('**/top.json', recursive=True):
 
         ET.SubElement(eventcell, "a", {"href": event[6]}).text = event[4]
 
-        stageinfo = ET.SubElement(stagecell, "br")
-        stageinfo.tail = event[5]
+        eventinfo = ET.SubElement(eventcell, "br")
+        eventinfo.tail = event[5]
