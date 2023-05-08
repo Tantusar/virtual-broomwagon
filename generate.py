@@ -128,7 +128,7 @@ for item in iglob('**/top.json', recursive=True):
         eventreplacements = {
             "EVENT_TITLE": current["title"],
             "THIRD_LINE": f"{current['edition']}{suffix(current['edition'])} Edition",
-            "FOURTH_LINE": f"{current['dates']} • {str(len(current['stages']) - 1) + '(+ 1 prologue)' if 'P' in current['stages'] else len(current['stages'])} • {sum([e['length'] for e in current['stages'].values()])}km",
+            "FOURTH_LINE": f"{current['dates']} • {str(len(current['stages']) - 1) + ' stages (+ 1 prologue)' if 'P' in current['stages'] else str(len(current['stages'])) + ' stages'} • {sum([e['length'] for e in current['stages'].values()])}km",
             "CURRENT_YEAR": year_roman()
         }
 
@@ -139,7 +139,11 @@ for item in iglob('**/top.json', recursive=True):
 
         eventdescription = [HTML.fragment_fromstring(d, create_parent="p") for d in current["description"]]
 
-        eventpage.find(".//article").extend(eventdescription)
+        if eventdescription:
+            eventpage.find(".//article").extend(eventdescription)
+        else:
+            eventdescription = eventpage.find(".//article")
+            eventdescription.getparent().remove(eventdescription)
 
         stagetable = eventpage.find(".//table")
 
