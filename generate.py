@@ -329,11 +329,11 @@ for item in iglob('**/top.json', recursive=True):
     for event in sorted(allevents, reverse=True):
         eventrow = ET.SubElement(eventtable, "tr")
 
-        ET.SubElement(eventrow, "td").text = event[3]
+        ET.SubElement(eventrow, "td").text = str(event[3])
 
         eventcell = ET.SubElement(eventrow, "td")
 
-        ET.SubElement(eventcell, "a", {"href": event[6]}).text = event[4]
+        ET.SubElement(eventcell, "a", {"href": str(event[6])}).text = str(event[4])
 
         eventinfo = ET.SubElement(eventcell, "br")
-        eventinfo.tail = event[5]
+        eventinfo.tail = str(event[5])
