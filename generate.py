@@ -139,9 +139,9 @@ for item in iglob('**/top.json', recursive=True):
 
         eventdescription = [HTML.fragment_fromstring(d, create_parent="p") for d in current["description"]]
 
-        eventdescription.find(".//article").extend(eventdescription)
+        eventpage.find(".//article").extend(eventdescription)
 
-        stagetable = eventdescription.find(".//table")
+        stagetable = eventpage.find(".//table")
 
         ET.SubElement(stagetable.find("thead"), "th").text = "Stage"
 
