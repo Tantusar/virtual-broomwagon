@@ -114,7 +114,7 @@
                     "finish"
                 ]
             ],
-            "final": false
+            "final": [5, 1, 41]
         },
         "4": {
             "title": "Venosa – Lago Laceno",
