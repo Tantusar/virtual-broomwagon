@@ -259,7 +259,9 @@ for item in iglob('**/top.json', recursive=True):
                     outer = ET.SubElement(row, "td", {"class": "final"})
                     outer.text = timeformat((waypoint[1]/finalspeed)*60)
                     ET.SubElement(outer, "br").tail = f"+ {timeformat(converter(finalspeed,replacements['STAGE_COEFFICIENT_LIST'], data['length'], current['coefficients'][0]) * (waypoint[1]/data['length']), False)}"
-                    stageinfo.tail += f" • {outer.text} • {finalspeed:.1f}km/h"
+
+            if data["final"]:
+                stageinfo.tail += f" • {timeformat(finalminutes)} • {finalspeed:.1f}km/h"
 
             filename = 'output/' + subitem.replace('.json', f'/{c}.html')
             os.makedirs(os.path.dirname(filename), exist_ok=True)
