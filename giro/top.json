@@ -1,5 +1,6 @@
 {
     "title": "Giro d'Italia",
+    "code": "giro",
     "country": "Italy",
     "description": [],
     "events": [

@@ -104,7 +104,7 @@ def year_roman(year: int = 0) -> str:
 
 suffix = lambda n: { 1: "st", 2: "nd", 3: "rd" }.get(n if (n < 20) else (n % 10), 'th')
 
-allevents = []
+reallyallevents = []
 
 for item in iglob('**/top.json', recursive=True):
     if item.startswith("output"):
@@ -112,8 +112,7 @@ for item in iglob('**/top.json', recursive=True):
     with open(item, 'r') as f:
         toplevel = load(f)
 
-
-    allevents.extend([e[:-1] + [item.replace("top.json",e[-1])] for e in toplevel["events"]])
+    allevents = []
 
     for ep, ec, en in windowed(chain([None], toplevel["events"], [None]), 3):
 
@@ -126,11 +125,15 @@ for item in iglob('**/top.json', recursive=True):
             eventpage = f.read()
 
         eventreplacements = {
-            "EVENT_TITLE": current["title"],
+            "EVENT_TITLE": toplevel["title"],
             "THIRD_LINE": f"{current['edition']}{suffix(current['edition'])} Edition",
             "FOURTH_LINE": f"{current['dates']} • {str(len(current['stages']) - 1) + ' stages (+ 1 prologue)' if 'P' in current['stages'] else str(len(current['stages'])) + ' stages'} • {sum([e['length'] for e in current['stages'].values()])}km",
             "CURRENT_YEAR": year_roman()
         }
+
+        allevents.append(ec[:3] + [current['edition'], current['title'], eventreplacements["FOURTH_LINE"]], f"./{ec[4]}")
+
+        reallyallevents.append(ec[:3] + [current['edition'], current['title'], eventreplacements["FOURTH_LINE"]], f"/{toplevel['code']}/{ec[4]}")
 
         for k, v in eventreplacements.items():
             eventpage = eventpage.replace(k, str(v))
@@ -160,9 +163,6 @@ for item in iglob('**/top.json', recursive=True):
             eventdescription.getparent().remove(eventdescription)
 
         stagetable = eventpage.find(".//table")
-
-        ET.SubElement(stagetable.find("thead"), "th").text = "Stage"
-
     
         for p, c, n in windowed(chain([None], current["stages"], [None]), 3):
             data = current["stages"][c]
@@ -296,3 +296,42 @@ for item in iglob('**/top.json', recursive=True):
 
         with open(filename, 'w') as f:
             f.write(output)
+
+    
+    with open("series_template.html", "r") as f:
+            seriespage = f.read()
+
+    seriesreplacements = {
+        "EVENT_TITLE": toplevel["title"],
+        "THIRD_LINE": f"Country: {toplevel['country']}",
+        "FOURTH_LINE": f"{len(toplevel['events'])} events recorded",
+        "CURRENT_YEAR": year_roman()
+    }
+    for k, v in seriesreplacements.items():
+        seriespage = seriespage.replace(k, str(v))
+
+    seriespage = HTML.fromstring(seriespage)
+
+    serieslinks = seriespage.findall(".//h3/a")
+
+    seriesdescription = [HTML.fragment_fromstring(d, create_parent="p") for d in toplevel["description"]]
+
+    if seriesdescription:
+        seriespage.find(".//article").extend(seriesdescription)
+    else:
+        seriesdescription = seriespage.find(".//article")
+        seriesdescription.getparent().remove(seriesdescription)
+
+    eventtable = seriespage.find(".//table")
+
+    for event in sorted(allevents, reverse=True):
+        eventrow = ET.SubElement(eventtable, "tr")
+
+        ET.SubElement(eventrow, "td").text = event[3]
+
+        eventcell = ET.SubElement(eventrow, "td")
+
+        ET.SubElement(eventcell, "a", {"href": event[6]}).text = event[4]
+
+        stageinfo = ET.SubElement(stagecell, "br")
+        stageinfo.tail = event[5]
