@@ -203,3 +203,57 @@ article {
 article.short {
     padding: 0.5rem 2rem;
 }
+
+h4 {
+    margin: 0 0 8px;
+}
+
+.awardset {
+    display: grid;
+    grid-auto-columns: 240px;
+    gap: 8px;
+    width: 100%;
+    grid-auto-flow: column;
+}
+
+.awardwrap {
+    display: grid;
+    grid-template-columns: 64px auto;
+}
+
+.awardwrap>div {
+    padding: 8px;
+}
+
+.awardwrap object {
+    width: 48px;
+    border-radius: 8px;
+}
+
+.awardwrap> :first-child {
+    background: rgb(230, 230, 230);
+    border-radius: 8px 0 0 8px;
+}
+
+.awardwrap> :last-child {
+    max-width: 172px;
+}
+
+ol {
+    margin: 8px 0 0;
+    counter-reset: item;
+    padding: 0;
+    width: fit-content;
+}
+
+li:before {
+    display: inline-block;
+    content: counter(item) ". ";
+    counter-increment: item;
+    text-align: left;
+    width: 2em;
+}
+
+li {
+    display: block;
+}

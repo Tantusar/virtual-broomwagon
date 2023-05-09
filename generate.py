@@ -293,10 +293,12 @@ for item in iglob('**/top.json', recursive=True):
             if data["final"]:
                 stageinfo.tail += f" • {timeformat(finalminutes)} • {finalspeed:.1f}km/h"
 
-            for award, awards in data["awards"].items():
-                ET.SubElement(working, "h3").text = current["awards"][award]["title"]
+            main = working.find(".//main")
 
-                awardset = ET.SubElement(working, "div", {"class": "awardset"})
+            for award, awards in data["awards"].items():
+                ET.SubElement(main, "h3").text = current["awards"][award]["title"]
+
+                awardset = ET.SubElement(main, "div", {"class": "awardset"})
 
                 for awardtype, location in awards:
                     svgtarget = awardtype
@@ -319,8 +321,10 @@ for item in iglob('**/top.json', recursive=True):
 
                     awardinnerlist = ET.SubElement(awardinner, "ol")
 
+                    width = max([len(a) for a in awardlist])
+
                     for a in awardlist:
-                        ET.SubElement(awardinnerlist, "li").text = a
+                        ET.SubElement(awardinnerlist, "li").text = a.rjust(width, " ")
 
             filename = 'output/' + subitem.replace('.json', f'/{c}.html')
             os.makedirs(os.path.dirname(filename), exist_ok=True)
