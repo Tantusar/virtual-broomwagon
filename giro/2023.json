@@ -13,6 +13,37 @@
         "E": [[0.3], [20, 60]]
         }
     ],
+    "awards": {
+        "time_bonus": {
+            "title": "Bonus Time",
+            "bonus": ["3\"", "2\"", "1\""],
+            "finish": ["10\"", "6\"", "4\""]
+        },
+        "points": {
+            "title": "Points Classification (Maglia Ciclamino)",
+            "sprint_purple": ["12", "8", "6", "5", "4", "3", "2", "1"],
+            "finish": {
+                "A": ["50", "35", "25", "18", "14", "12", "10", "8", "7", "6", "5", "4", "3", "2", "1"],
+                "B": ["50", "35", "25", "18", "14", "12", "10", "8", "7", "6", "5", "4", "3", "2", "1"],
+                "C": ["25", "18", "12", "8", "6", "5", "4", "3", "2", "1"],
+                "D": ["15", "12", "9", "7", "6", "5", "4", "3", "2", "1"],
+                "D (short)": ["15", "12", "9", "7", "6", "5", "4", "3", "2", "1"],
+                "E": ["15", "12", "9", "7", "6", "5", "4", "3", "2", "1"]
+            }
+        },
+        "kom": {
+            "title": "King of the Mountains (Maglia Azzurra)",
+            "mountain_0": ["50", "30", "20", "14", "10", "6", "4", "2", "1"],
+            "mountain_1": ["40", "18", "12", "9", "6", "4", "2", "1"],
+            "mountain_2": ["18", "8", "6", "4", "2", "1"],
+            "mountain_3": ["9", "4", "2", "1"],
+            "mountain_4": ["3", "2", "1"]
+        },
+        "intermediate": {
+            "title": "Intermediate Sprints Classification",
+            "sprint_purple": ["10", "6", "3", "2", "1"]
+        }
+    },
     "rounding": "ceil-m",
     "stages": {
         "1": {
@@ -21,7 +52,7 @@
             "type": "Individual Time Trial",
             "coefficient": "E",
             "length": 19.6,
-            "description": [],
+            "description": ["Ortona KOM timed from the Porto di Ortona timecheck."],
             "range": [45, 59],
             "speeds": [50, 52, 54],
             "waypoints": [
@@ -30,6 +61,10 @@
                 ["Porto di Ortona", 16.8, "timecheck"],
                 ["Ortona (69m)", 19.6, "finish_mountain_4"]
             ],
+            "awards": {
+                "points": [["finish", "Ortona"]],
+                "kom": [["mountain_4", "Ortona"]]
+            },
             "final": [0, 17, 10]
         },
         "2": {
@@ -161,7 +196,7 @@
                     "finish"
                 ]
             ],
-            "final": false
+            "final": [4, 16, 5]
         },
         "5": {
             "title": "Atripalda – Salerno",
@@ -842,7 +877,7 @@
             "type": "Individual Time Trial",
             "coefficient": "E",
             "length": 18.6,
-            "description": [],
+            "description": ["Monte Lussari KOM timed from the Base of Climb timecheck."],
             "range": [
                 20,
                 34
