@@ -319,7 +319,10 @@ for item in iglob('**/top.json', recursive=True):
 
                     ET.SubElement(awardinner, "h4").text = location
 
-                    awardinnerlist = ET.SubElement(awardinner, "ol")
+                    if len(awardlist) > 10:
+                        awardinnerlist = ET.SubElement(awardinner, "ol", {"class": "long"})
+                    else:
+                        awardinnerlist = ET.SubElement(awardinner, "ol")
 
                     width = max([len(a) for a in awardlist])
 
