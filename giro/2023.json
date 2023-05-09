@@ -17,7 +17,12 @@
         "time_bonus": {
             "title": "Bonus Time",
             "bonus": ["3\"", "2\"", "1\""],
-            "finish": ["10\"", "6\"", "4\""]
+            "finish": ["10\"", "6\"", "4\""],
+            "finish_mountain_0": "finish",
+            "finish_mountain_1": "finish",
+            "finish_mountain_2": "finish",
+            "finish_mountain_3": "finish",
+            "finish_mountain_4": "finish"
         },
         "points": {
             "title": "Points Classification (Maglia Ciclamino)",
@@ -29,7 +34,12 @@
                 "D": ["15", "12", "9", "7", "6", "5", "4", "3", "2", "1"],
                 "D (short)": ["15", "12", "9", "7", "6", "5", "4", "3", "2", "1"],
                 "E": ["15", "12", "9", "7", "6", "5", "4", "3", "2", "1"]
-            }
+            },
+            "finish_mountain_0": "finish",
+            "finish_mountain_1": "finish",
+            "finish_mountain_2": "finish",
+            "finish_mountain_3": "finish",
+            "finish_mountain_4": "finish"
         },
         "kom": {
             "title": "King of the Mountains (Maglia Azzurra)",
@@ -37,12 +47,18 @@
             "mountain_1": ["40", "18", "12", "9", "6", "4", "2", "1"],
             "mountain_2": ["18", "8", "6", "4", "2", "1"],
             "mountain_3": ["9", "4", "2", "1"],
-            "mountain_4": ["3", "2", "1"]
+            "mountain_4": ["3", "2", "1"],
+            "finish_mountain_0": "mountain_0",
+            "finish_mountain_1": "mountain_1",
+            "finish_mountain_2": "mountain_2",
+            "finish_mountain_3": "mountain_3",
+            "finish_mountain_4": "mountain_4"
         },
         "intermediate": {
             "title": "Intermediate Sprints Classification",
-            "sprint_purple": ["10", "6", "3", "2", "1"]
-        }
+            "sprint_purple": ["10", "6", "3", "2", "1"],
+            "bonus": "sprint_purple"
+            }
     },
     "rounding": "ceil-m",
     "stages": {
@@ -62,8 +78,12 @@
                 ["Ortona (69m)", 19.6, "finish_mountain_4"]
             ],
             "awards": {
-                "points": [["finish", "Ortona"]],
-                "kom": [["mountain_4", "Ortona"]]
+                "points": [
+                    ["finish_mountain_4", "Ortona"]
+                ],
+                "kom": [
+                    ["finish_mountain_4", "Ortona"]
+                ]
             },
             "final": [0, 17, 10]
         },
@@ -76,37 +96,31 @@
             "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [41, 43, 45],
             "waypoints": [
-                [
-                    "Teramo (after 5.6km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Silvi Paese (203m)",
-                    84.5,
-                    "mountain_4"
-                ],
-                [
-                    "Pescara",
-                    101.5,
-                    "sprint_purple"
-                ],
-                [
-                    "Chieti",
-                    121.6,
-                    "bonus"
-                ],
-                [
-                    "Ripa Teatina (210m)",
-                    130.3,
-                    "mountain_4"
-                ],
-                [
-                    "San Salvo",
-                    202,
-                    "finish"
-                ]
+                ["Teramo (after 5.6km)", 0, "depart_real"],
+                ["Silvi Paese (203m)", 84.5, "mountain_4"],
+                ["Pescara", 101.5, "sprint_purple"],
+                ["Chieti", 121.6, "bonus"],
+                ["Ripa Teatina (210m)", 130.3, "mountain_4"],
+                ["San Salvo", 202, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Pescara"],
+                    ["finish", "San Salvo"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Chieti"],
+                    ["finish", "San Salvo"]
+                ],
+                "kom": [
+                    ["mountain_4", "Silvi Paese"],
+                    ["mountain_4", "Ripa Teatina"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Pescara"],
+                    ["bonus", "Chieti"]
+                ]
+            },
             "final": [4, 55, 11]
         },
         "3": {
@@ -118,37 +132,31 @@
             "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [39, 41, 43],
             "waypoints": [
-                [
-                    "Vasto (after 9.5km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Foggia",
-                    107,
-                    "sprint_purple"
-                ],
-                [
-                    "Valico dei Laghi di Monticchio (705m)",
-                    180,
-                    "mountain_3"
-                ],
-                [
-                    "Valico La Croce (858m)",
-                    187.1,
-                    "mountain_4"
-                ],
-                [
-                    "Rapolla",
-                    203.3,
-                    "bonus"
-                ],
-                [
-                    "Melfi",
-                    213,
-                    "finish"
-                ]
+                ["Vasto (after 9.5km)", 0, "depart_real"],
+                ["Foggia", 107, "sprint_purple"],
+                ["Valico dei Laghi di Monticchio (705m)", 180, "mountain_3"],
+                ["Valico La Croce (858m)", 187.1, "mountain_4"],
+                ["Rapolla", 203.3, "bonus"],
+                ["Melfi", 213, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Foggia"],
+                    ["finish", "Melfi"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Rapolla"],
+                    ["finish", "Melfi"]
+                ],
+                "kom": [
+                    ["mountain_3", "Valico dei Laghi di Monticchio"],
+                    ["mountain_4", "Valico La Croce"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Foggia"],
+                    ["bonus", "Rapolla"]
+                ]
+            },
             "final": [5, 1, 41]
         },
         "4": {
@@ -160,42 +168,33 @@
             "description": ["The three-kilometre rule applies on this stage."],
             "speeds": [37, 39, 41],
             "waypoints": [
-                [
-                    "Venosa (after 6.3km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Passo delle Crocelle (1136m)",
-                    64.2,
-                    "mountain_2"
-                ],
-                [
-                    "Muro Lucano",
-                    95.9,
-                    "sprint_purple"
-                ],
-                [
-                    "Valico di Monte Carruozzo (1136m)",
-                    110.2,
-                    "mountain_2"
-                ],
-                [
-                    "Montella",
-                    159.2,
-                    "bonus"
-                ],
-                [
-                    "Colle Molella (1084m)",
-                    172,
-                    "mountain_2"
-                ],
-                [
-                    "Lago Laceno",
-                    175,
-                    "finish"
-                ]
+                ["Venosa (after 6.3km)", 0, "depart_real"],
+                ["Passo delle Crocelle (1136m)", 64.2, "mountain_2"],
+                ["Muro Lucano", 95.9, "sprint_purple"],
+                ["Valico di Monte Carruozzo (1136m)", 110.2, "mountain_2"],
+                ["Montella", 159.2, "bonus"],
+                ["Colle Molella (1084m)", 172, "mountain_2"],
+                ["Lago Laceno", 175, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Muro Lucano"],
+                    ["finish", "Lago Laceno"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Montella"],
+                    ["finish", "Lago Laceno"]
+                ],
+                "kom": [
+                    ["mountain_2", "Passo delle Crocelle"],
+                    ["mountain_2", "Valico di Monte Carruozzo"],
+                    ["mountain_2", "Colle Molella"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Muro Lucano"],
+                    ["bonus", "Montella"]
+                ]
+            },
             "final": [4, 16, 5]
         },
         "5": {
@@ -207,37 +206,31 @@
             "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [38, 40, 42],
             "waypoints": [
-                [
-                    "Atripalda (after 9km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Passo Serra (584m)",
-                    11.6,
-                    "mountain_3"
-                ],
-                [
-                    "Sant'Angelo dei Lombardi",
-                    65.3,
-                    "sprint_purple"
-                ],
-                [
-                    "Oliveto Citra (385m)",
-                    113.9,
-                    "mountain_3"
-                ],
-                [
-                    "Battipaglia",
-                    145.3,
-                    "bonus"
-                ],
-                [
-                    "Salerno",
-                    171,
-                    "finish"
-                ]
+                ["Atripalda (after 9km)", 0, "depart_real"],
+                ["Passo Serra (584m)", 11.6, "mountain_3"],
+                ["Sant'Angelo dei Lombardi", 65.3, "sprint_purple"],
+                ["Oliveto Citra (385m)", 113.9, "mountain_3"],
+                ["Battipaglia", 145.3, "bonus"],
+                ["Salerno", 171, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Sant'Angelo dei Lombardi"],
+                    ["finish", "Salerno"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Battipaglia"],
+                    ["finish", "Salerno"]
+                ],
+                "kom": [
+                    ["mountain_3", "Passo Serra"],
+                    ["mountain_3", "Oliveto Citra"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Sant'Angelo dei Lombardi"],
+                    ["bonus", "Battipaglia"]
+                ]
+            },
             "final": false
         },
         "6": {
@@ -249,37 +242,31 @@
             "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [39, 41, 43],
             "waypoints": [
-                [
-                    "Napoli (after 9.5km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Sant'Antonio Abate",
-                    34.4,
-                    "sprint_purple"
-                ],
-                [
-                    "Valico di Chiunzi (656m)",
-                    48.8,
-                    "mountain_2"
-                ],
-                [
-                    "Picco Sant'Angelo (469m)",
-                    95.9,
-                    "mountain_3"
-                ],
-                [
-                    "Sorrento",
-                    107.8,
-                    "bonus"
-                ],
-                [
-                    "Napoli",
-                    162,
-                    "finish"
-                ]
+                ["Napoli (after 9.5km)", 0, "depart_real"],
+                ["Sant'Antonio Abate", 34.4, "sprint_purple"],
+                ["Valico di Chiunzi (656m)", 48.8, "mountain_2"],
+                ["Picco Sant'Angelo (469m)", 95.9, "mountain_3"],
+                ["Sorrento", 107.8, "bonus"],
+                ["Napoli", 162, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Sant'Antonio Abate"],
+                    ["finish", "Napoli"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Sorrento"],
+                    ["finish", "Napoli"]
+                ],
+                "kom": [
+                    ["mountain_2", "Valico di Chiunzi"],
+                    ["mountain_3", "Picco Sant'Angelo"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Sant'Antonio Abate"],
+                    ["bonus", "Sorrento"]
+                ]
+            },
             "final": false
         },
         "7": {
@@ -291,37 +278,32 @@
             "description": [],
             "speeds": [35, 37, 39],
             "waypoints": [
-                [
-                    "Capua (after 2.6km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Castel di Sangro",
-                    91.1,
-                    "sprint_purple"
-                ],
-                [
-                    "Roccaraso (1254m)",
-                    100.5,
-                    "mountain_2"
-                ],
-                [
-                    "Bussi sul Tirino",
-                    160.6,
-                    "bonus"
-                ],
-                [
-                    "Calascio (1190m)",
-                    185.8,
-                    "mountain_2"
-                ],
-                [
-                    "Gran Sasso d'Italia (2130m)<br>(Campo Imperature)",
-                    218,
-                    "finish_mountain_1"
-                ]
+                ["Capua (after 2.6km)", 0, "depart_real"],
+                ["Castel di Sangro", 91.1, "sprint_purple"],
+                ["Roccaraso (1254m)", 100.5, "mountain_2"],
+                ["Bussi sul Tirino", 160.6, "bonus"],
+                ["Calascio (1190m)", 185.8, "mountain_2"],
+                ["Gran Sasso d'Italia (2130m)<br>(Campo Imperature)", 218, "finish_mountain_1"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Castel di Sangro"],
+                    ["finish_mountain_1", "Gran Sasso d'Italia"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Bussi sul Tirino"],
+                    ["finish_mountain_1", "Gran Sasso d'Italia"]
+                ],
+                "kom": [
+                    ["mountain_2", "Roccaraso"],
+                    ["mountain_2", "Calascio"],
+                    ["finish_mountain_1", "Gran Sasso d'Italia"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Castel di Sangro"],
+                    ["bonus", "Bussi sul Tirino"]
+                ]
+            },
             "final": false
         },
         "8": {
@@ -333,46 +315,34 @@
             "description": ["The three-kilometre rule applies on this stage."],
             "speeds": [38, 40, 42],
             "waypoints": [
-                [
-                    "Terni (after 5.2km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Foligno",
-                    47.9,
-                    "sprint_purple"
-                ],
-                [
-                    "Sigillo",
-                    97.3,
-                    "bonus"
-                ],
-                [
-                    "I Cappuccini (329m)",
-                    156.8,
-                    "mountain_4"
-                ],
-                [
-                    "Fossombrone (1st passage)",
-                    162.6
-                ],
-                [
-                    "Monte delle Cesane (628m)",
-                    185.8,
-                    "mountain_2"
-                ],
-                [
-                    "I Cappuccini (329m)",
-                    201.1,
-                    "mountain_4"
-                ],
-                [
-                    "Fossombrone",
-                    207,
-                    "finish"
-                ]
+                ["Terni (after 5.2km)", 0, "depart_real"],
+                ["Foligno", 47.9, "sprint_purple"],
+                ["Sigillo", 97.3, "bonus"],
+                ["I Cappuccini (329m)", 156.8, "mountain_4"],
+                ["Fossombrone (1st passage)", 162.6],
+                ["Monte delle Cesane (628m)", 185.8, "mountain_2"],
+                ["I Cappuccini (329m)", 201.1, "mountain_4"],
+                ["Fossombrone", 207, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Foligno"],
+                    ["finish", "Fossombrone"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Sigillo"],
+                    ["finish", "Fossombrone"]
+                ],
+                "kom": [
+                    ["mountain_4", "I Cappuccini"],
+                    ["mountain_2", "Monte delle Cesane"],
+                    ["mountain_4", "I Cappuccini"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Foligno"],
+                    ["bonus", "Sigillo"]
+                ]
+            },
             "final": false
         },
         "9": {
@@ -385,32 +355,17 @@
             "range": [47, 61],
             "speeds": [52, 54, 56],
             "waypoints": [
-                [
-                    "Savignano sul Rubicone",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Fossa",
-                    13,
-                    "timecheck"
-                ],
-                [
-                    "Ruffio",
-                    23.1,
-                    "timecheck"
-                ],
-                [
-                    "Cesena",
-                    29,
-                    "timecheck"
-                ],
-                [
-                    "Cesena (Technogym Village)",
-                    35,
-                    "finish"
-                ]
+                ["Savignano sul Rubicone", 0, "depart_real"],
+                ["Fossa", 13, "timecheck"],
+                ["Ruffio", 23.1, "timecheck"],
+                ["Cesena", 29, "timecheck"],
+                ["Cesena (Technogym Village)", 35, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["finish", "Cesena (Technogym Village)"]
+                ]
+            },
             "final": false
         },
         "10": {
@@ -422,37 +377,31 @@
             "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [38, 40, 42],
             "waypoints": [
-                [
-                    "Scandiano (after 6.5km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Villa Minozzo",
-                    48.1,
-                    "sprint_purple"
-                ],
-                [
-                    "Passo delle Radici (1527m)",
-                    87.5,
-                    "mountain_2"
-                ],
-                [
-                    "Monteperpoli (491m)",
-                    120.7,
-                    "mountain_4"
-                ],
-                [
-                    "Ponte a Moriano",
-                    154.1,
-                    "bonus"
-                ],
-                [
-                    "Viareggio",
-                    196,
-                    "finish"
-                ]
+                ["Scandiano (after 6.5km)", 0, "depart_real"],
+                ["Villa Minozzo", 48.1, "sprint_purple"],
+                ["Passo delle Radici (1527m)", 87.5, "mountain_2"],
+                ["Monteperpoli (491m)", 120.7, "mountain_4"],
+                ["Ponte a Moriano", 154.1, "bonus"],
+                ["Viareggio", 196, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Villa Minozzo"],
+                    ["finish", "Viareggio"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Ponte a Moriano"],
+                    ["finish", "Viareggio"]
+                ],
+                "kom": [
+                    ["mountain_2", "Passo delle Radici"],
+                    ["mountain_4", "Monteperpoli"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Villa Minozzo"],
+                    ["bonus", "Ponte a Moriano"]
+                ]
+            },
             "final": false
         },
         "11": {
@@ -464,42 +413,33 @@
             "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [38, 40, 42],
             "waypoints": [
-                [
-                    "Camaiore (after 10km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Borghetto di Vara",
-                    62.1,
-                    "sprint_purple"
-                ],
-                [
-                    "Passo del Bracco (610m)",
-                    80,
-                    "mountain_3"
-                ],
-                [
-                    "Colla di Boasi (615m)",
-                    143,
-                    "mountain_3"
-                ],
-                [
-                    "Busalla",
-                    169.7,
-                    "bonus"
-                ],
-                [
-                    "Passo della Castagnola (583m)",
-                    176.2,
-                    "mountain_4"
-                ],
-                [
-                    "Tortona",
-                    219,
-                    "finish"
-                ]
+                ["Camaiore (after 10km)", 0, "depart_real"],
+                ["Borghetto di Vara", 62.1, "sprint_purple"],
+                ["Passo del Bracco (610m)", 80, "mountain_3"],
+                ["Colla di Boasi (615m)", 143, "mountain_3"],
+                ["Busalla", 169.7, "bonus"],
+                ["Passo della Castagnola (583m)", 176.2, "mountain_4"],
+                ["Tortona", 219, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Borghetto di Vara"],
+                    ["finish", "Tortona"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Busalla"],
+                    ["finish", "Tortona"]
+                ],
+                "kom": [
+                    ["mountain_3", "Passo del Bracco"],
+                    ["mountain_3", "Colla di Boasi"],
+                    ["mountain_4", "Passo della Castagnola"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Borghetto di Vara"],
+                    ["bonus", "Busalla"]
+                ]
+            },
             "final": false
         },
         "12": {
@@ -511,41 +451,32 @@
             "description": ["The three-kilometre rule applies on this stage."],
             "speeds": [38, 40, 42],
             "waypoints": [
-                [
-                    "Bra (after 7.9km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Pedaggera (732m)",
-                    36,
-                    "mountain_3"
-                ],
-                [
-                    "Ceresole d'Alba",
-                    79.8,
-                    "sprint_purple"
-                ],
-                [
-                    "Rivoli (1st passage)",
-                    125.7
-                ],
-                [
-                    "Buttigliera Alta",
-                    134.4,
-                    "bonus"
-                ],
-                [
-                    "Colle Braida (1007m)",
-                    151.1,
-                    "mountain_2"
-                ],
-                [
-                    "Rivoli",
-                    179,
-                    "finish"
-                ]
+                ["Bra (after 7.9km)", 0, "depart_real"],
+                ["Pedaggera (732m)", 36, "mountain_3"],
+                ["Ceresole d'Alba", 79.8, "sprint_purple"],
+                ["Rivoli (1st passage)", 125.7],
+                ["Buttigliera Alta", 134.4, "bonus"],
+                ["Colle Braida (1007m)", 151.1, "mountain_2"],
+                ["Rivoli", 179, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Ceresole d'Alba"],
+                    ["finish", "Rivoli"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Buttigliera Alta"],
+                    ["finish", "Rivoli"]
+                ],
+                "kom": [
+                    ["mountain_3", "Pedaggera"],
+                    ["mountain_2", "Colle Braida"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Ceresole d'Alba"],
+                    ["bonus", "Buttigliera Alta"]
+                ]
+            },
             "final": false
         },
         "13": {
@@ -557,37 +488,32 @@
             "description": [],
             "speeds": [32, 34, 36],
             "waypoints": [
-                [
-                    "Borgofranco d'Ivrea (after 2.8km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Nus",
-                    49.1,
-                    "sprint_purple"
-                ],
-                [
-                    "Col du Grand Saint-Bernard (2469m)<br>(Cima Coppi)",
-                    96.1,
-                    "mountain_0"
-                ],
-                [
-                    "Verbier",
-                    141.1,
-                    "bonus"
-                ],
-                [
-                    "Croix de Coeur (2174m)",
-                    147.9,
-                    "mountain_1"
-                ],
-                [
-                    "Crans Montana (Valais) (1456m)",
-                    207,
-                    "finish_mountain_1"
-                ]
+                ["Borgofranco d'Ivrea (after 2.8km)", 0, "depart_real"],
+                ["Nus", 49.1, "sprint_purple"],
+                ["Col du Grand Saint-Bernard (2469m)<br>(Cima Coppi)", 96.1, "mountain_0"],
+                ["Verbier", 141.1, "bonus"],
+                ["Croix de Coeur (2174m)", 147.9, "mountain_1"],
+                ["Crans Montana (Valais) (1456m)", 207, "finish_mountain_1"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Nus"],
+                    ["finish_mountain_1", "Crans Montana"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Verbier"],
+                    ["finish_mountain_1", "Crans Montana"]
+                ],
+                "kom": [
+                    ["mountain_0", "Col du Grand Saint-Bernard"],
+                    ["mountain_1", "Croix de Coeur"],
+                    ["finish_mountain_1", "Crans Montana"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Nus"],
+                    ["bonus", "Verbier"]
+                ]
+            },
             "final": false
         },
         "14": {
@@ -599,32 +525,29 @@
             "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [37, 39, 41],
             "waypoints": [
-                [
-                    "Sierre (Valais) (after 6km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Simplon Pass/Passo del Sempione (2004m)",
-                    56,
-                    "mountain_1"
-                ],
-                [
-                    "Villadossola",
-                    101.7,
-                    "sprint_purple"
-                ],
-                [
-                    "Stresa",
-                    138.3,
-                    "bonus"
-                ],
-                [
-                    "Cassano Magnago",
-                    194,
-                    "finish"
-                ]
+                ["Sierre (Valais) (after 6km)", 0, "depart_real"],
+                ["Simplon Pass/Passo del Sempione (2004m)", 56, "mountain_1"],
+                ["Villadossola", 101.7, "sprint_purple"],
+                ["Stresa", 138.3, "bonus"],
+                ["Cassano Magnago", 194, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Villadossola"],
+                    ["finish", "Cassano Magnago"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Stresa"],
+                    ["finish", "Cassano Magnago"]
+                ],
+                "kom": [
+                    ["mountain_1", "Simplon Pass/Passo del Sempione"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Villadossola"],
+                    ["bonus", "Stresa"]
+                ]
+            },
             "final": false
         },
         "15": {
@@ -636,51 +559,36 @@
             "description": ["The three-kilometre rule applies on this stage."],
             "speeds": [35, 37, 39],
             "waypoints": [
-                [
-                    "Seregno (after 4.7km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Valico di Valcava (1336m)",
-                    46.4,
-                    "mountain_1"
-                ],
-                [
-                    "Nembro",
-                    87.3,
-                    "sprint_purple"
-                ],
-                [
-                    "Selvino (946m)",
-                    98.6,
-                    "mountain_2"
-                ],
-                [
-                    "Miragolo San Salvatore (945m)",
-                    111.3,
-                    "mountain_2"
-                ],
-                [
-                    "Bergamo (1st passage)",
-                    141.2
-                ],
-                [
-                    "Almenno San Bartolomeo",
-                    153.7,
-                    "bonus"
-                ],
-                [
-                    "Roncola Alta",
-                    164.4,
-                    "mountain_2"
-                ],
-                [
-                    "Bergamo",
-                    195,
-                    "finish"
-                ]
+                ["Seregno (after 4.7km)", 0, "depart_real"],
+                ["Valico di Valcava (1336m)", 46.4, "mountain_1"],
+                ["Nembro", 87.3, "sprint_purple"],
+                ["Selvino (946m)", 98.6, "mountain_2"],
+                ["Miragolo San Salvatore (945m)", 111.3, "mountain_2"],
+                ["Bergamo (1st passage)", 141.2],
+                ["Almenno San Bartolomeo", 153.7, "bonus"],
+                ["Roncola Alta", 164.4, "mountain_2"],
+                ["Bergamo", 195, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Nembro"],
+                    ["finish", "Bergamo"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Almenno San Bartolomeo"],
+                    ["finish", "Bergamo"]
+                ],
+                "kom": [
+                    ["mountain_1", "Valico di Valcava"],
+                    ["mountain_2", "Selvino"],
+                    ["mountain_2", "Miragolo San Salvatore"],
+                    ["mountain_2", "Roncola Alta"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Nembro"],
+                    ["bonus", "Almenno San Bartolomeo"]
+                ]
+            },
             "final": false
         },
         "16": {
@@ -692,47 +600,36 @@
             "description": [],
             "speeds": [31, 33, 35],
             "waypoints": [
-                [
-                    "Sabbio Chiese (after 6.5km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Passo di Santa Barbara (1169m)",
-                    76.8,
-                    "mountain_1"
-                ],
-                [
-                    "Passo Bordala (1253m)",
-                    84.2,
-                    "mountain_3"
-                ],
-                [
-                    "Roverto",
-                    103.5,
-                    "sprint_purple"
-                ],
-                [
-                    "Matassone (832m)",
-                    116.4,
-                    "mountain_2"
-                ],
-                [
-                    "Serrada (1250m)",
-                    153.5,
-                    "mountain_2"
-                ],
-                [
-                    "Aldeno",
-                    181.1,
-                    "bonus"
-                ],
-                [
-                    "Monte Bondone (1632m)",
-                    203,
-                    "finish_mountain_1"
-                ]
+                ["Sabbio Chiese (after 6.5km)", 0, "depart_real"],
+                ["Passo di Santa Barbara (1169m)", 76.8, "mountain_1"],
+                ["Passo Bordala (1253m)", 84.2, "mountain_3"],
+                ["Roverto", 103.5, "sprint_purple"],
+                ["Matassone (832m)", 116.4, "mountain_2"],
+                ["Serrada (1250m)", 153.5, "mountain_2"],
+                ["Aldeno", 181.1, "bonus"],
+                ["Monte Bondone (1632m)", 203, "finish_mountain_1"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Roverto"],
+                    ["finish_mountain_1", "Monte Bondone"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Aldeno"],
+                    ["finish_mountain_1", "Monte Bondone"]
+                ],
+                "kom": [
+                    ["mountain_1", "Passo di Santa Barbara"],
+                    ["mountain_3", "Passo Bordala"],
+                    ["mountain_2", "Matassone"],
+                    ["mountain_2", "Serrada"],
+                    ["finish_mountain_1", "Monte Bondone"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Roverto"],
+                    ["bonus", "Aldeno"]
+                ]
+            },
             "final": false
         },
         "17": {
@@ -744,27 +641,25 @@
             "description": ["The three-kilometre rule applies on this stage."],
             "speeds": [43, 45, 47],
             "waypoints": [
-                [
-                    "Pergine Valsugana (after 2.6km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Rosà",
-                    83,
-                    "sprint_purple"
-                ],
-                [
-                    "Lido di Jesolo",
-                    165.7,
-                    "bonus"
-                ],
-                [
-                    "Caorle",
-                    197,
-                    "finish"
-                ]
+                ["Pergine Valsugana (after 2.6km)", 0, "depart_real"],
+                ["Rosà", 83, "sprint_purple"],
+                ["Lido di Jesolo", 165.7, "bonus"],
+                ["Caorle", 197, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Rosà"],
+                    ["finish", "Caorle"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Lido di Jesolo"],
+                    ["finish", "Caorle"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Rosà"],
+                    ["bonus", "Lido di Jesolo"]
+                ]
+            },
             "final": false
         },
         "18": {
@@ -776,47 +671,36 @@
             "description": [],
             "speeds": [32, 34, 36],
             "waypoints": [
-                [
-                    "Oderzo (after 5.8km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Passo della Crosetta (1118m)",
-                    40.8,
-                    "mountain_1"
-                ],
-                [
-                    "Pieve d'Alpago (691m)",
-                    68.3,
-                    "mountain_4"
-                ],
-                [
-                    "Pieve di Cadore",
-                    115.7,
-                    "sprint_purple"
-                ],
-                [
-                    "Forcella Cibiana (1530m)",
-                    135.2,
-                    "mountain_1"
-                ],
-                [
-                    "Forno di Zoldo",
-                    147.1,
-                    "bonus"
-                ],
-                [
-                    "Coi (1501m)",
-                    155.7,
-                    "mountain_2"
-                ],
-                [
-                    "Val di Zoldo (1518m)",
-                    161,
-                    "finish_mountain_2"
-                ]
+                ["Oderzo (after 5.8km)", 0, "depart_real"],
+                ["Passo della Crosetta (1118m)", 40.8, "mountain_1"],
+                ["Pieve d'Alpago (691m)", 68.3, "mountain_4"],
+                ["Pieve di Cadore", 115.7, "sprint_purple"],
+                ["Forcella Cibiana (1530m)", 135.2, "mountain_1"],
+                ["Forno di Zoldo", 147.1, "bonus"],
+                ["Coi (1501m)", 155.7, "mountain_2"],
+                ["Val di Zoldo (1518m)", 161, "finish_mountain_2"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Pieve di Cadore"],
+                    ["finish_mountain_2", "Val di Zoldo"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Forno di Zoldo"],
+                    ["finish_mountain_2", "Val di Zoldo"]
+                ],
+                "kom": [
+                    ["mountain_1", "Passo della Crosetta"],
+                    ["mountain_4", "Pieve d'Alpago"],
+                    ["mountain_1", "Forcella Cibiana"],
+                    ["mountain_2", "Coi"],
+                    ["finish_mountain_2", "Val di Zoldo"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Pieve di Cadore"],
+                    ["bonus", "Forno di Zoldo"]
+                ]
+            },
             "final": false
         },
         "19": {
@@ -828,47 +712,36 @@
             "description": [],
             "speeds": [32, 34, 36],
             "waypoints": [
-                [
-                    "Longarone (after 8.2km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Caprile",
-                    64.4,
-                    "sprint_purple"
-                ],
-                [
-                    "Passo Campolongo (1875m)",
-                    87.4,
-                    "mountain_2"
-                ],
-                [
-                    "Passo Valparola (2196m)",
-                    112.1,
-                    "mountain_1"
-                ],
-                [
-                    "Passo Giau (2236m)",
-                    143.5,
-                    "mountain_1"
-                ],
-                [
-                    "Cortina d'Ampezzo",
-                    161.3,
-                    "bonus"
-                ],
-                [
-                    "Passo Tre Croci (1805m)",
-                    169.5,
-                    "mountain_2"
-                ],
-                [
-                    "Tre Cime di Lavaredo (1518m)",
-                    183,
-                    "finish_mountain_1"
-                ]
+                ["Longarone (after 8.2km)", 0, "depart_real"],
+                ["Caprile", 64.4, "sprint_purple"],
+                ["Passo Campolongo (1875m)", 87.4, "mountain_2"],
+                ["Passo Valparola (2196m)", 112.1, "mountain_1"],
+                ["Passo Giau (2236m)", 143.5, "mountain_1"],
+                ["Cortina d'Ampezzo", 161.3, "bonus"],
+                ["Passo Tre Croci (1805m)", 169.5, "mountain_2"],
+                ["Tre Cime di Lavaredo (1518m)", 183, "finish_mountain_1"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Caprile"],
+                    ["finish_mountain_1", "Tre Cime di Lavaredo"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Cortina d'Ampezzo"],
+                    ["finish_mountain_1", "Tre Cime di Lavaredo"]
+                ],
+                "kom": [
+                    ["mountain_2", "Passo Campolongo"],
+                    ["mountain_1", "Passo Valparola"],
+                    ["mountain_1", "Passo Giau"],
+                    ["mountain_2", "Passo Tre Croci"],
+                    ["finish_mountain_1", "Tre Cime di Lavaredo"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Caprile"],
+                    ["bonus", "Cortina d'Ampezzo"]
+                ]
+            },
             "final": false
         },
         "20": {
@@ -878,38 +751,23 @@
             "coefficient": "E",
             "length": 18.6,
             "description": ["Monte Lussari KOM timed from the Base of Climb timecheck."],
-            "range": [
-                20,
-                34
-            ],
+            "range": [20, 34],
             "speeds": [25, 27, 29],
             "waypoints": [
-                [
-                    "Tarvisio",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Base of Climb",
-                    10.8,
-                    "timecheck"
-                ],
-                [
-                    "Halfway Up",
-                    14.3,
-                    "timecheck"
-                ],
-                [
-                    "Sella Prasnig",
-                    17.8,
-                    "timecheck"
-                ],
-                [
-                    "Monte Lussari (1760m)",
-                    18.6,
-                    "finish_mountain_1"
-                ]
+                ["Tarvisio", 0, "depart_real"],
+                ["Base of Climb", 10.8, "timecheck"],
+                ["Halfway Up", 14.3, "timecheck"],
+                ["Sella Prasnig", 17.8, "timecheck"],
+                ["Monte Lussari (1760m)", 18.6, "finish_mountain_1"]
             ],
+            "awards": {
+                "points": [
+                    ["finish_mountain_1", "Monte Lussari"]
+                ],
+                "kom": [
+                    ["finish_mountain_1", "Monte Lussari"]
+                ]
+            },
             "final": false
         },
         "21": {
@@ -921,47 +779,30 @@
             "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
             "speeds": [38, 40, 42],
             "waypoints": [
-                [
-                    "Roma - Eur (Westbound) (after 2.5km)",
-                    0,
-                    "depart_real"
-                ],
-                [
-                    "Roma - Eur (Eastbound)",
-                    35.7
-                ],
-                [
-                    "Roma (1st passage)",
-                    44.4
-                ],
-                [
-                    "Roma (end of lap 1)",
-                    58
-                ],
-                [
-                    "Roma (end of lap 2)",
-                    71.6,
-                    "sprint_purple"
-                ],
-                [
-                    "Roma (end of lap 3)",
-                    85.2
-                ],
-                [
-                    "Roma (end of lap 4)",
-                    98.8,
-                    "bonus"
-                ],
-                [
-                    "Roma (end of lap 5)",
-                    112.4
-                ],
-                [
-                    "Roma",
-                    126,
-                    "finish"
-                ]
+                ["Roma - Eur (Westbound) (after 2.5km)", 0, "depart_real"],
+                ["Roma - Eur (Eastbound)", 35.7],
+                ["Roma (1st passage)", 44.4],
+                ["Roma (end of lap 1)", 58],
+                ["Roma (end of lap 2)", 71.6, "sprint_purple"],
+                ["Roma (end of lap 3)", 85.2],
+                ["Roma (end of lap 4)", 98.8, "bonus"],
+                ["Roma (end of lap 5)", 112.4],
+                ["Roma", 126, "finish"]
             ],
+            "awards": {
+                "points": [
+                    ["sprint_purple", "Roma (end of lap 2)"],
+                    ["finish", "Roma"]
+                ],
+                "time_bonus": [
+                    ["bonus", "Roma (end of lap 4)"],
+                    ["finish", "Roma"]
+                ],
+                "intermediate": [
+                    ["sprint_purple", "Roma (end of lap 2)"],
+                    ["bonus", "Roma (end of lap 4)"]
+                ]
+            },
             "final": false
         }
     }

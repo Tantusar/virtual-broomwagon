@@ -293,6 +293,35 @@ for item in iglob('**/top.json', recursive=True):
             if data["final"]:
                 stageinfo.tail += f" • {timeformat(finalminutes)} • {finalspeed:.1f}km/h"
 
+            for award, awards in data["awards"].items():
+                ET.SubElement(working, "h3").text = current["awards"][award]["title"]
+
+                awardset = ET.SubElement(working, "div", {"class": "awardset"})
+
+                for awardtype, location in awards:
+                    svgtarget = awardtype
+
+                    while type(current["awards"][award][awardtype]) is str:
+                        awardtype = current["awards"][award][awardtype]
+
+                    if type(current["awards"][award][awardtype]) is dict:
+                        awardlist = current["awards"][award][awardtype][data["coefficient"]]
+                    else:
+                        awardlist = current["awards"][award][awardtype]
+
+                    awardwrap = ET.SubElement(awardset, "div", {"class": "awardwrap"})
+
+                    ET.SubElement(ET.SubElement(awardwrap, "div"), "object", {"data": f"/sprites/{svgtarget}.svg"})
+
+                    awardinner = ET.SubElement(awardwrap, "div")
+
+                    ET.SubElement(awardinner, "h4").text = location
+
+                    awardinnerlist = ET.SubElement(awardinner, "ol")
+
+                    for a in awardlist:
+                        ET.SubElement(awardinnerlist, "li").text = a
+
             filename = 'output/' + subitem.replace('.json', f'/{c}.html')
             os.makedirs(os.path.dirname(filename), exist_ok=True)
 
