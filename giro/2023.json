@@ -235,7 +235,7 @@
                     ["bonus", "Battipaglia"]
                 ]
             },
-            "final": false
+            "final": [4, 30, 19]
         },
         "6": {
             "title": "Napoli – Napoli",
