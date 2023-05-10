@@ -24,6 +24,7 @@ h1 {
 h2 {
     font-size: 200%;
     margin: 1rem 0;
+    page-break-after: avoid;
 }
 
 h3 {
@@ -209,6 +210,14 @@ h4 {
     margin: 0 0 8px;
 }
 
+h3 {
+    page-break-after: avoid;
+}
+
+.awardset {
+    page-break-inside: avoid;
+}
+
 .awardset th {
     height: 24px;
 }
@@ -245,7 +254,7 @@ h4 {
     --grey: hsl(300, 50%, 80%);
 }
 
-@media screen and (min-width: calc(848px + 4rem)) {
+@media screen and (min-width: calc(848px + 4rem)), print {
     .awardcontainer {
         display: grid;
         gap: 1rem;
@@ -262,5 +271,11 @@ h4 {
     .awardcontainer table {
         margin: 0;
         height: fit-content;
+    }
+}
+
+@media print {
+    body {
+        margin: 0;
     }
 }
