@@ -304,9 +304,9 @@ for item in iglob('**/top.json', recursive=True):
 
                     awardtitle = ET.SubElement(awardset, "thead")
 
-                    ET.SubElement(awardtitle, "th")
+                    ET.SubElement(ET.SubElement(awardtitle, "th"), "object")
 
-                    ET.SubElement(awardtitle, "th").text = awards["title"]
+                    ET.SubElement(awardtitle, "th").text = current["awards"][award]["title"]
 
                     for awardtype, location in awards:
                         svgtarget = awardtype
