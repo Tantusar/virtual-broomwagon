@@ -302,6 +302,9 @@ for item in iglob('**/top.json', recursive=True):
                 for award, awards in data["awards"].items():
                     awardset = ET.SubElement(main, "table")
 
+                    if current["awards"][award]["class"]:
+                        awardset.attrib["class"] = awardset.attrib.get("class", "") + " " + current["awards"][award]["class"]
+
                     awardtitle = ET.SubElement(awardset, "thead")
 
                     ET.SubElement(ET.SubElement(awardtitle, "th"), "object")

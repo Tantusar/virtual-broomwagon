@@ -16,6 +16,7 @@
     "awards": {
         "time_bonus": {
             "title": "Bonus Time",
+            "class": "pink",
             "bonus": ["3\"", "2\"", "1\""],
             "finish": ["10\"", "6\"", "4\""],
             "finish_mountain_0": "finish",
@@ -26,6 +27,7 @@
         },
         "points": {
             "title": "Points Classification (Maglia Ciclamino)",
+            "class": "purple",
             "sprint_purple": ["12", "8", "6", "5", "4", "3", "2", "1"],
             "finish": {
                 "A": ["50", "35", "25", "18", "14", "12", "10", "8", "7", "6", "5", "4", "3", "2", "1"],
@@ -43,6 +45,7 @@
         },
         "kom": {
             "title": "King of the Mountains (Maglia Azzurra)",
+            "class": "blue",
             "mountain_0": ["50", "30", "20", "14", "10", "6", "4", "2", "1"],
             "mountain_1": ["40", "18", "12", "9", "6", "4", "2", "1"],
             "mountain_2": ["18", "8", "6", "4", "2", "1"],
@@ -56,6 +59,7 @@
         },
         "intermediate": {
             "title": "Intermediate Sprints Classification",
+            "class": "",
             "sprint_purple": ["10", "6", "3", "2", "1"],
             "bonus": "sprint_purple"
             }

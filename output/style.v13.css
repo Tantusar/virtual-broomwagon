@@ -1,6 +1,7 @@
 :root {
     font-family: 'Inter', sans-serif;
     font-feature-settings: 'tnum';
+    --grey: hsl(0, 0%, 90%);
 }
 
 @supports (font-variation-settings: normal) {
@@ -79,7 +80,7 @@ a[disabled] {
 #timeGraph {
     grid-area: timeGraph;
     width: 100%;
-    background: rgb(230, 230, 230);
+    background: var(--grey);
     border-radius: 8px 8px 8px 0px;
     display: none;
 }
@@ -112,7 +113,7 @@ th, td {
 }
 
 td {
-    border-top: rgb(230, 230, 230) solid 1px;
+    border-top: var(--grey) solid 1px;
 }
 
 :is(th, td):last-child {
@@ -125,7 +126,7 @@ th {
 
 :is(th, td):first-child {
     width: 48px;
-    background: rgb(230, 230, 230);
+    background: var(--grey);
     padding: 8px 8px;
     text-align: center;
     font-size: 140%;
@@ -187,14 +188,14 @@ a {
 }
 
 .annotations text {
-    stroke:rgb(230, 230, 230);
+    stroke: var(--grey);
     stroke-width: 4px;
     fill: black;
         paint-order: stroke fill;
 }
 
 article {
-    background:rgb(230, 230, 230);
+    background: var(--grey);
     padding: 1rem 2rem;
     border-radius: 8px;
     margin: 1rem 0;
@@ -208,59 +209,38 @@ h4 {
     margin: 0 0 8px;
 }
 
-.awardset {
-    display: grid;
-    grid-auto-columns: 240px;
-    gap: 8px;
-    width: 100%;
-    grid-auto-flow: column;
+.awardset th {
+    height: 24px;
 }
 
-.awardwrap {
-    display: grid;
-    grid-template-columns: 64px auto;
-    height: fit-content;
+.red {
+    --grey: hsl(0, 50%, 70%);
 }
 
-.awardwrap > div {
-    padding: 8px;
+.orange {
+    --grey: hsl(30, 50%, 70%);
 }
 
-.awardwrap object {
-    width: 48px;
-    border-radius: 8px;
+.yellow {
+    --grey: hsl(60, 50%, 70%);
 }
 
-.awardwrap > :first-child {
-    background: rgb(230, 230, 230);
-    border-radius: 8px 0 0 8px;
+.green {
+    --grey: hsl(120, 50%, 70%);
 }
 
-.awardwrap > :last-child {
-    max-width: 172px;
+.teal {
+    --grey: hsl(180, 50%, 70%);
 }
 
-ol {
-    margin: 8px 0 0;
-    counter-reset: item;
-    padding: 0;
-    width: fit-content;
+.blue {
+    --grey: hsl(240, 50%, 70%);
 }
 
-li:before {
-    display: inline-block;
-    content: counter(item) ". ";
-    counter-increment: item;
-    text-align: left;
-    width: 1.5em;
+.purple {
+    --grey: hsl(270, 50%, 70%);
 }
 
-li {
-    display: block;
-}
-
-ol.long {
-    column-count: 2;
-    column-gap: 24px;
-    column-rule: rgb(230, 230, 230) 1px solid;
+.pink {
+    --grey: hsl(300, 50%, 70%);
 }
