@@ -244,3 +244,9 @@ h4 {
 .pink {
     --grey: hsl(300, 50%, 80%);
 }
+
+.awardcontainer {
+    display: grid;
+    gap: 8px;
+    grid-auto-columns: minmax(400px, 1fr);
+}

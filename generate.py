@@ -299,8 +299,10 @@ for item in iglob('**/top.json', recursive=True):
 
                 ET.SubElement(main, "h3").text = "Classification Stakes"
 
+                awardconatiner = ET.SubElement(main, "div", {"class": "awardcontainer"})
+
                 for award, awards in data["awards"].items():
-                    awardset = ET.SubElement(main, "table", {"class": "awardset"})
+                    awardset = ET.SubElement(awardcontainer, "table", {"class": "awardset"})
 
                     if current["awards"][award]["class"]:
                         awardset.attrib["class"] += " " + current["awards"][award]["class"]
