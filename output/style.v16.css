@@ -245,8 +245,16 @@ h4 {
     --grey: hsl(300, 50%, 80%);
 }
 
-.awardcontainer {
-    display: grid;
-    gap: 8px;
-    grid-auto-columns: minmax(400px, 1fr);
+@media screen and (min-width: calc(848px + 4rem)) {
+    .awardcontainer {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem 0;
+    }
+    
+    .awardcontainer table {
+        margin: 0;
+        height: fit-content;
+    }
 }
