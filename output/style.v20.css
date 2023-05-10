@@ -271,15 +271,7 @@ h4 {
         max-width: revert;
     }
 
-    h3 {
-        page-break-after: avoid;
-    }
-
-    .awardcontainer {
-        break-before: avoid;
-    }
-
-    .awardset {
-        break-inside: avoid;
+    main h3 {
+        break-before: always;
     }
 }
