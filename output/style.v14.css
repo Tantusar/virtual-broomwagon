@@ -214,33 +214,33 @@ h4 {
 }
 
 .red {
-    --grey: hsl(0, 50%, 70%);
+    --grey: hsl(0, 50%, 80%);
 }
 
 .orange {
-    --grey: hsl(30, 50%, 70%);
+    --grey: hsl(30, 50%, 80%);
 }
 
 .yellow {
-    --grey: hsl(60, 50%, 70%);
+    --grey: hsl(60, 50%, 80%);
 }
 
 .green {
-    --grey: hsl(120, 50%, 70%);
+    --grey: hsl(120, 50%, 80%);
 }
 
 .teal {
-    --grey: hsl(180, 50%, 70%);
+    --grey: hsl(180, 50%, 80%);
 }
 
 .blue {
-    --grey: hsl(240, 50%, 70%);
+    --grey: hsl(240, 50%, 80%);
 }
 
 .purple {
-    --grey: hsl(270, 50%, 70%);
+    --grey: hsl(270, 50%, 80%);
 }
 
 .pink {
-    --grey: hsl(300, 50%, 70%);
+    --grey: hsl(300, 50%, 80%);
 }
