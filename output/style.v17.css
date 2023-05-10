@@ -252,6 +252,12 @@ h4 {
         grid-template-columns: 1fr 1fr;
         margin: 1rem 0;
     }
+
+    @supports (grid-template-rows: masonry) {
+        .awardcontainer {
+            grid-template-rows: masonry;
+        }
+    }
     
     .awardcontainer table {
         margin: 0;
