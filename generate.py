@@ -295,39 +295,39 @@ for item in iglob('**/top.json', recursive=True):
 
             main = working.find(".//main")
 
-            for award, awards in data["awards"].items():
-                ET.SubElement(main, "h3").text = current["awards"][award]["title"]
+            if "awards" in data:
 
-                awardset = ET.SubElement(main, "div", {"class": "awardset"})
+                ET.SubElement(main, "h3").text = "Classification Stakes"
 
-                for awardtype, location in awards:
-                    svgtarget = awardtype
+                for award, awards in data["awards"].items():
+                    awardset = ET.SubElement(main, "table")
 
-                    while type(current["awards"][award][awardtype]) is str:
-                        awardtype = current["awards"][award][awardtype]
+                    awardtitle = ET.SubElement(awardset, "thead")
 
-                    if type(current["awards"][award][awardtype]) is dict:
-                        awardlist = current["awards"][award][awardtype][data["coefficient"]]
-                    else:
-                        awardlist = current["awards"][award][awardtype]
+                    ET.SubElement(awardtitle, "th")
 
-                    awardwrap = ET.SubElement(awardset, "div", {"class": "awardwrap"})
+                    ET.SubElement(awardtitle, "th").text = awards["title"]
 
-                    ET.SubElement(ET.SubElement(awardwrap, "div"), "object", {"data": f"/sprites/{svgtarget}.svg"})
+                    for awardtype, location in awards:
+                        svgtarget = awardtype
 
-                    awardinner = ET.SubElement(awardwrap, "div")
+                        while type(current["awards"][award][awardtype]) is str:
+                            awardtype = current["awards"][award][awardtype]
 
-                    ET.SubElement(awardinner, "h4").text = location
+                        if type(current["awards"][award][awardtype]) is dict:
+                            awardlist = current["awards"][award][awardtype][data["coefficient"]]
+                        else:
+                            awardlist = current["awards"][award][awardtype]
 
-                    if len(awardlist) > 10:
-                        awardinnerlist = ET.SubElement(awardinner, "ol", {"class": "long"})
-                    else:
-                        awardinnerlist = ET.SubElement(awardinner, "ol")
+                        awardwrap = ET.SubElement(awardset, "tr")
 
-                    width = max([len(a) for a in awardlist])
+                        ET.SubElement(ET.SubElement(awardwrap, "td"), "object", {"data": f"/sprites/{svgtarget}.svg"})
 
-                    for a in awardlist:
-                        ET.SubElement(awardinnerlist, "li").text = a.rjust(width, " ")
+                        awardinner = ET.SubElement(awardwrap, "td")
+
+                        ET.SubElement(awardinner, "b").text = location
+
+                        ET.SubElement(awardinner, "br").tail = ", ".join(awardlist)
 
             filename = 'output/' + subitem.replace('.json', f'/{c}.html')
             os.makedirs(os.path.dirname(filename), exist_ok=True)
