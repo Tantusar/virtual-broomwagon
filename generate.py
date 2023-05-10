@@ -265,7 +265,7 @@ for item in iglob('**/top.json', recursive=True):
 
                 name = ET.SubElement(row, "td")
 
-                for i, l in enumerate(waypoint[0].split("<br>")):
+                for i, l in enumerate([waypoint[0]] if type(waypoint[0]) is str else waypoint[0]):
                     if not i:
                         name.text = l
                     else:

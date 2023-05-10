@@ -287,7 +287,7 @@
                 ["Roccaraso (1254m)", 100.5, "mountain_2"],
                 ["Bussi sul Tirino", 160.6, "bonus"],
                 ["Calascio (1190m)", 185.8, "mountain_2"],
-                ["Gran Sasso d'Italia (2130m)<br>(Campo Imperature)", 218, "finish_mountain_1"]
+                [["Gran Sasso d'Italia (2130m)", "(Campo Imperature)"], 218, "finish_mountain_1"]
             ],
             "awards": {
                 "points": [
@@ -494,7 +494,7 @@
             "waypoints": [
                 ["Borgofranco d'Ivrea (after 2.8km)", 0, "depart_real"],
                 ["Nus", 49.1, "sprint_purple"],
-                ["Col du Grand Saint-Bernard (2469m)<br>(Cima Coppi)", 96.1, "mountain_0"],
+                [["Col du Grand Saint-Bernard (2469m)","(Cima Coppi)"], 96.1, "mountain_0"],
                 ["Verbier", 141.1, "bonus"],
                 ["Croix de Coeur (2174m)", 147.9, "mountain_1"],
                 ["Crans Montana (Valais) (1456m)", 207, "finish_mountain_1"]
