@@ -1,6 +1,6 @@
 :root {
     font-family: 'Inter', sans-serif;
-    font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum', 'cv05';
     --grey: hsl(0, 0%, 90%);
 }
 
