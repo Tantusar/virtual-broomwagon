@@ -271,7 +271,7 @@
                     ["bonus", "Sorrento"]
                 ]
             },
-            "final": false
+            "final": [3, 44, 45]
         },
         "7": {
             "title": "Capua – Gran Sasso d'Italia",
