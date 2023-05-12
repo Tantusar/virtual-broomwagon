@@ -246,7 +246,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false, me
 
         duration = duration[0] * 60 + duration[1] + duration[2] / 60;
 
-        speed = (Math.floor(timeToSpeed(duration, realDistance) * 10) / 10).toFixed(1);
+        speed = timeToSpeed(duration, realDistance);
 
         if (realDistance == distance) {
             vbroomwagon = converter(speed, coefficient, distance, rounding);
@@ -257,7 +257,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false, me
 
         pace = (distance / speed) * 60
 
-        document.querySelector("section p").innerHTML = `${speed} km/h`
+        document.querySelector("section p").innerHTML = `${(Math.floor(speed * 10) / 10).toFixed(1)} km/h`
 
         if (realDistance != distance) {
             document.querySelector("section p").innerHTML += ` • Pace: ${Math.floor(pace / 60)}h${Math.floor(pace % 60).toString().padStart(2, '0')}'${Math.floor((pace * 60) % 60).toString().padStart(2, '0')}"`
