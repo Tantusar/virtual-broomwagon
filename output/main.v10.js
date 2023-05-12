@@ -1,4 +1,4 @@
-function stagemonolith(coefficient, distance, rounding, range, final = false) {
+function stagemonolith(coefficient, distance, rounding, range, final = false, medianspeed = false) {
 
     function speedFormat(x) {
         return `${x} km/h`
@@ -88,7 +88,9 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
     let timeannotations = []
     let speedannotations = []
 
-    medianspeed = (range[0] + range[1]) / 2
+    if (!medianspeed) {
+        medianspeed = (range[0] + range[1]) / 2
+    }
 
     mediantime = speedToTime(medianspeed, distance)
 
@@ -246,8 +248,6 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
 
         speed = timeToSpeed(duration, realDistance).toFixed(1);
 
-        broomwagon = false
-
         if (realDistance == distance) {
             vbroomwagon = converter(speed, coefficient, distance, rounding);
         } else {
@@ -257,9 +257,15 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
 
         pace = (distance / speed) * 60
 
-        document.querySelector("section p").innerHTML = `${speed} km/h • Pace: ${Math.floor(pace / 60)}h${Math.floor(pace % 60).toString().padStart(2, '0')}'${Math.floor((pace * 60) % 60).toString().padStart(2, '0')}" • Virtual broomwagon: + ${Math.floor(vbroomwagon).toString().padStart(2, '0')}'${Math.floor((vbroomwagon * 60) % 60).toString().padStart(2, '0')}"`
+        document.querySelector("section p").innerHTML = `${speed} km/h`
 
-        if (broomwagon) {
+        if (realDistance != distance) {
+            document.querySelector("section p").innerHTML += ` • Pace: ${Math.floor(pace / 60)}h${Math.floor(pace % 60).toString().padStart(2, '0')}'${Math.floor((pace * 60) % 60).toString().padStart(2, '0')}"`
+        }
+        
+        document.querySelector("section p").innerHTML += ` • Virtual broomwagon: + ${Math.floor(vbroomwagon).toString().padStart(2, '0')}'${Math.floor((vbroomwagon * 60) % 60).toString().padStart(2, '0')}"`
+
+        if (realDistance != distance) {
             document.querySelector("section p").innerHTML += ` (of ${Math.floor(broomwagon).toString().padStart(2, '0')}'${Math.floor((broomwagon * 60) % 60).toString().padStart(2, '0')}")`
         }
     }

@@ -6,6 +6,7 @@ import lxml.html as HTML
 from json import load
 from datetime import datetime
 from math import floor, ceil
+from statistics import median
 import logging
 import os
 
@@ -197,11 +198,19 @@ for item in iglob('**/top.json', recursive=True):
                 "EVENT_ROUNDING": current["coefficients"][0],
                 "STAGE_RANGE": current["coefficients"][1][data["coefficient"]][1],
                 "CURRENT_YEAR": year_roman(),
-                "FINAL_TIME": data["final"] or "false"
+                "FINAL_TIME": data["final"] if "final" in data else "false",
+                "MEDIAN_SPEED": median(data["speeds"]) if "speeds" in data else "false"
             }
 
             if "range" in data:
                 replacements["STAGE_RANGE"] = data["range"]
+
+            elif "speeds" in data:
+                if replacements["STAGE_RANGE"][0]+5 > min(data["speeds"]):
+                    replacements["STAGE_RANGE"][0] = floor(min(data["speeds"]) - 5)
+
+                if replacements["STAGE_RANGE"][1]-5 < max(data["speeds"]):
+                    replacements["STAGE_RANGE"][1] = ceil(max(data["speeds"]) + 5)
 
             for k, v in replacements.items():
                 working = working.replace(k, str(v))
