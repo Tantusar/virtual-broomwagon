@@ -246,7 +246,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false, me
 
         duration = duration[0] * 60 + duration[1] + duration[2] / 60;
 
-        speed = timeToSpeed(duration, realDistance).toFixed(1);
+        speed = (Math.floor(timeToSpeed(duration, realDistance) * 10) / 10).toFixed(1);
 
         if (realDistance == distance) {
             vbroomwagon = converter(speed, coefficient, distance, rounding);

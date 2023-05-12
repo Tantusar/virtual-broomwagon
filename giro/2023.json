@@ -308,7 +308,7 @@
                     ["bonus", "Bussi sul Tirino"]
                 ]
             },
-            "final": false
+            "final": [6, 8, 40]
         },
         "8": {
             "title": "Terni – Fossombrone",
