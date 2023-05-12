@@ -198,7 +198,7 @@ for item in iglob('**/top.json', recursive=True):
                 "EVENT_ROUNDING": current["coefficients"][0],
                 "STAGE_RANGE": current["coefficients"][1][data["coefficient"]][1],
                 "CURRENT_YEAR": year_roman(),
-                "FINAL_TIME": data["final"] if "final" in data else "false",
+                "FINAL_TIME": data.get("final", False) or "false",
                 "MEDIAN_SPEED": median(data["speeds"]) if "speeds" in data else "false"
             }
 
