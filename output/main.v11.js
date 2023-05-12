@@ -267,6 +267,8 @@ function stagemonolith(coefficient, distance, rounding, range, final = false, me
 
         if (realDistance != distance) {
             document.querySelector("section p").innerHTML += ` (of ${Math.floor(broomwagon).toString().padStart(2, '0')}'${Math.floor((broomwagon * 60) % 60).toString().padStart(2, '0')}")`
+        } else {
+            document.querySelector("section p").innerHTML = document.querySelector("section p").innerHTML.replace("Virtual broomwagon:", "Time cut:")
         }
     }
 
