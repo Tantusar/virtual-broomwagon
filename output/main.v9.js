@@ -138,7 +138,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
                 xLine: true,
                 yLine: true,
                 renderer: function (x, y, index) {
-                    x = x.toFixed(1);
+                    x = (floor(x * 10) / 10).toFixed(1);
                     x = speedFormat(x);
 
                     y = overageFormat(y);
@@ -196,10 +196,10 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
                 xLine: true,
                 yLine: true,
                 renderer: function (x, y, index) {
-                    x = x.toFixed(1);
+                    x = (floor(x * 60) / 60);
                     x = timeFormat(x);
 
-                    y = overageFormat(y);
+                    y = overageFormat(floor(y));
 
                     return `${x}\n${y}`
                 }
@@ -246,13 +246,22 @@ function stagemonolith(coefficient, distance, rounding, range, final = false) {
 
         speed = timeToSpeed(duration, realDistance).toFixed(1);
 
+        broomwagon = false
+
         if (realDistance == distance) {
-            broomwagon = converter(speed, coefficient, distance, rounding);
+            vbroomwagon = converter(speed, coefficient, distance, rounding);
         } else {
-            broomwagon = converter(speed, coefficient, distance, rounding) * (realDistance / distance);
+            vbroomwagon = converter(speed, coefficient, distance, rounding) * (realDistance / distance);
+            broomwagon = converter(speed, coefficient, distance, rounding);
         }
 
-        document.querySelector("section p").innerHTML = `${speed} km/h • Virtual broomwagon: + ${Math.floor(broomwagon).toString().padStart(2, '0')}'${Math.floor((broomwagon * 60) % 60).toString().padStart(2, '0')}"`
+        pace = (distance / speed) * 60
+
+        document.querySelector("section p").innerHTML = `${speed} km/h • Pace: ${Math.floor(pace / 60)}h${Math.floor(pace % 60).toString().padStart(2, '0')}'${Math.floor((pace * 60) % 60).toString().padStart(2, '0')}" • Virtual broomwagon: + ${Math.floor(vbroomwagon).toString().padStart(2, '0')}'${Math.floor((vbroomwagon * 60) % 60).toString().padStart(2, '0')}"`
+
+        if (broomwagon) {
+            document.querySelector("section p").innerHTML += ` (of ${Math.floor(broomwagon).toString().padStart(2, '0')}'${Math.floor((broomwagon * 60) % 60).toString().padStart(2, '0')}")`
+        }
     }
 
     document.getElementById("distance").addEventListener("change", () => updateVirtual())
