@@ -140,7 +140,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false, me
                 xLine: true,
                 yLine: true,
                 renderer: function (x, y, index) {
-                    x = (floor(x * 10) / 10).toFixed(1);
+                    x = (Math.floor(x * 10) / 10).toFixed(1);
                     x = speedFormat(x);
 
                     y = overageFormat(y);
@@ -198,7 +198,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false, me
                 xLine: true,
                 yLine: true,
                 renderer: function (x, y, index) {
-                    x = (floor(x * 60) / 60);
+                    x = (Math.floor(x * 60) / 60);
                     x = timeFormat(x);
 
                     y = overageFormat(floor(y));
