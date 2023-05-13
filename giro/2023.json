@@ -347,7 +347,7 @@
                     ["bonus", "Sigillo"]
                 ]
             },
-            "final": false
+            "final": [4, 44, 24]
         },
         "9": {
             "title": "Savignano sul Rubicone – Cesena Tudor ITT",
