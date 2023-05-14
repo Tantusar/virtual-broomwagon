@@ -17,6 +17,8 @@ function stagemonolith(coefficient, distance, rounding, range, final = false, me
         if (seconds) {
             output += `${seconds.toString().padStart(2, '0')}"`
         }
+
+        return output
     }
 
     function convertRemToPixels(rem) {
@@ -151,7 +153,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false, me
 
                     y = overageFormat(y);
 
-                    return `${x}<br>${y}`
+                    return `${x}\n\n${y}`
                 }
             },
             yAxis: {
@@ -209,7 +211,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false, me
 
                     y = overageFormat(Math.floor(y));
 
-                    return `${x}<br>${y}`
+                    return `${x}\n\n${y}`
                 }
             },
             yAxis: {
