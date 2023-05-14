@@ -10,7 +10,13 @@ function stagemonolith(coefficient, distance, rounding, range, final = false, me
         return `${Math.floor(x / 60)}h${Math.floor(x % 60).toString().padStart(2, '0')}'${Math.floor((x * 60) % 60).toString().padStart(2, '0')}"`
     }
     function hourFormat(x) {
-        return `${Math.floor(x / 60)}h${Math.floor(x % 60).toString().padStart(2, '0')}'`
+        output = `${Math.floor(x / 60)}h${Math.floor(x % 60).toString().padStart(2, '0')}'`
+
+        seconds = Math.floor((x * 60) % 60)
+
+        if (seconds) {
+            output += `${seconds.toString().padStart(2, '0')}"`
+        }
     }
 
     function convertRemToPixels(rem) {
@@ -198,7 +204,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false, me
                 xLine: true,
                 yLine: true,
                 renderer: function (x, y, index) {
-                    x = (Math.floor(x * 60) / 60);
+
                     x = timeFormat(x);
 
                     y = overageFormat(floor(y));
