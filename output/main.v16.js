@@ -151,7 +151,7 @@ function stagemonolith(coefficient, distance, rounding, range, final = false, me
 
                     y = overageFormat(y);
 
-                    return `${x}\n${y}`
+                    return `${x}<br>${y}`
                 }
             },
             yAxis: {
@@ -207,9 +207,9 @@ function stagemonolith(coefficient, distance, rounding, range, final = false, me
 
                     x = timeFormat(x);
 
-                    y = overageFormat(floor(y));
+                    y = overageFormat(Math.floor(y));
 
-                    return `${x}\n${y}`
+                    return `${x}<br>${y}`
                 }
             },
             yAxis: {
