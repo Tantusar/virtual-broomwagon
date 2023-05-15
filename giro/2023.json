@@ -370,7 +370,7 @@
                     ["finish", "Cesena (Technogym Village)"]
                 ]
             },
-            "final": false
+            "final": [0, 41, 24]
         },
         "10": {
             "title": "Scandiano – Viareggio",
