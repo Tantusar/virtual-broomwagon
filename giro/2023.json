@@ -52,8 +52,8 @@
             "mountain_3": ["9", "4", "2", "1"],
             "mountain_4": ["3", "2", "1"],
             "finish_mountain_0": "mountain_0",
-            "finish_mountain_1": "mountain_1",
-            "finish_mountain_2": "mountain_2",
+            "finish_mountain_1": ["50", "24", "16", "9", "6", "4", "2", "1"],
+            "finish_mountain_2": ["26", "12", "8", "4", "2", "1"],
             "finish_mountain_3": "mountain_3",
             "finish_mountain_4": "mountain_4"
         },
