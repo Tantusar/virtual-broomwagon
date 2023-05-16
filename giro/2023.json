@@ -406,7 +406,7 @@
                     ["bonus", "Ponte a Moriano"]
                 ]
             },
-            "final": false
+            "final": [4, 51, 16]
         },
         "11": {
             "title": "Camaiore – Tortona",
