@@ -444,7 +444,7 @@
                     ["bonus", "Busalla"]
                 ]
             },
-            "final": false
+            "final": [5, 9, 2]
         },
         "12": {
             "title": "Bra – Rivoli",
