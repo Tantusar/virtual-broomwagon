@@ -497,7 +497,7 @@
                 ["Salita del Gran San Bernardo (1878m)", 87.5, "mountain_1"],
                 ["Verbier", 133.3, "bonus"],
                 ["Croix de Coeur (2174m)", 139.8, "mountain_1"],
-                ["Crans Montana (1456m)", 199, "finish_mountain_0"]
+                ["Crans Montana (1456m)", 199, "finish_mountain_1"]
             ],
             "awards": {
                 "points": [
@@ -511,7 +511,7 @@
                 "kom": [
                     ["mountain_0", "Col du Grand Saint-Bernard"],
                     ["mountain_1", "Croix de Coeur"],
-                    ["finish_mountain_0", "Crans Montana"]
+                    ["finish_mountain_1", "Crans Montana"]
                 ],
                 "intermediate": [
                     ["sprint_purple", "Nus"],
@@ -728,18 +728,18 @@
             "awards": {
                 "points": [
                     ["sprint_purple", "Caprile"],
-                    ["finish_mountain_1", "Tre Cime di Lavaredo"]
+                    ["finish_mountain_0", "Tre Cime di Lavaredo"]
                 ],
                 "time_bonus": [
                     ["bonus", "Cortina d'Ampezzo"],
-                    ["finish_mountain_1", "Tre Cime di Lavaredo"]
+                    ["finish_mountain_0", "Tre Cime di Lavaredo"]
                 ],
                 "kom": [
                     ["mountain_2", "Passo Campolongo"],
                     ["mountain_1", "Passo Valparola"],
                     ["mountain_1", "Passo Giau"],
                     ["mountain_2", "Passo Tre Croci"],
-                    ["finish_mountain_1", "Tre Cime di Lavaredo"]
+                    ["finish_mountain_0", "Tre Cime di Lavaredo"]
                 ],
                 "intermediate": [
                     ["sprint_purple", "Caprile"],
