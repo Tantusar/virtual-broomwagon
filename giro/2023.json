@@ -484,20 +484,20 @@
             "final": false
         },
         "13": {
-            "title": "Borgofranco d'Ivrea – Crans Montana",
+            "title": "Borgofranco d'Ivrea – Crans Montana (Valais)",
             "date": "Friday 19 May 2023",
             "type": "High difficulty",
             "coefficient": "D",
-            "length": 207,
+            "length": 199,
             "description": [],
             "speeds": [32, 34, 36],
             "waypoints": [
                 ["Borgofranco d'Ivrea (after 2.8km)", 0, "depart_real"],
                 ["Nus", 49.1, "sprint_purple"],
-                [["Col du Grand Saint-Bernard (2469m)","(Cima Coppi)"], 96.1, "mountain_0"],
-                ["Verbier", 141.1, "bonus"],
-                ["Croix de Coeur (2174m)", 147.9, "mountain_1"],
-                ["Crans Montana (Valais) (1456m)", 207, "finish_mountain_1"]
+                ["Salita del Gran San Bernardo (1878m)", 87.5, "mountain_1"],
+                ["Verbier", 133.3, "bonus"],
+                ["Croix de Coeur (2174m)", 139.8, "mountain_1"],
+                ["Crans Montana (1456m)", 199, "finish_mountain_0"]
             ],
             "awards": {
                 "points": [
@@ -511,7 +511,7 @@
                 "kom": [
                     ["mountain_0", "Col du Grand Saint-Bernard"],
                     ["mountain_1", "Croix de Coeur"],
-                    ["finish_mountain_1", "Crans Montana"]
+                    ["finish_mountain_0", "Crans Montana"]
                 ],
                 "intermediate": [
                     ["sprint_purple", "Nus"],
@@ -723,7 +723,7 @@
                 ["Passo Giau (2236m)", 143.5, "mountain_1"],
                 ["Cortina d'Ampezzo", 161.3, "bonus"],
                 ["Passo Tre Croci (1805m)", 169.5, "mountain_2"],
-                ["Tre Cime di Lavaredo (1518m)", 183, "finish_mountain_1"]
+                [["Tre Cime di Lavaredo (1518m)", "(Cima Coppi)"], 183, "finish_mountain_0"]
             ],
             "awards": {
                 "points": [
