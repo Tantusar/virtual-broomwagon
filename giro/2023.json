@@ -481,7 +481,7 @@
                     ["bonus", "Buttigliera Alta"]
                 ]
             },
-            "final": false
+            "final": [4, 18, 11]
         },
         "13": {
             "title": "Borgofranco d'Ivrea – Crans Montana (Valais)",
