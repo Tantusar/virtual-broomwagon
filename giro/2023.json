@@ -488,20 +488,17 @@
             "date": "Friday 19 May 2023",
             "type": "High difficulty",
             "coefficient": "D",
-            "length": 199,
-            "description": [],
+            "length": 74.6,
+            "description": ["Stage modified twice due to weather events:", "1) Cima Coppi removed from stage as Col du Grand Saint-Bernard replaced with Salita del Gran San Bernardo.", "2) Stage cut from 207km to 74.6km, starting from La Châble, cutting the Grand Saint-Bernard out entirely."],
             "speeds": [32, 34, 36],
             "waypoints": [
-                ["Borgofranco d'Ivrea (after 2.8km)", 0, "depart_real"],
-                ["Nus", 49.1, "sprint_purple"],
-                ["Salita del Gran San Bernardo (1878m)", 87.5, "mountain_1"],
-                ["Verbier", 133.3, "bonus"],
-                ["Croix de Coeur (2174m)", 139.8, "mountain_1"],
-                ["Crans Montana (1456m)", 199, "finish_mountain_1"]
+                ["La Châble (after 2.8km and a bus transfer)", 0, "depart_real"],
+                ["Verbier", 8.9, "bonus"],
+                ["Croix de Coeur (2174m)", 15.4, "mountain_1"],
+                ["Crans Montana (1456m)", 74.6, "finish_mountain_1"]
             ],
             "awards": {
                 "points": [
-                    ["sprint_purple", "Nus"],
                     ["finish_mountain_1", "Crans Montana"]
                 ],
                 "time_bonus": [
@@ -509,12 +506,10 @@
                     ["finish_mountain_1", "Crans Montana"]
                 ],
                 "kom": [
-                    ["mountain_1", "Salita del Gran San Bernardo"],
                     ["mountain_1", "Croix de Coeur"],
                     ["finish_mountain_1", "Crans Montana"]
                 ],
                 "intermediate": [
-                    ["sprint_purple", "Nus"],
                     ["bonus", "Verbier"]
                 ]
             },
@@ -713,7 +708,7 @@
             "type": "High difficulty",
             "coefficient": "D",
             "length": 183,
-            "description": [],
+            "description": ["Tre Cime di Lavaredo made Cima Coppi after changes to stage 13."],
             "speeds": [32, 34, 36],
             "waypoints": [
                 ["Longarone (after 8.2km)", 0, "depart_real"],
