@@ -489,7 +489,7 @@
             "type": "High difficulty",
             "coefficient": "D",
             "length": 74.6,
-            "description": ["Stage modified twice due to weather events:", "1) Cima Coppi removed from stage as Col du Grand Saint-Bernard cut down to Salita del Gran San Bernardo, cutting stage from 207km to 199km.", "2) Stage cut from 199km to 74.6km, starting from La Châble, cutting the Grand Saint-Bernard out entirely."],
+            "description": ["Stage modified twice due to weather events:", "1) Cima Coppi removed from stage as Col du Grand Saint-Bernard cut down to Salita del Gran San Bernardo, cutting stage from 207km to 199km.", "2) Stage cut from 199km to 74.6km, starting from La Châble, cutting the Grand Saint-Bernard out entirely. 2.8km neutral start still held in Borgofranco d'Ivrea before a bus transfer."],
             "speeds": [32, 34, 36],
             "waypoints": [
                 ["La Châble (after 2.8km and a bus transfer)", 0, "depart_real"],
