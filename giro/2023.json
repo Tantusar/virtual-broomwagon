@@ -513,7 +513,7 @@
                     ["bonus", "Verbier"]
                 ]
             },
-            "final": false
+            "final": [2, 16, 23]
         },
         "14": {
             "title": "Sierre – Cassano Magnago",
