@@ -521,14 +521,14 @@
             "type": "Low difficulty",
             "coefficient": "B",
             "length": 194,
-            "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage."],
+            "description": ["Stage expected to finish in a bunch sprint. The three-kilometre rule applies on this stage.", "2km detour added to stage between Simplon Pass and Villadossola due to landslide."],
             "speeds": [37, 39, 41],
             "waypoints": [
                 ["Sierre (Valais) (after 6km)", 0, "depart_real"],
                 ["Simplon Pass/Passo del Sempione (2004m)", 56, "mountain_1"],
-                ["Villadossola", 101.7, "sprint_purple"],
-                ["Stresa", 138.3, "bonus"],
-                ["Cassano Magnago", 194, "finish"]
+                ["Villadossola", 103.7, "sprint_purple"],
+                ["Stresa", 140.3, "bonus"],
+                ["Cassano Magnago", 196, "finish"]
             ],
             "awards": {
                 "points": [
