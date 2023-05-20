@@ -547,7 +547,7 @@
                     ["bonus", "Stresa"]
                 ]
             },
-            "final": false
+            "final": [4, 37, 30]
         },
         "15": {
             "title": "Seregno – Bergamo",
