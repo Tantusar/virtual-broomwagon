@@ -588,7 +588,7 @@
                     ["bonus", "Almenno San Bartolomeo"]
                 ]
             },
-            "final": false
+            "final": [5, 13, 39]
         },
         "16": {
             "title": "Sabbio Chiese – Monte Bondone",
