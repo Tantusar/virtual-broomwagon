@@ -629,7 +629,7 @@
                     ["bonus", "Aldeno"]
                 ]
             },
-            "final": false
+            "final": [5, 53, 27]
         },
         "17": {
             "title": "Pergine Valsugana – Caorle",
