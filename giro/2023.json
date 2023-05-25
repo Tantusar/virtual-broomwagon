@@ -700,7 +700,7 @@
                     ["bonus", "Forno di Zoldo"]
                 ]
             },
-            "final": false
+            "final": [4, 25, 12]
         },
         "19": {
             "title": "Longarone – Tre Cime di Lavaredo",
