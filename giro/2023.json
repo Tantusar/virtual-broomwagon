@@ -659,7 +659,7 @@
                     ["bonus", "Lido di Jesolo"]
                 ]
             },
-            "final": false
+            "final": [4, 26, 8]
         },
         "18": {
             "title": "Oderzo – Val di Zoldo",
