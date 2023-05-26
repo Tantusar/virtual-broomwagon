@@ -741,7 +741,7 @@
                     ["bonus", "Cortina d'Ampezzo"]
                 ]
             },
-            "final": false
+            "final": [5, 28, 8]
         },
         "20": {
             "title": "Tarvisio – Monte Lussari Tudor ITT",
