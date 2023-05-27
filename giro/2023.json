@@ -751,7 +751,7 @@
             "type": "Individual Time Trial",
             "coefficient": "E (modified)",
             "length": 18.6,
-            "description": ["Monte Lussari KOM timed from the Base of Climb timecheck.", "Time cut increased to 50% on the day. Three riders would be excluded by a 30% cut."],
+            "description": ["Monte Lussari KOM timed from the Base of Climb timecheck.", "Time cut increased to 50% on the day. No rider would have been excluded by a 30% cut (+14'00\")."],
             "range": [20, 34],
             "speeds": [25, 27, 29],
             "waypoints": [
