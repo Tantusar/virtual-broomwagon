@@ -99,7 +99,7 @@
                     ["mountain_3", "Côte de Pike"]
                 ]
             },
-            "final": false
+            "final": [4, 22, 49]
         }
     }
 }
