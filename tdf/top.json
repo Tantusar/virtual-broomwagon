@@ -1,0 +1,9 @@
+{
+    "title": "Tour de France",
+    "code": "tdf",
+    "country": "France",
+    "description": [],
+    "events": [
+        [2023, 7, 1, "2023.json", "2023", "2023 Tour de France"]
+    ]
+}

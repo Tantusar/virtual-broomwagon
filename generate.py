@@ -323,15 +323,19 @@ for item in iglob('**/top.json', recursive=True):
                     ET.SubElement(awardtitle, "th").text = current["awards"][award]["title"]
 
                     for awardtype, location in awards:
-                        svgtarget = awardtype
+                        if type(awardtype) is str:
+                            svgtarget = awardtype
 
-                        while type(current["awards"][award][awardtype]) is str:
-                            awardtype = current["awards"][award][awardtype]
+                            while type(current["awards"][award][awardtype]) is str:
+                                awardtype = current["awards"][award][awardtype]
 
-                        if type(current["awards"][award][awardtype]) is dict:
-                            awardlist = current["awards"][award][awardtype][data["coefficient"]]
+                            if type(current["awards"][award][awardtype]) is dict:
+                                awardlist = current["awards"][award][awardtype][data["coefficient"]]
+                            else:
+                                awardlist = current["awards"][award][awardtype]
                         else:
-                            awardlist = current["awards"][award][awardtype]
+                            svgtarget = awardtype[0]
+                            awardlist = awardtype[1]
 
                         awardwrap = ET.SubElement(awardset, "tr")
 

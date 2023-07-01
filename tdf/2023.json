@@ -1,0 +1,105 @@
+{
+    "title": "2023 Tour de France",
+    "edition": 110,
+    "dates": "1–23 July 2023",
+    "description": [],
+    "coefficients": [
+        "floor-s",
+        {
+            "1": [[0.04, 36, 0.05, 38, 0.06, 40, 0.07, 42, 0.08, 44, 0.09, 46, 0.1, 48, 0.11, 50, 0.12], [31, 55]],
+            "2": [[0.06, 35, 0.07, 36, 0.08, 37, 0.09, 38, 0.1, 39, 0.11, 40, 0.12, 41, 0.13, 42, 0.14, 43, 0.15, 44, 0.16, 45, 0.17, 46, 0.18], [30, 51]],
+            "3": [[0.1, 35, 0.11, 36, 0.12, 37, 0.13, 38, 0.14, 39, 0.15, 40, 0.16, 41, 0.17, 42, 0.18, 43, 0.19, 44, 0.2, 44], [30, 49]],
+            "4": [[0.07, 30, 0.08, 31, 0.09, 32, 0.1, 33, 0.11, 34, 0.12, 35, 0.13, 36, 0.14, 37, 0.15, 38, 0.16, 39, 0.17, 40, 0.18], [25, 45]],
+            "5": [[0.1, 29, 0.11, 30, 0.12, 31, 0.13, 32, 0.14, 33, 0.15, 34, 0.16, 35, 0.17, 36, 0.18, 36], [24, 41]],
+            "6": [[0.33], [20, 60]]
+        }
+    ],
+    "awards": {
+        "time_bonus": {
+            "title": "Bonus Time",
+            "class": "yellow",
+            "mountain_0": ["8\"", "5\"", "2\""],
+            "mountain_1": "mountain_0",
+            "mountain_2": "mountain_0",
+            "mountain_3": "mountain_0",
+            "mountain_4": "mountain_0",
+            "finish": ["10\"", "6\"", "4\""],
+            "finish_mountain_0": "finish",
+            "finish_mountain_1": "finish",
+            "finish_mountain_2": "finish",
+            "finish_mountain_3": "finish",
+            "finish_mountain_4": "finish"
+        },
+        "points": {
+            "title": "Points Classification (Maillot Vert)",
+            "class": "green",
+            "sprint_green": ["20", "17", "15", "13", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1"],
+            "finish": {
+                "1": ["50", "30", "20", "18", "16", "14", "12", "10", "8", "7", "6", "5", "4", "3", "2"],
+                "2": ["50", "30", "20", "18", "16", "14", "12", "10", "8", "7", "6", "5", "4", "3", "2"],
+                "3": ["30", "25", "22", "19", "17", "15", "13", "11", "9", "7", "6", "5", "4", "3", "2"],
+                "4": ["20", "17", "15", "13", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1"],
+                "5": ["20", "17", "15", "13", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1"],
+                "6": ["20", "17", "15", "13", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1"]
+            },
+            "finish_mountain_0": "finish",
+            "finish_mountain_1": "finish",
+            "finish_mountain_2": "finish",
+            "finish_mountain_3": "finish",
+            "finish_mountain_4": "finish"
+        },
+        "kom": {
+            "title": "King of the Mountains (Maillot à Pois)",
+            "class": "red",
+            "mountain_0": ["20", "15", "12", "10", "8", "6", "4", "2"],
+            "mountain_1": ["10", "8", "6", "4", "2", "1"],
+            "mountain_2": ["5", "3", "2", "1"],
+            "mountain_3": ["2", "1"],
+            "mountain_4": ["1"],
+            "finish_mountain_0": "mountain_0",
+            "finish_mountain_1": "mountain_1",
+            "finish_mountain_2": "mountain_2",
+            "finish_mountain_3": "mountain_3",
+            "finish_mountain_4": "mountain_4"
+        },
+        "rounding": "floor-s"
+    },
+    "stages": {
+        "1": {
+            "title": "Bilbao – Bilbao",
+            "date": "Saturday 1 July 2023",
+            "type": "Very rolling terrain",
+            "coefficient": "3",
+            "length": 182,
+            "description": ["The three-kilometre rule applies on this stage."],
+            "speeds": [38, 40, 42],
+            "waypoints": [
+                ["Bilbao (after 11.3km)", 0, "depart_real"],
+                [["Côte de Laukiz", "↑ 211m → 2.2km ↗ 6.9%"], 13.8, "mountain_3"],
+                [ [ "Côte de San Juan de Gaztelugatxe", "↑ 286m → 3.5km ↗ 7.6%" ], 67.8, "mountain_3" ],
+                ["Gernika-Lumo", 88.2, "sprint_green"],
+                [ [ "Col de Morga", "↑ 307m → 3.9km ↗ 4.1%" ], 140.9, "mountain_4" ],
+                [ [ "Côte de Vivero", "↑ 361m → 4.2km ↗ 7.3%" ], 154.9, "mountain_2" ],
+                [ [ "Côte de Pike", "↑ 212m → 2km ↗ 10%" ], 172.4, "mountain_3" ],
+                ["Bilbao", 182, "finish"]
+            ],
+            "awards": {
+                "points": [
+                    ["sprint_green", "Gernika-Lumo"],
+                    ["finish", "Bilbao"]
+                ],
+                "time_bonus": [
+                    ["finish", "Bilbao"]
+                ],
+                "kom": [
+                    ["mountain_3", "Côte de Laukiz"],
+                    ["mountain_3", "Côte de San Juan de Gaztelugatxe"],
+                    ["mountain_4", "Col de Morga"],
+                    ["mountain_2", "Côte de Vivero"],
+                    ["mountain_3", "Côte de Pike"]
+                ]
+            },
+            "final": false
+        }
+    }
+}
