@@ -136,7 +136,7 @@
                     [ "mountain_2", "Jaizkibel" ]
                 ]
             },
-            "final": false
+            "final": [4, 46, 39]
         }
     }
 }
