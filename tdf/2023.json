@@ -61,9 +61,9 @@
             "finish_mountain_2": "mountain_2",
             "finish_mountain_3": "mountain_3",
             "finish_mountain_4": "mountain_4"
-        },
-        "rounding": "floor-s"
+        }
     },
+    "rounding": "floor-s",
     "stages": {
         "1": {
             "title": "Bilbao – Bilbao",
@@ -100,6 +100,43 @@
                 ]
             },
             "final": [4, 22, 49]
+        },
+        "2": {
+            "title": "Vitoria-Gasteiz – San Sebastián",
+            "date": "Sunday 2 July 2023",
+            "type": "Rolling terrain",
+            "coefficient": "2",
+            "length": 208.9,
+            "description": ["The three-kilometre rule applies on this stage."],
+            "speeds": [41, 43, 45],
+            "waypoints": [
+                ["Vitoria-Gasteiz (after 6.7km)", 0, "depart_real"],
+                ["Legutio", 40.6, "sprint_green"],
+                [["Col d'Udana", "↑ 515m → 4.5km ↗ 5.1%"], 81.3, "mountain_3"],
+                [["Côte d'Aztiria", "↑ 572m → 2.7km ↗ 5.3%"], 87.6, "mountain_4"],
+                [["Côte d'Alkiza", "↑ 324m → 4.2km ↗ 5.7%"], 140.9, "mountain_3"],
+                [["Côte de Gurutze", "↑ 150m → 2.6km ↗ 4.7%"], 174.2, "mountain_4"],
+                [["Jaizkibel [B]", "↑ 455m → 8.1km ↗ 5.3%"], 192.4, "mountain_2"],
+                ["San Sebastián", 208.9, "finish"]
+            ],
+            "awards": {
+                "points": [
+                    [ "sprint_green", "Legutio" ],
+                    [ "finish", "San Sebastián" ]
+                ],
+                "time_bonus": [
+                    ["mountain_2", "Jaizkibel"],
+                    [ "finish", "San Sebastián" ]
+                ],
+                "kom": [
+                    [ "mountain_3", "Col d'Udana" ],
+                    [ "mountain_4", "Côte d'Aztiria" ],
+                    [ "mountain_3", "Côte d'Alkiza" ],
+                    [ "mountain_4", "Côte de Gurutze" ],
+                    [ "mountain_2", "Jaizkibel" ]
+                ]
+            },
+            "final": false
         }
     }
 }
